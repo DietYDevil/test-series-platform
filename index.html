@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test Series Portal</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ GLOBAL HEADER ============ -->
+<header id="appHeader" class="hidden">
+  <div class="hbrand"><b id="hBrand"></b><span id="hSub"></span></div>
+  <div class="huser">
+    <span class="hu-name" id="huName"></span>
+    <span class="hu-phone" id="huPhone"></span>
+    <button class="btn-sm" id="btnLogout" onclick="App.logout()">Logout</button>
+  </div>
+</header>
+
+<!-- ============ AUTH VIEW ============ -->
+<div id="viewAuth">
+  <div class="authCard">
+    <div class="banner">
+      <h1 id="authBrand"></h1>
+      <p id="authSub"></p>
+    </div>
+    <div class="tabs">
+      <button class="active" data-tab="login" onclick="App.showAuthTab('login')">Login</button>
+      <button data-tab="signup" onclick="App.showAuthTab('signup')">Sign Up</button>
+    </div>
+
+    <div class="body">
+      <!-- Login -->
+      <div id="authLogin">
+        <div class="field">
+          <label>Phone Number</label>
+          <div class="row2">
+            <select id="li-cc"></select>
+            <input id="li-phone" type="tel" placeholder="e.g. 9876543210" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input id="li-pass" type="password" placeholder="Enter password" autocomplete="current-password">
+        </div>
+        <div class="msg" id="li-err"></div>
+        <button class="submit" onclick="App.login()">Login</button>
+        <p class="hint">New here? Use the <b>Sign Up</b> tab to create your account.</p>
+      </div>
+
+      <!-- Sign up -->
+      <div id="authSignup" class="hidden">
+        <div class="field">
+          <label>Full Name</label>
+          <input id="su-name" type="text" placeholder="Your full name">
+        </div>
+        <div class="field">
+          <label>Phone Number</label>
+          <div class="row2">
+            <select id="su-cc"></select>
+            <input id="su-phone" type="tel" placeholder="e.g. 9876543210">
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input id="su-pass" type="password" placeholder="Min 6 characters" autocomplete="new-password">
+        </div>
+        <div class="field">
+          <label>Confirm Password</label>
+          <input id="su-pass2" type="password" placeholder="Re-enter password" autocomplete="new-password">
+        </div>
+        <div class="msg" id="su-err"></div>
+        <button class="submit" onclick="App.signup()">Create Account</button>
+        <p class="hint">Your name and phone number are locked after signup. Access is granted only after the administrator approves your account.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PENDING APPROVAL ============ -->
+<div id="viewPending" class="hidden" style="max-width:460px;margin:48px auto;padding:0 16px">
+  <div class="authCard">
+    <div class="banner">
+      <h1>Account Pending Approval</h1>
+      <p>We are verifying your details</p>
+    </div>
+    <div class="body">
+      <p>Hello <b id="pendName"></b>! Your account has been created successfully, but it has <b>not yet been approved</b> by the administrator.</p>
+      <p>You will be able to take tests once your account is approved. Please check back later.</p>
+      <div class="msg"></div>
+      <button class="submit" onclick="App.checkApproval()">Check Approval Status</button>
+      <button class="submit" style="background:#eee;color:#3a4c5e;margin-top:10px" onclick="App.logout()">Logout</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STUDENT DASHBOARD ============ -->
+<div id="viewDash" class="hidden">
+  <div class="page">
+    <div class="pageHead">
+      <h2>Available Tests</h2>
+      <div class="sub" id="dashMeta"></div>
+    </div>
+    <div id="dashGrid" class="cards"></div>
+
+    <div class="pageHead" style="margin-top:30px">
+      <h2>My Attempts</h2>
+    </div>
+    <div id="dashHistory" class="tableWrap"></div>
+  </div>
+</div>
+
+<!-- ============ TEST VIEW ============ -->
+<div id="viewTest" class="hidden">
+  <div id="topbar">
+    <span class="tname" id="tbName"></span>
+    <span id="timer">--:--</span>
+  </div>
+  <div id="layout">
+    <div id="qwrap">
+      <div id="qmeta">
+        <span class="qnum" id="qnum"></span>
+        <span class="subj" id="qsubj"></span>
+      </div>
+      <div id="qbody"></div>
+      <div id="opts"></div>
+      <div id="nav">
+        <button onclick="TestRunner.go(-1)">&larr; Previous</button>
+        <button class="mark" onclick="TestRunner.markReview()">Mark for Review</button>
+        <button onclick="TestRunner.go(1)">Next &rarr;</button>
+        <button class="danger" style="margin-left:auto" onclick="TestRunner.openSubmit()">Submit Test</button>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="calc">
+        <div class="cdisp">
+          <div class="cexpr" id="cexpr"></div>
+          <div class="cmain" id="cmain">0</div>
+        </div>
+        <div class="cgrid">
+          <button type="button" class="mem" data-act="mem" data-val="MC">MC</button>
+          <button type="button" class="mem" data-act="mem" data-val="MR">MR</button>
+          <button type="button" class="mem" data-act="mem" data-val="M+">M+</button>
+          <button type="button" class="mem" data-act="mem" data-val="M-">M-</button>
+          <button type="button" class="mem" data-act="back">&#9003;</button>
+          <button type="button" class="fn" data-act="char" data-val="(">(</button>
+          <button type="button" class="fn" data-act="char" data-val=")">)</button>
+          <button type="button" class="fn" data-act="const" data-val="pi">&pi;</button>
+          <button type="button" class="fn" data-act="const" data-val="e">e</button>
+          <button type="button" class="fn" data-act="clear">C</button>
+          <button type="button" class="fn" data-act="unary" data-val="sin">sin</button>
+          <button type="button" class="fn" data-act="unary" data-val="cos">cos</button>
+          <button type="button" class="fn" data-act="unary" data-val="tan">tan</button>
+          <button type="button" class="fn" data-act="unary" data-val="log">log</button>
+          <button type="button" class="fn" data-act="unary" data-val="ln">ln</button>
+          <button type="button" class="fn" data-act="unary" data-val="asin">sin&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="unary" data-val="acos">cos&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="unary" data-val="atan">tan&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="op" data-val="^">x&#8310;</button>
+          <button type="button" class="fn" data-act="unary" data-val="e^">e&#8310;</button>
+          <button type="button" class="fn" data-act="sq" data-val="2">x&#178;</button>
+          <button type="button" class="fn" data-act="sq" data-val="3">x&#179;</button>
+          <button type="button" class="fn" data-act="unary" data-val="sqrt">&#8730;</button>
+          <button type="button" class="fn" data-act="post" data-val="!">n!</button>
+          <button type="button" class="fn" data-act="op" data-val="%">mod</button>
+          <button type="button" data-act="num" data-val="7">7</button>
+          <button type="button" data-act="num" data-val="8">8</button>
+          <button type="button" data-act="num" data-val="9">9</button>
+          <button type="button" data-act="op" data-val="/">&#247;</button>
+          <button type="button" data-act="op" data-val="%">%</button>
+          <button type="button" data-act="num" data-val="4">4</button>
+          <button type="button" data-act="num" data-val="5">5</button>
+          <button type="button" data-act="num" data-val="6">6</button>
+          <button type="button" data-act="op" data-val="*">&#215;</button>
+          <button type="button" class="fn" data-act="unary" data-val="inv">1/x</button>
+          <button type="button" data-act="num" data-val="1">1</button>
+          <button type="button" data-act="num" data-val="2">2</button>
+          <button type="button" data-act="num" data-val="3">3</button>
+          <button type="button" data-act="op" data-val="-">&#8722;</button>
+          <button type="button" class="fn" data-act="neg">+/-</button>
+          <button type="button" data-act="num" data-val="0">0</button>
+          <button type="button" data-act="dot">.</button>
+          <button type="button" class="eq" data-act="eq">=</button>
+          <button type="button" data-act="op" data-val="+">+</button>
+          <button type="button" class="deg" data-act="deg" id="cdeg">Deg</button>
+        </div>
+      </div>
+      <h4>Question Palette</h4>
+      <div id="palette"></div>
+      <div id="legend">
+        <span><i></i> Answered</span>
+        <span><i class="m"></i> Marked</span>
+        <span><i class="u"></i> Not Answered</span>
+      </div>
+      <h4 style="margin-top:18px">Instructions</h4>
+      <div class="legendmini" id="sbInstr"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RESULT / ANALYSIS VIEW ============ -->
+<div id="viewResult" class="hidden">
+  <div class="page">
+    <div class="card">
+      <h2>Test Report of <span id="anName"></span></h2>
+      <div class="tabs">
+        <button class="active" onclick="TestRunner.showTab('ov')">Score Overview</button>
+        <button onclick="TestRunner.showTab('sub')">Subject Wise</button>
+        <button onclick="TestRunner.showTab('q')">Question Wise</button>
+        <button onclick="TestRunner.showTab('time')">Time Wise</button>
+        <button onclick="TestRunner.showTab('top')">Compare with Topper</button>
+      </div>
+      <div id="tp-ov" class="tabpane active"></div>
+      <div id="tp-sub" class="tabpane"></div>
+      <div id="tp-q" class="tabpane"></div>
+      <div id="tp-time" class="tabpane"></div>
+      <div id="tp-top" class="tabpane"></div>
+      <div id="btnExport">
+        <button class="e-pdf" onclick="TestRunner.exportPDF()">&#128196; Save as PDF</button>
+        <button class="e-md" onclick="TestRunner.exportMD()">&#128193; Save as .md</button>
+        <button class="e-html" onclick="TestRunner.exportHTML()">&#128194; Save as HTML</button>
+      </div>
+      <div style="margin-top:18px">
+        <button class="btn primary" onclick="App.backToDash()">&#8592; Back to Dashboard</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ADMIN VIEW ============ -->
+<div id="viewAdmin" class="hidden">
+  <div class="page">
+    <div class="pageHead"><h2>Admin Panel</h2></div>
+    <div class="tabs">
+      <button class="active admin-tab" data-tab="users" onclick="App.adminTab('users')">Users</button>
+      <button class="admin-tab" data-tab="tests" onclick="App.adminTab('tests')">Tests</button>
+      <button class="admin-tab" data-tab="results" onclick="App.adminTab('results')">Results</button>
+    </div>
+    <div id="admUsers"></div>
+    <div id="admTests" class="hidden"></div>
+    <div id="admResults" class="hidden"></div>
+  </div>
+</div>
+
+<!-- ============ INSTRUCTIONS MODAL ============ -->
+<div class="modal" id="instModal">
+  <div class="box">
+    <h3 id="instTitle"></h3>
+    <div class="row"><span>Questions</span><b id="instQs"></b></div>
+    <div class="row"><span>Duration</span><b id="instDur"></b></div>
+    <div class="row"><span>Maximum Marks</span><b id="instMax"></b></div>
+    <div class="row"><span>Marking Scheme</span><b id="instMarks"></b></div>
+    <div style="margin-top:14px;font-size:13.5px;line-height:1.6;color:#33475a" id="instRules"></div>
+    <div class="msg" id="instErr"></div>
+    <div class="acts">
+      <button style="background:#eee;color:#3a4c5e" onclick="App.closeInst()">Cancel</button>
+      <button style="background:var(--brand);color:#fff" onclick="TestRunner.start()">Start Test</button>
+    </div>
+    <p class="note" id="instNote"></p>
+  </div>
+</div>
+
+<!-- ============ SUBMIT MODAL ============ -->
+<div class="modal" id="submitModal">
+  <div class="box">
+    <h3>Submit Test?</h3>
+    <div class="row"><span>Total Questions</span><b id="smTotal"></b></div>
+    <div class="row"><span>Answered</span><b id="smAns"></b></div>
+    <div class="row"><span>Not Answered</span><b id="smNa"></b></div>
+    <div class="row"><span>Marked for Review</span><b id="smMk"></b></div>
+    <div class="row"><span>Time Remaining</span><b id="smTime"></b></div>
+    <div class="acts">
+      <button onclick="TestRunner.closeSubmit()" style="background:#eee;color:#3a4c5e">Keep Working</button>
+      <button onclick="TestRunner.finish()" style="background:var(--brand);color:#fff">Submit</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ASSIGN USERS MODAL ============ -->
+<div class="modal" id="assignModal">
+  <div class="box">
+    <h3>Assign Users to Test</h3>
+    <p class="note">If the test is set to "visible to all approved students", assignment is not needed. This only applies when a test is limited to selected students.</p>
+    <div id="assignBox" style="max-height:320px;overflow-y:auto;margin:10px 0"></div>
+    <input type="hidden" id="assignTestId">
+    <div class="acts">
+      <button style="background:#eee;color:#3a4c5e" onclick="App.hideModal('assignModal')">Cancel</button>
+      <button style="background:var(--brand);color:#fff" onclick="App.saveAssignments()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/test.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

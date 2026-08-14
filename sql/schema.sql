@@ -1,0 +1,192 @@
+-- ============================================================
+-- Test Series Platform - Supabase schema
+-- Run this whole file in: Supabase Dashboard -> SQL Editor -> New query
+-- ============================================================
+
+create extension if not exists pgcrypto;
+
+-- ------------------------------------------------------------
+-- Tables
+-- ------------------------------------------------------------
+create table if not exists public.profiles (
+  id          uuid primary key references auth.users(id) on delete cascade,
+  phone       text not null unique,
+  name        text not null,
+  role        text not null default 'student' check (role in ('student','admin')),
+  approved    boolean not null default false,
+  created_at  timestamptz not null default now()
+);
+
+create table if not exists public.tests (
+  id          uuid primary key default gen_random_uuid(),
+  title       text not null,
+  subject     text,
+  description text,
+  duration_min int not null default 60,
+  total_qs    int not null default 0,
+  max_score   int not null default 0,
+  all_users   boolean not null default true,   -- true = every approved student can take it
+  status      text not null default 'active' check (status in ('active','archived')),
+  data        jsonb not null,                  -- the full test dataset (questions, answers, ...)
+  created_at  timestamptz not null default now()
+);
+
+-- which specific students can take a test (used when all_users = false)
+create table if not exists public.test_access (
+  test_id uuid not null references public.tests(id) on delete cascade,
+  user_id uuid not null references public.profiles(id) on delete cascade,
+  primary key (test_id, user_id)
+);
+
+create table if not exists public.results (
+  id            uuid primary key default gen_random_uuid(),
+  test_id       uuid not null references public.tests(id) on delete cascade,
+  user_id       uuid not null references public.profiles(id) on delete cascade,
+  score         numeric not null default 0,
+  max_score     int not null default 0,
+  correct       int not null default 0,
+  incorrect     int not null default 0,
+  unattempted   int not null default 0,
+  time_used_sec int not null default 0,
+  answers       jsonb not null default '[]',
+  time_spent    jsonb not null default '[]',
+  marked        jsonb not null default '[]',
+  started_at    timestamptz not null default now(),
+  submitted_at  timestamptz not null default now(),
+  unique (test_id, user_id)   -- one attempt per test
+);
+
+-- ------------------------------------------------------------
+-- Helper functions
+-- ------------------------------------------------------------
+-- Is the current signed-in user an admin?
+create or replace function public.is_admin()
+returns boolean
+language sql stable security definer set search_path = public as $$
+  select exists (select 1 from public.profiles where id = auth.uid() and role = 'admin');
+$$;
+
+-- Can the current user view / take this test?
+create or replace function public.can_view_test(tid uuid)
+returns boolean
+language sql stable security definer set search_path = public as $$
+  select exists (select 1 from public.tests t
+    where t.id = tid
+      and (
+        public.is_admin()
+        or (
+          t.status = 'active'
+          and (
+            t.all_users = true
+            or exists (select 1 from public.test_access a where a.test_id = t.id and a.user_id = auth.uid())
+          )
+        )
+      ));
+$$;
+
+-- Create a profile for a freshly signed-up user.
+-- The very FIRST account ever created automatically becomes the admin.
+-- (Sign up your own admin account first!)
+create or replace function public.create_profile(p_name text, p_phone text)
+returns void
+language plpgsql security definer set search_path = public as $$
+declare
+  v_role text;
+begin
+  if exists (select 1 from public.profiles) then
+    v_role := 'student';
+  else
+    v_role := 'admin';
+  end if;
+  insert into public.profiles (id, name, phone, role, approved)
+  values (auth.uid(), p_name, p_phone, v_role, v_role = 'admin');
+end;
+$$;
+
+-- ------------------------------------------------------------
+-- Row Level Security
+-- ------------------------------------------------------------
+alter table public.profiles     enable row level security;
+alter table public.tests        enable row level security;
+alter table public.test_access  enable row level security;
+alter table public.results      enable row level security;
+
+-- profiles: users see only their own; admin sees everyone
+create policy "profiles select own or admin"
+  on public.profiles for select to authenticated
+  using (auth.uid() = id or public.is_admin());
+
+-- students must NEVER edit their profile (name + phone stay locked)
+create policy "profiles admin update"
+  on public.profiles for update to authenticated
+  using (public.is_admin()) with check (public.is_admin());
+
+create policy "profiles admin delete"
+  on public.profiles for delete to authenticated
+  using (public.is_admin());
+
+-- tests: approved students see allowed tests; admin sees all
+create policy "tests select for allowed users"
+  on public.tests for select to authenticated
+  using (public.can_view_test(id));
+
+create policy "tests admin manage"
+  on public.tests for all to authenticated
+  using (public.is_admin()) with check (public.is_admin());
+
+-- test_access: students see their own assignments; admin manages all
+create policy "test_access select own or admin"
+  on public.test_access for select to authenticated
+  using (user_id = auth.uid() or public.is_admin());
+
+create policy "test_access admin insert"
+  on public.test_access for insert to authenticated
+  with check (public.is_admin());
+
+create policy "test_access admin update"
+  on public.test_access for update to authenticated
+  using (public.is_admin()) with check (public.is_admin());
+
+create policy "test_access admin delete"
+  on public.test_access for delete to authenticated
+  using (public.is_admin());
+
+-- results: students see + create their own; admin sees/manages all
+create policy "results select own or admin"
+  on public.results for select to authenticated
+  using (user_id = auth.uid() or public.is_admin());
+
+create policy "results insert own"
+  on public.results for insert to authenticated
+  with check (user_id = auth.uid());
+
+create policy "results admin update"
+  on public.results for update to authenticated
+  using (public.is_admin()) with check (public.is_admin());
+
+create policy "results admin delete"
+  on public.results for delete to authenticated
+  using (public.is_admin());
+
+-- ------------------------------------------------------------
+-- Indexes
+-- ------------------------------------------------------------
+create index if not exists idx_tests_status      on public.tests(status);
+create index if not exists idx_access_user       on public.test_access(user_id);
+create index if not exists idx_access_test       on public.test_access(test_id);
+create index if not exists idx_results_user      on public.results(user_id);
+create index if not exists idx_results_test      on public.results(test_id);
+
+-- ------------------------------------------------------------
+-- Permissions
+-- ------------------------------------------------------------
+grant usage on schema public to anon, authenticated;
+
+grant all on table public.profiles     to anon, authenticated;
+grant all on table public.tests        to anon, authenticated;
+grant all on table public.test_access  to anon, authenticated;
+grant all on table public.results      to anon, authenticated;
+
+grant execute on function public.is_admin()          to anon, authenticated;
+grant execute on function public.can_view_test(uuid) to anon, authenticated;
+grant execute on function public.create_profile(text, text) to authenticated;
