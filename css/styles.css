@@ -119,6 +119,20 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 #topbar .cand-info div{font-size:12.5px}
 #topbar #candName{font-weight:600}
 #topbar #candRoll{opacity:.8;font-size:11.5px}
+#calchost{display:flex;justify-content:center;flex:1;min-width:0}
+#calc{background:linear-gradient(160deg,#e8edf2,#c3ccd6);border:1px solid #9aa7b3;border-radius:10px;padding:7px 8px 8px;box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(0,0,0,.35);width:min(560px,100%)}
+#calc .cdisp{background:#0c141c;border:1px solid #05080c;border-radius:5px;padding:4px 9px 5px;text-align:right;margin-bottom:6px;box-shadow:inset 0 1px 3px rgba(0,0,0,.7)}
+#calc .cexpr{font-size:10px;color:#7fd0a8;min-height:13px;word-break:break-all;line-height:1.2;font-family:Consolas,Menlo,monospace}
+#calc .cmain{font-size:19px;font-weight:700;color:#9cf5c0;min-height:24px;word-break:break-all;line-height:1.25;font-family:Consolas,Menlo,monospace;text-shadow:0 0 6px rgba(80,255,160,.35)}
+#calc .cmain.err{color:#ff7b6b}
+#calc .cgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+#calc .cgrid button{border:1px solid #b7c1cc;background:linear-gradient(180deg,#fbfdff,#e6ecf2);color:#1f3142;border-radius:4px;font-size:11px;font-weight:600;padding:5px 0;cursor:pointer;line-height:1.1;box-shadow:0 1px 1px rgba(0,0,0,.15)}
+#calc .cgrid button:hover{background:linear-gradient(180deg,#fff,#dce6ee)}
+#calc .cgrid button:active{transform:translateY(1px);box-shadow:none}
+#calc .cgrid button.fn{background:linear-gradient(180deg,#eef4fa,#d5e2ee);color:var(--brand)}
+#calc .cgrid button.mem{background:linear-gradient(180deg,#f2f6f9,#dce3e9);color:#44586b}
+#calc .cgrid button.eq{background:linear-gradient(180deg,var(--brand2),#0a4a7d);color:#fff;border-color:#0a4a7d}
+#calc .cgrid button.deg{background:linear-gradient(180deg,#efeaf8,#dcd2f0);color:var(--mark);border-color:#d9cdf0}
 #secbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
 .sec-tab{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:7px 14px;cursor:pointer;color:#fff;min-width:150px;text-align:left;transition:.12s}
 .sec-tab:hover{background:rgba(255,255,255,.2)}
@@ -187,21 +201,6 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 #nav button:disabled{opacity:.45;cursor:not-allowed}
 .legendmini{font-size:12px;color:#5a6b7c;margin-top:6px}
 
-/* ---------- Calculator ---------- */
-#calc{background:#fdfefe;border:1px solid #c9d4df;border-radius:8px;overflow:hidden;margin-bottom:16px}
-#calc .cdisp{background:#e7eef5;border-bottom:1px solid #c9d4df;padding:6px 10px 7px;text-align:right}
-#calc .cexpr{font-size:10.5px;color:#5a6b7c;min-height:13px;word-break:break-all;line-height:1.2}
-#calc .cmain{font-size:19px;font-weight:700;color:#16283a;min-height:26px;word-break:break-all;line-height:1.25}
-#calc .cmain.err{color:var(--bad)}
-#calc .cgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:6px}
-#calc .cgrid button{border:1px solid #d3dce5;background:#fff;color:#1f3142;border-radius:5px;font-size:11.5px;font-weight:600;padding:6px 0;cursor:pointer;line-height:1.1}
-#calc .cgrid button:hover{background:#eef4fa}
-#calc .cgrid button.fn{background:#eef4fa;color:var(--brand)}
-#calc .cgrid button.mem{background:#f2f6f9;color:#44586b}
-#calc .cgrid button.eq{background:var(--brand);color:#fff;border-color:var(--brand)}
-#calc .cgrid button.deg{background:#efeaf8;color:var(--mark);border-color:#d9cdf0}
-#calc .cgrid button:active{transform:translateY(1px)}
-
 /* ---------- Analysis / result ---------- */
 .card{background:#fff;border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,.07);padding:20px 24px;margin-bottom:18px}
 .card h2{margin:0 0 14px;font-size:17px;color:var(--brand);border-bottom:2px solid #eef3f8;padding-bottom:10px}
@@ -254,4 +253,8 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 @media (max-width:760px){
   #layout{flex-direction:column}
   #sidebar{width:100%;border-left:0;border-top:1px solid #dfe6ee;max-height:260px}
+  #calchost{order:3;flex-basis:100%;justify-content:flex-start}
+  #calc{width:100%}
+  #calc .cgrid{grid-template-columns:repeat(5,1fr)}
+  #secbar{order:4}
 }
