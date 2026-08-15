@@ -125,6 +125,15 @@
       </div>
       <div id="qbody"></div>
       <div id="opts"></div>
+      <div id="natwrap" class="natbox hidden">
+        <div class="nlabel">Enter your numerical answer (NAT):</div>
+        <input id="natinput" type="text" inputmode="decimal" placeholder="Your answer" autocomplete="off">
+        <div class="nacts">
+          <button class="save" onclick="TestRunner.saveNAT()">Save Answer</button>
+          <button class="clear" onclick="TestRunner.clearNAT()">Clear</button>
+        </div>
+        <div class="nsaved" id="natsaved"></div>
+      </div>
       <div id="nav">
         <button onclick="TestRunner.go(-1)">&larr; Previous</button>
         <button class="mark" onclick="TestRunner.markReview()">Mark for Review</button>
