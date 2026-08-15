@@ -31,6 +31,23 @@ window.TestRunner = (function () {
   }
 
   // ---------- load a test ----------
+  var SECS = [];
+  var SECQ = {};
+  function buildSections() {
+    SECS = DATA.sections || [];
+    SECQ = {};
+    if (SECS.length) {
+      SECS.forEach(function (s) { SECQ[s.id] = []; });
+      Q.forEach(function (q, i) { var pid = q.part || (SECS[0] && SECS[0].id); if (SECQ[pid]) SECQ[pid].push(i); else { SECQ[pid] = [i]; } });
+    } else {
+      SECS = [{ id: 'A', name: 'All Questions', type: 'MCQ', count: N }];
+      SECQ['A'] = Q.map(function (_, i) { return i; });
+    }
+  }
+  function secActiveFor(i) {
+    for (var s = 0; s < SECS.length; s++) { var ids = SECQ[SECS[s].id]; if (i >= ids[0] && i <= ids[ids.length - 1]) return SECS[s].id; }
+    return SECS[SECS.length - 1].id;
+  }
   function loadTest(testObj) {
     _lastTestId = testObj.id || null;
     _lastData = testObj.data || {};
@@ -42,8 +59,14 @@ window.TestRunner = (function () {
     marked = new Array(N).fill(false);
     visited = new Array(N).fill(false);
     cur = 0; remaining = (DATA.timeLimitMin || testObj.duration_min || 60) * 60;
+    buildSections();
     document.getElementById('tbName').textContent = testObj.title || DATA.testName || 'Test';
-    document.getElementById('sbInstr').textContent = 'Green = answered, Purple = marked, White = not answered.';
+    document.getElementById('tbSub').textContent = (DATA.subjects && DATA.subjects[0]) || 'GATE / NET PHYSICS';
+    document.getElementById('sbInstr').textContent = 'Green = answered, Red = visited-not-answered, Purple = marked, White = not visited.';
+    var nm = who();
+    document.getElementById('candName').textContent = nm;
+    document.getElementById('candRoll').textContent = 'Roll No: ' + (nm ? nm.replace(/\s+/g, '-').toUpperCase() : '—');
+    updateAnswered();
   }
 
   function openInstructions(testObj) {
@@ -71,7 +94,10 @@ window.TestRunner = (function () {
     App.showView('viewTest');
     running = true;
     timerInt = setInterval(tick, 1000);
+    updateTimer();
+    renderSecBar();
     renderPalette();
+    updateAnswered();
     showQ(0);
     if (document.documentElement.requestFullscreen) { try { document.documentElement.requestFullscreen().catch(function () {}); } catch (e) {} }
   }
@@ -91,23 +117,67 @@ window.TestRunner = (function () {
   // ---------- question rendering ----------
   function renderPalette() {
     var p = document.getElementById('palette'); p.innerHTML = '';
-    for (var i = 0; i < N; i++) {
-      var b = document.createElement('button');
-      b.textContent = i + 1;
-      b.id = 'pal' + i;
-      if (i === cur) b.classList.add('cur');
-      if (hasAns(i)) b.classList.add('answered');
-      if (marked[i]) b.classList.add('marked');
-      (function (idx) { b.onclick = function () { showQ(idx); }; })(i);
-      p.appendChild(b);
-    }
+    SECS.forEach(function (s) {
+      var ids = SECQ[s.id] || [];
+      var head = document.createElement('div');
+      head.className = 'sechead';
+      head.textContent = s.name + ' (' + ids.length + ')';
+      p.appendChild(head);
+      ids.forEach(function (i) {
+        var b = document.createElement('button');
+        b.textContent = i + 1;
+        b.id = 'pal' + i;
+        if (i === cur) b.classList.add('cur');
+        if (marked[i] && hasAns(i)) b.classList.add('answered', 'marked');
+        else if (hasAns(i)) b.classList.add('answered');
+        else if (marked[i]) b.classList.add('marked');
+        else if (visited[i]) b.classList.add('nanswered');
+        (function (idx) { b.onclick = function () { showQ(idx); }; })(i);
+        p.appendChild(b);
+      });
+    });
+    renderSecBar();
+  }
+  function renderSecBar() {
+    var bar = document.getElementById('secbar');
+    if (!bar) return;
+    bar.innerHTML = '';
+    SECS.forEach(function (s) {
+      var ids = SECQ[s.id] || [];
+      var answered = 0; ids.forEach(function (i) { if (hasAns(i)) answered++; });
+      var d = document.createElement('button');
+      d.className = 'sec-tab' + (secActiveFor(cur) === s.id ? ' active' : '');
+      d.innerHTML = '<span class="sname">' + esc(s.name) + '</span>' +
+        '<span class="smeta"><span class="schip">' + esc(s.type) + ' (' + ids.length + ')</span> +' + (s.marksPos || 0) +
+        ((s.marksNeg || 0) > 0 ? ' / &minus;' + s.marksNeg : ' / 0') + ' &middot; answered ' + answered + '/' + ids.length + '</span>';
+      (function (pid) { d.onclick = function () { jumpSection(pid); }; })(s.id);
+      bar.appendChild(d);
+    });
+  }
+  function jumpSection(pid) {
+    var ids = SECQ[pid] || [];
+    var target = null;
+    for (var k = 0; k < ids.length; k++) { if (!visited[ids[k]]) { target = ids[k]; break; } }
+    if (target === null) target = ids[0];
+    showQ(target);
   }
   function hasAns(i) { var a = answers[i]; return Array.isArray(a) ? a.length > 0 : (a !== null && a !== undefined && String(a).trim() !== ''); }
+  function updateAnswered() {
+    var el = document.getElementById('answeredChip');
+    if (el) el.textContent = 'Answered: ' + countAns() + ' / ' + N;
+  }
 
   function showQ(i) {
     cur = i; visited[i] = true;
+    var q = Q[i];
     document.getElementById('qnum').textContent = 'Question ' + (i + 1) + ' of ' + N;
-    document.getElementById('qsubj').textContent = Q[i].subject || '';
+    var qt = document.getElementById('qtype');
+    if (qt) { qt.textContent = q.type || ''; }
+    var qs = document.getElementById('qsec');
+    if (qs) qs.textContent = (q.subject || '').replace('PART-', 'PART ');
+    document.getElementById('qsubj').textContent = q.subject || '';
+    var qm = document.getElementById('qmarks');
+    if (qm) qm.textContent = '+' + (q.marksPos || 0) + ((q.marksNeg || 0) > 0 ? ' / &minus;' + q.marksNeg : ' / 0');
     var body = document.getElementById('qbody');
     body.innerHTML = (Q[i].passage ? ('<div style="background:#f7fafc;border:1px solid #e4ebf2;border-radius:8px;padding:12px 14px;margin-bottom:12px;font-size:14px">' + Q[i].passage + '</div>') : '') + (Q[i].question || '');
     var opts = document.getElementById('opts'); opts.innerHTML = '';
@@ -148,7 +218,7 @@ window.TestRunner = (function () {
     } else {
       answers[i] = oi;
     }
-    renderPalette(); showQ(i);
+    renderPalette(); showQ(i); updateAnswered();
   }
   function saveNAT() {
     var inp = document.getElementById('natinput');
@@ -159,16 +229,29 @@ window.TestRunner = (function () {
       answers[cur] = v;
       document.getElementById('natsaved').textContent = 'Answer saved.';
     }
-    renderPalette();
+    renderPalette(); updateAnswered();
   }
   function clearNAT() {
     answers[cur] = null;
     document.getElementById('natinput').value = '';
     document.getElementById('natsaved').textContent = '';
-    renderPalette();
+    renderPalette(); updateAnswered();
   }
   function go(d) { var ni = cur + d; if (ni >= 0 && ni < N) showQ(ni); }
   function markReview() { marked[cur] = !marked[cur]; renderPalette(); }
+  function saveNext() { var ni = cur + 1; if (ni < N) showQ(ni); else renderPalette(); }
+  function markReviewNext() { marked[cur] = !marked[cur]; var ni = cur + 1; if (ni < N) showQ(ni); else renderPalette(); }
+  function clearResponse() {
+    var q = Q[cur];
+    if (q.type === 'NAT') {
+      answers[cur] = null;
+      var inp = document.getElementById('natinput'); if (inp) inp.value = '';
+      document.getElementById('natsaved').textContent = '';
+    } else {
+      answers[cur] = null;
+    }
+    renderPalette(); showQ(cur);
+  }
 
   function openSubmit() {
     if (!running) return;
@@ -631,6 +714,9 @@ window.TestRunner = (function () {
     start: start,
     go: go,
     markReview: markReview,
+    saveNext: saveNext,
+    markReviewNext: markReviewNext,
+    clearResponse: clearResponse,
     openSubmit: openSubmit,
     closeSubmit: closeSubmit,
     finish: finish,

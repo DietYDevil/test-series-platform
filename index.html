@@ -114,14 +114,34 @@
 <!-- ============ TEST VIEW ============ -->
 <div id="viewTest" class="hidden">
   <div id="topbar">
-    <span class="tname" id="tbName"></span>
-    <span id="timer">--:--</span>
+    <div class="tb-left">
+      <div class="tname" id="tbName"></div>
+      <div class="tsub" id="tbSub"></div>
+    </div>
+    <div class="tb-right">
+      <div class="cand">
+        <div class="cand-photo" id="candPhoto">PH</div>
+        <div class="cand-info">
+          <div id="candName"></div>
+          <div id="candRoll"></div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div id="timerbar">
+    <span class="tlbl">Time Left</span>
+    <span id="timer">--:--</span>
+    <span id="answeredChip" style="margin-left:auto">Answered: 0 / 0</span>
+  </div>
+  <div id="secbar"></div>
   <div id="layout">
     <div id="qwrap">
       <div id="qmeta">
         <span class="qnum" id="qnum"></span>
+        <span class="sec-chip" id="qsec"></span>
+        <span class="qtype" id="qtype"></span>
         <span class="subj" id="qsubj"></span>
+        <span class="qmarks" id="qmarks"></span>
       </div>
       <div id="qbody"></div>
       <div id="opts"></div>
@@ -136,8 +156,9 @@
       </div>
       <div id="nav">
         <button onclick="TestRunner.go(-1)">&larr; Previous</button>
-        <button class="mark" onclick="TestRunner.markReview()">Mark for Review</button>
-        <button onclick="TestRunner.go(1)">Next &rarr;</button>
+        <button class="mark" onclick="TestRunner.markReviewNext()">Mark for Review &amp; Next</button>
+        <button class="clear" onclick="TestRunner.clearResponse()">Clear Response</button>
+        <button class="primary" onclick="TestRunner.saveNext()">Save &amp; Next &rarr;</button>
         <button class="danger" style="margin-left:auto" onclick="TestRunner.openSubmit()">Submit Test</button>
       </div>
     </div>
@@ -198,9 +219,11 @@
       <h4>Question Palette</h4>
       <div id="palette"></div>
       <div id="legend">
-        <span><i></i> Answered</span>
+        <span><i class="a"></i> Answered</span>
+        <span><i class="r"></i> Not Answered</span>
         <span><i class="m"></i> Marked</span>
-        <span><i class="u"></i> Not Answered</span>
+        <span><i class="am"></i> Ans &amp; Marked</span>
+        <span><i class="u"></i> Not Visited</span>
       </div>
       <h4 style="margin-top:18px">Instructions</h4>
       <div class="legendmini" id="sbInstr"></div>
