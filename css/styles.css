@@ -110,7 +110,7 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 
 /* ---------- TEST ENGINE (GATE style) ---------- */
 #viewTest{display:flex;flex-direction:column;height:100vh}
-#topbar{background:linear-gradient(90deg,#0a2a4a,#0d3d66);color:#fff;padding:12px 18px 10px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+#topbar{background:linear-gradient(90deg,#0a2a4a,#0d3d66);color:#fff;padding:6px 8px 4px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
 #topbar .tname{font-weight:700;font-size:16.5px;letter-spacing:.2px}
 #topbar .tsub{font-size:12px;opacity:.85;margin-top:1px}
 #topbar .cand{display:flex;align-items:center;gap:10px}
@@ -119,21 +119,21 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 #topbar .cand-info div{font-size:12.5px}
 #topbar #candName{font-weight:600}
 #topbar #candRoll{opacity:.8;font-size:11.5px}
-#calchost{display:flex;justify-content:center;flex:1;min-width:0}
-#calc{background:linear-gradient(160deg,#e8edf2,#c3ccd6);border:1px solid #9aa7b3;border-radius:10px;padding:7px 8px 8px;box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(0,0,0,.35);width:min(560px,100%)}
-#calc .cdisp{background:#0c141c;border:1px solid #05080c;border-radius:5px;padding:4px 9px 5px;text-align:right;margin-bottom:6px;box-shadow:inset 0 1px 3px rgba(0,0,0,.7)}
-#calc .cexpr{font-size:10px;color:#7fd0a8;min-height:13px;word-break:break-all;line-height:1.2;font-family:Consolas,Menlo,monospace}
-#calc .cmain{font-size:19px;font-weight:700;color:#9cf5c0;min-height:24px;word-break:break-all;line-height:1.25;font-family:Consolas,Menlo,monospace;text-shadow:0 0 6px rgba(80,255,160,.35)}
+#calchost{display:flex;justify-content:flex-start;flex:0 0 auto;margin-left:auto}
+#calc{background:linear-gradient(160deg,#e8edf2,#c3ccd6);border:1px solid #9aa7b3;border-radius:8px;padding:4px 5px 5px;box-shadow:inset 0 1px 0 #fff,0 2px 6px rgba(0,0,0,.35);width:min(480px,100%)}
+#calc .cdisp{background:#0c141c;border:1px solid #05080c;border-radius:4px;padding:2px 5px 3px;text-align:right;margin-bottom:3px;box-shadow:inset 0 1px 3px rgba(0,0,0,.7)}
+#calc .cexpr{font-size:9px;color:#7fd0a8;min-height:11px;word-break:break-all;line-height:1.2;font-family:Consolas,Menlo,monospace}
+#calc .cmain{font-size:16px;font-weight:700;color:#9cf5c0;min-height:20px;word-break:break-all;line-height:1.25;font-family:Consolas,Menlo,monospace;text-shadow:0 0 6px rgba(80,255,160,.35)}
 #calc .cmain.err{color:#ff7b6b}
-#calc .cgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
-#calc .cgrid button{border:1px solid #b7c1cc;background:linear-gradient(180deg,#fbfdff,#e6ecf2);color:#1f3142;border-radius:4px;font-size:11px;font-weight:600;padding:5px 0;cursor:pointer;line-height:1.1;box-shadow:0 1px 1px rgba(0,0,0,.15)}
+#calc .cgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:1px}
+#calc .cgrid button{border:1px solid #b7c1cc;background:linear-gradient(180deg,#fbfdff,#e6ecf2);color:#1f3142;border-radius:3px;font-size:10px;font-weight:600;padding:3px 0;cursor:pointer;line-height:1.1;box-shadow:0 1px 1px rgba(0,0,0,.15)}
 #calc .cgrid button:hover{background:linear-gradient(180deg,#fff,#dce6ee)}
 #calc .cgrid button:active{transform:translateY(1px);box-shadow:none}
 #calc .cgrid button.fn{background:linear-gradient(180deg,#eef4fa,#d5e2ee);color:var(--brand)}
 #calc .cgrid button.mem{background:linear-gradient(180deg,#f2f6f9,#dce3e9);color:#44586b}
 #calc .cgrid button.eq{background:linear-gradient(180deg,var(--brand2),#0a4a7d);color:#fff;border-color:#0a4a7d}
 #calc .cgrid button.deg{background:linear-gradient(180deg,#efeaf8,#dcd2f0);color:var(--mark);border-color:#d9cdf0}
-#secbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+#secbar{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 0}
 .sec-tab{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:7px 14px;cursor:pointer;color:#fff;min-width:150px;text-align:left;transition:.12s}
 .sec-tab:hover{background:rgba(255,255,255,.2)}
 .sec-tab.active{background:#fff;color:#0a2a4a;border-color:#fff}
@@ -142,13 +142,13 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 .sec-tab.active .smeta{opacity:.8}
 .sec-tab .schip{display:inline-block;background:rgba(0,0,0,.2);border-radius:10px;padding:1px 8px;font-size:10.5px;margin-right:4px;font-weight:600}
 .sec-tab.active .schip{background:#e6f0fa;color:#0a2a4a}
-#timerbar{background:#082036;color:#fff;display:flex;align-items:center;gap:10px;padding:6px 18px;font-size:12.5px}
+#timerbar{background:#082036;color:#fff;display:flex;align-items:center;gap:6px;padding:4px 12px;font-size:12.5px}
 #timerbar .tlbl{text-transform:uppercase;letter-spacing:.6px;font-size:11px;opacity:.9}
 #timer{font-size:17px;font-weight:700;background:rgba(255,255,255,.14);padding:3px 14px;border-radius:4px;font-variant-numeric:tabular-nums}
 #timer.warn{background:#d43f3f;animation:blink 1s infinite}
 @keyframes blink{50%{opacity:.55}}
 #layout{display:flex;flex:1;min-height:0}
-#qwrap{flex:1;overflow-y:auto;padding:22px 26px;background:#fff}
+#qwrap{flex:1;overflow-y:auto;padding:16px 20px;background:#fff}
 #sidebar{width:250px;background:#f3f6f9;border-left:1px solid #dfe6ee;padding:14px;overflow-y:auto;flex-shrink:0}
 #sidebar h4{margin:4px 0 10px;font-size:13px;color:#5a6b7c;text-transform:uppercase;letter-spacing:.5px}
 #palette{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
