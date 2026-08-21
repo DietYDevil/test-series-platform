@@ -34,10 +34,30 @@ window.App = (function () {
     el('appHeader').classList.toggle('hidden', !showHeader);
     window.scrollTo(0, 0);
   }
+  
+  // Helper function to check if user has access to a category
+  function accessCheck(categoryId, userId) {
+    // This is a simplified check - in reality, this would need to query the database
+    // For client-side optimization, we'll rely on server-side RLS
+    // This function is mainly for UI optimization
+    return true; // RLS will handle actual access control
+  }
   function back() {
     viewStack.pop();
     var prev = viewStack[viewStack.length - 1];
     if (prev) showView(prev);
+  }
+  
+  function toggleCategorySection(headerElement) {
+    var content = headerElement.nextElementSibling;
+    if (content && content.classList.contains('categoryContent')) {
+      var isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+      var arrow = headerElement.querySelector('.categoryArrow');
+      if (arrow) {
+        arrow.textContent = isVisible ? '▶' : '▼';
+      }
+    }
   }
 
   // ---------------- init ----------------
@@ -194,7 +214,8 @@ window.App = (function () {
     showView('viewDash');
     el('dashMeta').textContent = state.profile.name + '  \u00b7  ' + state.profile.phone;
     var uid = state.user.id;
-    var { data: tests, error: te } = await sb.from('tests').select('*').order('created_at', { ascending: false });
+    var { data: categories, error: ce } = await sb.from('categories').select('*').eq('is_active', true).order('display_order', { ascending: true });
+    var { data: tests, error: te } = await sb.from('tests').select('*, categories(name, icon)').eq('status', 'active').order('created_at', { ascending: false });
     var { data: myResults } = await sb.from('results').select('*').eq('user_id', uid);
     var grid = el('dashGrid');
     grid.innerHTML = '';
@@ -202,32 +223,84 @@ window.App = (function () {
     if (!tests || !tests.length) {
       grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
     } else {
+      // Check category access for each category and only show categories with accessible tests
+      var accessibleCategories = [];
+      for (var i = 0; i < (categories || []).length; i++) {
+        var cat = categories[i];
+        var catTests = (tests || []).filter(function (t) { return t.category_id === cat.id; });
+        var hasAccess = false;
+        for (var j = 0; j < catTests.length; j++) {
+          var t = catTests[j];
+          if (t.all_users || 
+              (t.category_id && accessCheck(t.category_id, uid)) ||
+              !t.category_id) { // No category means accessible to all
+            hasAccess = true;
+            break;
+          }
+        }
+        if (hasAccess) {
+          accessibleCategories.push(cat);
+        }
+      }
+      
+      if (!accessibleCategories.length) {
+        grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
+        return;
+      }
+      
       var map = {};
       (myResults || []).forEach(function (r) { map[r.test_id] = r; });
-      tests.forEach(function (t) {
-        var res = map[t.id];
-        var card = document.createElement('div');
-        card.className = 'tcard';
-        var subj = t.subject ? '<span class="pill">' + esc(t.subject) + '</span>' : '';
-        card.innerHTML =
-          '<div class="tc-head"><h3>' + esc(t.title) + '</h3>' + subj + '</div>' +
-          '<div class="tc-body">' +
-          '<div class="stat"><span>Questions</span><b>' + (t.total_qs || (t.data && t.data.totalQs) || 0) + '</b></div>' +
-          '<div class="stat"><span>Duration</span><b>' + t.duration_min + ' min</b></div>' +
-          '<div class="stat"><span>Max Marks</span><b>' + (t.max_score || (t.data && t.data.maxScore) || 0) + '</b></div>' +
-          (res ? '<div class="stat"><span>Your Score</span><b>' + res.score + '/' + res.max_score + '</b></div>' : '') +
-          '</div>';
-        var foot = document.createElement('div');
-        foot.className = 'tc-foot';
-        var btn = document.createElement('button');
-        btn.className = 'btn ' + (res ? '' : 'primary');
-        btn.textContent = res ? 'View Result' : 'Take Test';
-        btn.onclick = function () { res ? viewResult(t, res) : TestRunner.openInstructions(t); };
-        foot.appendChild(btn);
-        card.appendChild(foot);
-        grid.appendChild(card);
-      });
+      
+      var html = '';
+      for (var i = 0; i < accessibleCategories.length; i++) {
+        var cat = accessibleCategories[i];
+        var catTests = (tests || []).filter(function (t) { return t.category_id === cat.id; });
+        // Filter tests that the user has access to
+        var accessibleTests = catTests.filter(function (t) {
+          return t.all_users || 
+                 (t.category_id && accessCheck(t.category_id, uid)) ||
+                 !t.category_id;
+        });
+        
+        if (!accessibleTests.length) continue;
+        
+        html += '<div class="categorySection" style="margin-bottom:24px;">';
+        html += '<div class="categoryHeader" style="background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:12px 16px;border-radius:8px;cursor:pointer;" onclick="App.toggleCategorySection(this)">';
+        html += '<span class="categoryIcon">' + (cat.icon || '📁') + '</span> <span class="categoryName">' + esc(cat.name) + '</span>';
+        html += '<span class="categoryArrow">▼</span>';
+        html += '</div>';
+        html += '<div class="categoryContent" style="display:block;margin-top:8px;">';
+        html += '<div class="cards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">';
+        
+        accessibleTests.forEach(function (t) {
+          var res = map[t.id];
+          var card = document.createElement('div');
+          card.className = 'tcard';
+          var subj = t.subject ? '<span class="pill">' + esc(t.subject) + '</span>' : '';
+          card.innerHTML =
+            '<div class="tc-head"><h3>' + esc(t.title) + '</h3>' + subj + '</div>' +
+            '<div class="tc-body">' +
+            '<div class="stat"><span>Questions</span><b>' + (t.total_qs || (t.data && t.data.totalQs) || 0) + '</b></div>' +
+            '<div class="stat"><span>Duration</span><b>' + t.duration_min + ' min</b></div>' +
+            '<div class="stat"><span>Max Marks</span><b>' + (t.max_score || (t.data && t.data.maxScore) || 0) + '</b></div>' +
+            (res ? '<div class="stat"><span>Your Score</span><b>' + res.score + '/' + res.max_score + '</b></div>' : '') +
+            '</div>';
+          var foot = document.createElement('div');
+          foot.className = 'tc-foot';
+          var btn = document.createElement('button');
+          btn.className = 'btn ' + (res ? '' : 'primary');
+          btn.textContent = res ? 'View Result' : 'Take Test';
+          btn.onclick = function () { res ? viewResult(t, res) : TestRunner.openInstructions(t); };
+          foot.appendChild(btn);
+          card.appendChild(foot);
+          html += card.outerHTML;
+        });
+        
+        html += '</div></div></div>'; // Close cards, categoryContent, categorySection
+      }
+      grid.innerHTML = html;
     }
+    
     // history table
     var hist = el('dashHistory');
     if (!(myResults || []).length) {
@@ -289,9 +362,11 @@ window.App = (function () {
       b.classList.toggle('active', b.getAttribute('data-tab') === tab);
     });
     el('admUsers').classList.toggle('hidden', tab !== 'users');
+    el('admCategories').classList.toggle('hidden', tab !== 'categories');
     el('admTests').classList.toggle('hidden', tab !== 'tests');
     el('admResults').classList.toggle('hidden', tab !== 'results');
     if (tab === 'users') renderUsers();
+    if (tab === 'categories') renderCategories();
     if (tab === 'tests') renderTests();
     if (tab === 'results') renderResults();
   }
@@ -333,24 +408,130 @@ window.App = (function () {
     renderUsers();
   }
 
+  // ---------------- admin: categories ----------------
+  async function renderCategories() {
+    var box = el('admCategories');
+    box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading categories...</div>';
+    var { data: categories, error } = await sb.from('categories').select('*').order('display_order', { ascending: true });
+    var { data: access } = await sb.from('category_access').select('category_id, user_id, approved, profiles(name, phone)');
+    var accessMap = {};
+    (access || []).forEach(function (a) {
+      if (!accessMap[a.category_id]) accessMap[a.category_id] = [];
+      accessMap[a.category_id].push({ name: a.profiles ? a.profiles.name : '?', phone: a.profiles ? a.profiles.phone : '', approved: a.approved, user_id: a.user_id });
+    });
+    var { data: testsCount } = await sb.from('tests').select('category_id');
+    var testCountMap = {};
+    (testsCount || []).forEach(function (t) {
+      testCountMap[t.category_id] = (testCountMap[t.category_id] || 0) + 1;
+    });
+    var html = '<div class="admCard"><h3>Create New Category</h3>' +
+      '<div class="field"><label>Category Name</label><input id="cat-name" placeholder="e.g. CSIR NET Dec 2026"></div>' +
+      '<div class="field"><label>Description (optional)</label><input id="cat-desc" placeholder="Short description"></div>' +
+      '<div class="field"><label>Icon (emoji)</label><input id="cat-icon" placeholder="🧪" maxlength="4"></div>' +
+      '<div class="field"><label>Display Order</label><input id="cat-order" type="number" value="0"></div>' +
+      '<div class="chk" style="margin:12px 0"><input type="checkbox" id="cat-active" checked><span>Active (visible to students with access)</span></div>' +
+      '<div class="msg" id="cat-err"></div>' +
+      '<button class="btn primary" onclick="App.createCategory()">Create Category</button></div>';
+    if (!categories.length) {
+      html += '<div class="empty">No categories yet. Create your first category above.</div>';
+    } else {
+      var rows = categories.map(function (c) {
+        var status = c.is_active ? '<span class="badge ok">Active</span>' : '<span class="badge u">Inactive</span>';
+        var assigned = accessMap[c.id] ? accessMap[c.id].map(function (a) {
+          return '<span class="u" style="margin-right:8px">' + esc(a.name) + ' · ' + esc(a.phone) + ' ' +
+            (a.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>') +
+            '<button class="danger" style="margin-left:4px;font-size:11px;padding:2px 8px" onclick="App.toggleCategoryAccess(' + "'" + c.id + "'" + ',' + "'" + a.user_id + "'" + ',' + (!a.approved) + ')">' + (a.approved ? 'Revoke' : 'Approve') + '</button>' +
+            '</span>';
+        }).join('') : '';
+        var testCount = testCountMap[c.id] || 0;
+        return '<div class="admCard"><div class="pageHead" style="margin:0 0 8px"><h3>' + (c.icon || '📁') + ' ' + esc(c.name) + ' ' + status + '</h3>' +
+          '<div class="actions">' +
+          '<button onclick="App.editCategory(' + "'" + c.id + "'" + ')">Edit</button>' +
+          '<button onclick="App.toggleCategoryStatus(' + "'" + c.id + "'" + ')">' + (c.is_active ? 'Deactivate' : 'Activate') + '</button>' +
+          '<button class="danger" onclick="App.deleteCategory(' + "'" + c.id + "'" + ')">Delete</button>' +
+          '</div></div>' +
+          '<div class="stat"><span>Description</span><b>' + esc(c.description || '—') + '</b></div>' +
+          '<div class="stat"><span>Tests in Category</span><b>' + testCount + '</b></div>' +
+          '<div class="stat"><span>Display Order</span><b>' + c.display_order + '</b></div>' +
+          '<div class="stat"><span>Students with Access</span><b>' + (accessMap[c.id] ? accessMap[c.id].length : 0) + '</b></div>' +
+          (assigned ? '<div class="assigned" style="margin-top:8px">' + assigned + '</div>' : '<div class="empty" style="margin-top:8px;text-align:left">No students assigned yet. Students get access when approved below.</div>') +
+          '</div>';
+      }).join('');
+      html += rows;
+    }
+    box.innerHTML = html;
+  }
+
+  async function createCategory() {
+    var name = el('cat-name').value.trim();
+    var desc = el('cat-desc').value.trim();
+    var icon = el('cat-icon').value.trim();
+    var order = parseInt(el('cat-order').value, 10) || 0;
+    var active = el('cat-active').checked;
+    var err = el('cat-err');
+    err.textContent = '';
+    if (!name) { err.textContent = 'Please enter a category name.'; return; }
+    var { error } = await sb.from('categories').insert({ name: name, description: desc || null, icon: icon || null, display_order: order, is_active: active });
+    if (error) { err.textContent = 'Save failed: ' + error.message; return; }
+    toast('Category created!');
+    el('cat-name').value = ''; el('cat-desc').value = ''; el('cat-icon').value = ''; el('cat-order').value = '0';
+    renderCategories();
+  }
+
+  async function editCategory(id) {
+    var { data } = await sb.from('categories').select('*').eq('id', id).maybeSingle();
+    if (!data) return;
+    var name = prompt('Category name:', data.name);
+    if (!name) return;
+    var desc = prompt('Description:', data.description || '');
+    var icon = prompt('Icon (emoji):', data.icon || '');
+    var order = parseInt(prompt('Display order:', data.display_order), 10) || 0;
+    var { error } = await sb.from('categories').update({ name: name, description: desc || null, icon: icon || null, display_order: order }).eq('id', id);
+    if (error) { toast('Failed: ' + error.message); return; }
+    toast('Category updated');
+    renderCategories();
+  }
+
+  async function toggleCategoryStatus(id) {
+    var { data } = await sb.from('categories').select('is_active').eq('id', id).maybeSingle();
+    if (!data) return;
+    await sb.from('categories').update({ is_active: !data.is_active }).eq('id', id);
+    renderCategories();
+  }
+
+  async function deleteCategory(id) {
+    if (!confirm('Delete this category? Tests in this category will become uncategorized.')) return;
+    await sb.from('categories').delete().eq('id', id);
+    toast('Category deleted');
+    renderCategories();
+  }
+
+  async function toggleCategoryAccess(categoryId, userId, approve) {
+    var { error } = await sb.from('category_access').upsert({ category_id: categoryId, user_id: userId, approved: approve, approved_at: approve ? new Date().toISOString() : null, approved_by: state.user.id });
+    if (error) { toast('Failed: ' + error.message); return; }
+    toast(approve ? 'Access granted' : 'Access revoked');
+    renderCategories();
+  }
+
   // ---------------- admin: tests ----------------
   async function renderTests() {
     var box = el('admTests');
     box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading tests...</div>';
-    var { data: tests } = await sb.from('tests').select('*').order('created_at', { ascending: false });
+    var { data: tests } = await sb.from('tests').select('*, categories(name, icon)').order('created_at', { ascending: false });
     var { data: access } = await sb.from('test_access').select('test_id, user_id, profiles(name)');
     var accessMap = {};
     (access || []).forEach(function (a) {
       if (!accessMap[a.test_id]) accessMap[a.test_id] = [];
       accessMap[a.test_id].push(a.profiles ? a.profiles.name : '?');
     });
-    var html = uploadFormHtml();
+    var html = await uploadFormHtml();
     if (!tests.length) {
       html += '<div class="empty">No tests yet. Upload your first test above.</div>';
     } else {
       var rows = tests.map(function (t) {
         var status = t.status === 'active' ? '<span class="badge ok">Active</span>' : '<span class="badge u">Archived</span>';
         var vis = t.all_users ? 'All approved students' : 'Selected students only';
+        var cat = t.categories ? (t.categories.icon || '📁') + ' ' + esc(t.categories.name) : '—';
         var assigned = accessMap[t.id] ? accessMap[t.id].map(function (n) { return '<span class="u">' + esc(n) + '</span>'; }).join('') : '';
         return '<div class="admCard"><div class="pageHead" style="margin:0 0 8px"><h3>' + esc(t.title) + ' ' + status + '</h3>' +
           '<div class="actions">' +
@@ -358,6 +539,7 @@ window.App = (function () {
           '<button onclick="App.assignTest(' + "'" + t.id + "'" + ')">Assign Users</button>' +
           '<button class="danger" onclick="App.deleteTest(' + "'" + t.id + "'" + ')">Delete</button>' +
           '</div></div>' +
+          '<div class="stat"><span>Category</span><b>' + cat + '</b></div>' +
           '<div class="stat"><span>Duration</span><b>' + t.duration_min + ' min</b></div>' +
           '<div class="stat"><span>Questions</span><b>' + (t.total_qs || 0) + '</b></div>' +
           '<div class="stat"><span>Max Marks</span><b>' + (t.max_score || 0) + '</b></div>' +
@@ -370,8 +552,11 @@ window.App = (function () {
     box.innerHTML = html;
   }
 
-  function uploadFormHtml() {
+  async function uploadFormHtml() {
+    var { data: cats } = await sb.from('categories').select('id, name, icon').eq('is_active', true).order('display_order', { ascending: true });
+    var catOptions = '<option value="">-- Select Category --</option>' + (cats || []).map(function (c) { return '<option value="' + c.id + '">' + (c.icon || '📁') + ' ' + esc(c.name) + '</option>'; }).join('');
     return '<div class="admCard"><h3>Upload New Test</h3>' +
+      '<div class="field"><label>Category</label><select id="up-category">' + catOptions + '</select></div>' +
       '<div class="field"><label>Test Title</label><input id="up-title" placeholder="e.g. Physics Thermodynamics Class Test 10-08-2026"></div>' +
       '<div class="field"><label>Subject (optional)</label><input id="up-subject" placeholder="e.g. Physics Thermodynamics"></div>' +
       '<div class="field"><label>Description (optional)</label><input id="up-desc" placeholder="Short description shown to students"></div>' +
@@ -381,7 +566,7 @@ window.App = (function () {
       '<div class="uploadZone" onclick="document.getElementById(\'up-file\').click()">' +
       '<b>Click to choose a file</b><p>Accepts .html (your existing test file) or .json</p></div>' +
       '<input type="file" id="up-file" accept=".html,.json,.txt" class="hidden" onchange="App.readFile(this)">' +
-      '<div class="chk" style="margin:12px 0"><input type="checkbox" id="up-all" checked><span>Visible to all approved students</span></div>' +
+      '<div class="chk" style="margin:12px 0"><input type="checkbox" id="up-all" checked><span>Visible to all approved students (with category access)</span></div>' +
       '<div class="msg" id="up-err"></div>' +
       '<button class="btn primary" onclick="App.uploadTest()">Save Test</button></div>';
   }
@@ -432,6 +617,7 @@ window.App = (function () {
     var subject = el('up-subject').value.trim();
     var desc = el('up-desc').value.trim();
     var dur = parseInt(el('up-dur').value, 10) || 60;
+    var categoryId = el('up-category').value || null;
     var raw = el('up-json').value.trim();
     var err = el('up-err');
     err.textContent = '';
@@ -450,6 +636,7 @@ window.App = (function () {
       max_score: data.maxScore || 0,
       all_users: el('up-all').checked,
       status: 'active',
+      category_id: categoryId,
       data: data
     };
     var { error } = await sb.from('tests').insert(payload);
