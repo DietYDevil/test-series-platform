@@ -199,10 +199,82 @@ window.App = (function () {
   async function logout() {
     try { if (sb) await sb.auth.signOut(); } catch (e) {}
     state.user = null; state.profile = null;
+    dashCatId = null;
     showView('viewAuth');
   }
 
   // ---------------- student dashboard ----------------
+  var dashCatId = null; // null = show folder grid; '__none__' = General (uncategorized); otherwise category id
+
+  function makeFolderCard(cat, tests) {
+    var isGen = cat.id === null;
+    var list = isGen ? tests.filter(function (t) { return !t.category_id; })
+                     : tests.filter(function (t) { return t.category_id === cat.id; });
+    var card = document.createElement('div');
+    card.className = 'fcard';
+    card.innerHTML =
+      '<div class="fc-icon">' + (cat.icon || '📁') + '</div>' +
+      '<h3>' + esc(cat.name) + '</h3>' +
+      '<p>' + esc(cat.description || '') + '</p>' +
+      '<span class="fc-count">' + list.length + ' test' + (list.length === 1 ? '' : 's') + '</span>';
+    card.onclick = function () {
+      dashCatId = isGen ? '__none__' : cat.id;
+      renderDashboard();
+    };
+    return card;
+  }
+
+  function makeTestCards(tests, map) {
+    var cards = document.createElement('div');
+    cards.className = 'cards';
+    tests.forEach(function (t) { cards.appendChild(makeTestCard(t, map[t.id])); });
+    return cards;
+  }
+
+  function renderFolderGrid(grid, tests, categories, map) {
+    grid.innerHTML = '';
+    var hasUncat = tests.some(function (t) { return !t.category_id; });
+    var usedCats = categories.filter(function (c) {
+      return tests.some(function (t) { return t.category_id === c.id; });
+    });
+    if (!usedCats.length && !hasUncat) {
+      grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
+      return;
+    }
+    if (!usedCats.length && hasUncat) {
+      // no folders visible -> plain flat list
+      grid.appendChild(makeTestCards(tests, map));
+      return;
+    }
+    var wrap = document.createElement('div');
+    wrap.className = 'folderGrid';
+    usedCats.forEach(function (c) { wrap.appendChild(makeFolderCard(c, tests)); });
+    if (hasUncat) {
+      wrap.appendChild(makeFolderCard({ id: null, name: 'General', description: 'Tests without a folder', icon: '📄' }, tests));
+    }
+    grid.appendChild(wrap);
+  }
+
+  function renderCategoryPage(grid, cat, tests, map) {
+    grid.innerHTML = '';
+    var head = document.createElement('div');
+    head.className = 'folderNav';
+    var back = document.createElement('button');
+    back.className = 'btn backbtn';
+    back.textContent = '← All Folders';
+    back.onclick = function () { dashCatId = null; renderDashboard(); };
+    head.appendChild(back);
+    grid.appendChild(head);
+    var title = document.createElement('div');
+    title.className = 'folderTitle';
+    title.innerHTML = (cat.icon || '📁') + ' <b>' + esc(cat.name) + '</b> <span class="ftcount">(' + tests.length + ')</span>';
+    grid.appendChild(title);
+    if (!tests.length) {
+      grid.insertAdjacentHTML('beforeend', '<div class="empty">No tests in this folder yet.</div>');
+      return;
+    }
+    grid.appendChild(makeTestCards(tests, map));
+  }
   function makeTestCard(t, res) {
     var card = document.createElement('div');
     card.className = 'tcard';
@@ -226,68 +298,6 @@ window.App = (function () {
     foot.appendChild(btn);
     card.appendChild(foot);
     return card;
-  }
-
-  function renderCategorized(grid, tests, categories, map) {
-    var catMap = {};
-    var uncategorizedTests = [];
-    (tests || []).forEach(function (t) {
-      if (t.category_id && t.categories) {
-        var cid = t.category_id;
-        if (!catMap[cid]) catMap[cid] = { category: t.categories, tests: [] };
-        catMap[cid].tests.push(t);
-      } else {
-        uncategorizedTests.push(t);
-      }
-    });
-    var catIds = Object.keys(catMap);
-    var displayCats = (categories || []).filter(function (c) { return catIds.indexOf(c.id) >= 0; });
-    if (uncategorizedTests.length) {
-      displayCats.push({ id: null, name: 'Uncategorized', icon: '📄', display_order: 999, tests: uncategorizedTests });
-    }
-    displayCats.sort(function (a, b) { return (a.display_order || 0) - (b.display_order || 0); });
-
-    var any = false;
-    displayCats.forEach(function (cat) {
-      var testsList = cat.tests || (catMap[cat.id] ? catMap[cat.id].tests : []);
-      if (!testsList.length) return;
-      any = true;
-      var section = document.createElement('div');
-      section.className = 'categorySection';
-      section.style.marginBottom = '24px';
-      var header = document.createElement('div');
-      header.className = 'categoryHeader';
-      header.style.cssText = 'background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;padding:12px 16px;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;';
-      var left = document.createElement('span');
-      left.innerHTML = (cat.icon || '📁') + ' <b>' + esc(cat.name) + '</b> <span style="opacity:.85;font-weight:400;font-size:12px">(' + testsList.length + ')</span>';
-      var arrow = document.createElement('span');
-      arrow.className = 'categoryArrow';
-      arrow.textContent = '▼';
-      header.appendChild(left);
-      header.appendChild(arrow);
-      header.onclick = function () {
-        var content = section.querySelector('.categoryContent');
-        var hidden = content.style.display === 'none';
-        content.style.display = hidden ? 'block' : 'none';
-        arrow.textContent = hidden ? '▼' : '▶';
-      };
-      var content = document.createElement('div');
-      content.className = 'categoryContent';
-      content.style.cssText = 'display:block;margin-top:8px;';
-      var cards = document.createElement('div');
-      cards.className = 'cards';
-      testsList.forEach(function (t) {
-        var res = map[t.id];
-        cards.appendChild(makeTestCard(t, res));
-      });
-      content.appendChild(cards);
-      section.appendChild(header);
-      section.appendChild(content);
-      grid.appendChild(section);
-    });
-    if (!any) {
-      grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
-    }
   }
 
   async function renderDashboard() {
@@ -317,23 +327,18 @@ window.App = (function () {
     var map = {};
     myResults.forEach(function (r) { map[r.test_id] = r; });
 
-    // If we have category info, group by category. Otherwise flat list.
-    var hasCategoryData = categories.length > 0 || (tests.length && tests.some(function (t) { return t.categories; }));
-    if (hasCategoryData) {
-      renderCategorized(grid, tests, categories, map);
+    // Folder-first navigation: grid of folders, or tests inside one folder
+    if (!dashCatId) {
+      renderFolderGrid(grid, tests, categories, map);
+    } else if (dashCatId === '__none__') {
+      var genTests = tests.filter(function (t) { return !t.category_id; });
+      renderCategoryPage(grid, { name: 'General', icon: '📄' }, genTests, map);
     } else {
-      if (!tests.length) {
-        grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
-      } else {
-        var cards = document.createElement('div');
-        cards.className = 'cards';
-        tests.forEach(function (t) {
-          var res = map[t.id];
-          cards.appendChild(makeTestCard(t, res));
-        });
-        grid.innerHTML = '';
-        grid.appendChild(cards);
-      }
+      var cat = null;
+      categories.forEach(function (c) { if (c.id === dashCatId) cat = c; });
+      if (!cat && tests.length && tests[0].categories) { /* category hidden by RLS */ }
+      renderCategoryPage(grid, cat || { name: 'Folder', icon: '📁' },
+        tests.filter(function (t) { return t.category_id === dashCatId; }), map);
     }
 
     // history table

@@ -258,3 +258,15 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
   #calc .cgrid{grid-template-columns:repeat(5,1fr)}
   #secbar{order:4}
 }
+/* ============ folder-first dashboard ============ */
+.folderGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:4px 0 10px;max-width:900px}
+.fcard{background:#fff;border:1px solid #e6edf3;border-radius:14px;padding:24px 18px;text-align:center;cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s;display:flex;flex-direction:column;align-items:center}
+.fcard:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(11,79,138,.14);border-color:var(--brand)}
+.fc-icon{font-size:40px;line-height:1;margin-bottom:12px}
+.fcard h3{margin:0 0 6px;font-size:16px;color:#1c2733}
+.fcard p{margin:0 0 12px;font-size:12.5px;color:#5a6b7c;min-height:17px}
+.fc-count{display:inline-block;background:#eef4ff;color:var(--brand);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:600}
+.folderNav{display:flex;align-items:center;margin:2px 0 8px}
+.backbtn{font-weight:600}
+.folderTitle{font-size:19px;margin:4px 0 16px;color:#1c2733}
+.folderTitle .ftcount{color:#5a6b7c;font-size:14px;font-weight:400}
