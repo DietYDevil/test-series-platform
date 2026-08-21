@@ -18,13 +18,13 @@ create table if not exists public.profiles (
 );
 
 create table if not exists public.categories (
-  id          uuid primary key default gen_random_uuid(),
-  name        text not null unique,
-  description text,
-  icon        text,
+  id            uuid primary key default gen_random_uuid(),
+  name          text not null unique,
+  description   text,
+  icon          text,
   display_order int not null default 0,
-  is_active   boolean not null default true,
-  created_at  timestamptz not null default now()
+  is_active     boolean not null default true,
+  created_at    timestamptz not null default now()
 );
 
 create table if not exists public.tests (
@@ -77,31 +77,6 @@ create table if not exists public.results (
   unique (test_id, user_id)
 );
 
--- which specific students can take a test (used when all_users = false)
-create table if not exists public.test_access (
-  test_id uuid not null references public.tests(id) on delete cascade,
-  user_id uuid not null references public.profiles(id) on delete cascade,
-  primary key (test_id, user_id)
-);
-
-create table if not exists public.results (
-  id            uuid primary key default gen_random_uuid(),
-  test_id       uuid not null references public.tests(id) on delete cascade,
-  user_id       uuid not null references public.profiles(id) on delete cascade,
-  score         numeric not null default 0,
-  max_score     int not null default 0,
-  correct       int not null default 0,
-  incorrect     int not null default 0,
-  unattempted   int not null default 0,
-  time_used_sec int not null default 0,
-  answers       jsonb not null default '[]',
-  time_spent    jsonb not null default '[]',
-  marked        jsonb not null default '[]',
-  started_at    timestamptz not null default now(),
-  submitted_at  timestamptz not null default now(),
-  unique (test_id, user_id)   -- one attempt per test
-);
-
 -- ------------------------------------------------------------
 -- Helper functions
 -- ------------------------------------------------------------
@@ -113,6 +88,8 @@ language sql stable security definer set search_path = public as $$
 $$;
 
 -- Can the current user view / take this test?
+-- Requires: test active, category active (if categorized), AND
+-- (admin OR (all_users with category access) OR explicit test_access)
 create or replace function public.can_view_test(tid uuid)
 returns boolean
 language sql stable security definer set search_path = public as $$
@@ -123,9 +100,9 @@ language sql stable security definer set search_path = public as $$
         public.is_admin()
         or (
           t.status = 'active'
-          and c.is_active = true
+          and (c.id is null or c.is_active = true)
           and (
-            t.all_users = true
+            (t.all_users = true and (c.id is null or public.can_access_category(c.id)))
             or exists (select 1 from public.test_access a where a.test_id = t.id and a.user_id = auth.uid())
           )
         )
@@ -133,6 +110,7 @@ language sql stable security definer set search_path = public as $$
 $$;
 
 -- Can the current user access this category?
+-- Only via explicit admin approval in category_access table
 create or replace function public.can_access_category(cid uuid)
 returns boolean
 language sql stable security definer set search_path = public as $$
@@ -141,17 +119,11 @@ language sql stable security definer set search_path = public as $$
       and c.is_active = true
       and (
         public.is_admin()
-        or (
-          c.id in (
-            select category_id from public.category_access
-            where user_id = auth.uid() and approved = true
-          )
-          or exists (
-            select 1 from public.tests t
-            where t.category_id = c.id
-              and t.all_users = true
-              and t.status = 'active'
-          )
+        or exists (
+          select 1 from public.category_access ca
+          where ca.category_id = c.id
+            and ca.user_id = auth.uid()
+            and ca.approved = true
         )
       ));
 $$;
