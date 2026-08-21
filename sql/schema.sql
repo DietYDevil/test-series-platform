@@ -87,6 +87,25 @@ language sql stable security definer set search_path = public as $$
   select exists (select 1 from public.profiles where id = auth.uid() and role = 'admin');
 $$;
 
+-- Can the current user access this category?
+-- Only via explicit admin approval in category_access table
+create or replace function public.can_access_category(cid uuid)
+returns boolean
+language sql stable security definer set search_path = public as $$
+  select exists (select 1 from public.categories c
+    where c.id = cid
+      and c.is_active = true
+      and (
+        public.is_admin()
+        or exists (
+          select 1 from public.category_access ca
+          where ca.category_id = c.id
+            and ca.user_id = auth.uid()
+            and ca.approved = true
+        )
+      ));
+$$;
+
 -- Can the current user view / take this test?
 -- Requires: test active, category active (if categorized), AND
 -- (admin OR (all_users with category access) OR explicit test_access)
@@ -105,25 +124,6 @@ language sql stable security definer set search_path = public as $$
             (t.all_users = true and (c.id is null or public.can_access_category(c.id)))
             or exists (select 1 from public.test_access a where a.test_id = t.id and a.user_id = auth.uid())
           )
-        )
-      ));
-$$;
-
--- Can the current user access this category?
--- Only via explicit admin approval in category_access table
-create or replace function public.can_access_category(cid uuid)
-returns boolean
-language sql stable security definer set search_path = public as $$
-  select exists (select 1 from public.categories c
-    where c.id = cid
-      and c.is_active = true
-      and (
-        public.is_admin()
-        or exists (
-          select 1 from public.category_access ca
-          where ca.category_id = c.id
-            and ca.user_id = auth.uid()
-            and ca.approved = true
         )
       ));
 $$;
