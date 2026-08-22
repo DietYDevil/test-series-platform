@@ -455,7 +455,7 @@ window.TestRunner = (function () {
     var rank = computeRank(obtained);
     var totalToppers = DATA.toppers ? DATA.toppers.length : 0;
     if (rank <= totalToppers) {
-      return '<b>Rank ' + rank + '</b> (within Top ' + totalToppers + ')'));
+      return '<b>Rank ' + rank + '</b> (within Top ' + totalToppers + ')';
     }
     return '<b>Below ' + totalToppers + '</b>';
   }
