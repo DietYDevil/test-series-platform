@@ -161,6 +161,59 @@
       </div>
     </div>
     <div id="sidebar">
+      <div id="calchost"><div id="calc">
+        <div class="cdisp">
+          <div class="cexpr" id="cexpr"></div>
+          <div class="cmain" id="cmain">0</div>
+        </div>
+        <div class="cgrid">
+          <button type="button" class="mem" data-act="mem" data-val="MC">MC</button>
+          <button type="button" class="mem" data-act="mem" data-val="MR">MR</button>
+          <button type="button" class="mem" data-act="mem" data-val="M+">M+</button>
+          <button type="button" class="mem" data-act="mem" data-val="M-">M-</button>
+          <button type="button" class="mem" data-act="back">&#9003;</button>
+          <button type="button" class="fn" data-act="char" data-val="(">(</button>
+          <button type="button" class="fn" data-act="char" data-val=")">)</button>
+          <button type="button" class="fn" data-act="const" data-val="pi">&pi;</button>
+          <button type="button" class="fn" data-act="const" data-val="e">e</button>
+          <button type="button" class="fn" data-act="clear">C</button>
+          <button type="button" class="fn" data-act="unary" data-val="sin">sin</button>
+          <button type="button" class="fn" data-act="unary" data-val="cos">cos</button>
+          <button type="button" class="fn" data-act="unary" data-val="tan">tan</button>
+          <button type="button" class="fn" data-act="unary" data-val="log">log</button>
+          <button type="button" class="fn" data-act="unary" data-val="ln">ln</button>
+          <button type="button" class="fn" data-act="unary" data-val="asin">sin&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="unary" data-val="acos">cos&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="unary" data-val="atan">tan&#8315;&#185;</button>
+          <button type="button" class="fn" data-act="op" data-val="^">x&#8310;</button>
+          <button type="button" class="fn" data-act="unary" data-val="e^">e&#8310;</button>
+          <button type="button" class="fn" data-act="sq" data-val="2">x&#178;</button>
+          <button type="button" class="fn" data-act="sq" data-val="3">x&#179;</button>
+          <button type="button" class="fn" data-act="unary" data-val="sqrt">&#8730;</button>
+          <button type="button" class="fn" data-act="post" data-val="!">n!</button>
+          <button type="button" class="fn" data-act="op" data-val="%">mod</button>
+          <button type="button" data-act="num" data-val="7">7</button>
+          <button type="button" data-act="num" data-val="8">8</button>
+          <button type="button" data-act="num" data-val="9">9</button>
+          <button type="button" data-act="op" data-val="/">&#247;</button>
+          <button type="button" data-act="op" data-val="%">%</button>
+          <button type="button" data-act="num" data-val="4">4</button>
+          <button type="button" data-act="num" data-val="5">5</button>
+          <button type="button" data-act="num" data-val="6">6</button>
+          <button type="button" data-act="op" data-val="*">&#215;</button>
+          <button type="button" class="fn" data-act="unary" data-val="inv">1/x</button>
+          <button type="button" data-act="num" data-val="1">1</button>
+          <button type="button" data-act="num" data-val="2">2</button>
+          <button type="button" data-act="num" data-val="3">3</button>
+          <button type="button" data-act="op" data-val="-">&#8722;</button>
+          <button type="button" class="fn" data-act="neg">+/-</button>
+          <button type="button" data-act="num" data-val="0">0</button>
+          <button type="button" data-act="dot">.</button>
+          <button type="button" class="eq" data-act="eq">=</button>
+          <button type="button" data-act="op" data-val="+">+</button>
+          <button type="button" class="deg" data-act="deg" id="cdeg">Deg</button>
+        </div>
+      </div></div>
       <h4>Question Palette</h4>
       <div id="palette"></div>
       <div id="legend">
@@ -176,7 +229,7 @@
   </div>
 </div>
 
-<!-- ============ RESULT / ANALYSIS VIEW ============ --><!-- ============ RESULT / ANALYSIS VIEW ============ -->
+<!-- ============ RESULT / ANALYSIS VIEW ============ -->
 <div id="viewResult" class="hidden">
   <div class="page">
     <div class="card">
