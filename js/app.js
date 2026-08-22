@@ -505,10 +505,11 @@ window.App = (function () {
             '</span>';
         }).join('') : '';
         var testCount = testCountMap[c.id] || 0;
-        return '<div class="admCard"><div class="pageHead" style="margin:0 0 8px"><h3>' + (c.icon || '📁') + ' ' + esc(c.name) + ' ' + status + '</h3>' +
+         return '<div class="admCard"><div class="pageHead" style="margin:0 0 8px"><h3>' + (c.icon || '📁') + ' ' + esc(c.name) + ' ' + status + '</h3>' +
           '<div class="actions">' +
           '<button onclick="App.editCategory(' + "'" + c.id + "'" + ')">Edit</button>' +
           '<button onclick="App.toggleCategoryStatus(' + "'" + c.id + "'" + ')">' + (c.is_active ? 'Deactivate' : 'Activate') + '</button>' +
+          '<button class="primary" onclick="App.assignAllStudentsToCategory(' + "'" + c.id + "'" + ')">Assign All Students</button>' +
           '<button class="danger" onclick="App.deleteCategory(' + "'" + c.id + "'" + ')">Delete</button>' +
           '</div></div>' +
           '<div class="stat"><span>Description</span><b>' + esc(c.description || '—') + '</b></div>' +
@@ -567,10 +568,20 @@ window.App = (function () {
     renderCategories();
   }
 
-  async function toggleCategoryAccess(categoryId, userId, approve) {
+   async function toggleCategoryAccess(categoryId, userId, approve) {
     var { error } = await sb.from('category_access').upsert({ category_id: categoryId, user_id: userId, approved: approve, approved_at: approve ? new Date().toISOString() : null, approved_by: state.user.id });
     if (error) { toast('Failed: ' + error.message); return; }
     toast(approve ? 'Access granted' : 'Access revoked');
+    renderCategories();
+  }
+
+  async function assignAllStudentsToCategory(categoryId) {
+    var { data: students } = await sb.from('profiles').select('id').eq('role', 'student').eq('approved', true);
+    if (!students || !students.length) { toast('No approved students available.'); return; }
+    for (var i = 0; i < students.length; i++) {
+      await sb.from('category_access').upsert({ category_id: categoryId, user_id: students[i].id, approved: true, approved_at: new Date().toISOString(), approved_by: state.user.id });
+    }
+    toast('All approved students have been assigned to this category!');
     renderCategories();
   }
 
