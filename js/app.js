@@ -255,7 +255,7 @@ window.App = (function () {
     grid.appendChild(wrap);
   }
 
-  function renderCategoryPage(grid, cat, tests, map) {
+   function renderCategoryPage(grid, cat, tests, map) {
     grid.innerHTML = '';
     var head = document.createElement('div');
     head.className = 'folderNav';
@@ -273,7 +273,25 @@ window.App = (function () {
       grid.insertAdjacentHTML('beforeend', '<div class="empty">No tests in this folder yet.</div>');
       return;
     }
+    var filterButtons = document.createElement('div');
+    filterButtons.className = 'filterButtons';
+    filterButtons.innerHTML = '
+      <button class="btn filter active" onclick="App.filterTests('none')">All Tests</button>
+      <button class="btn filter" onclick="App.filterTests('unit')">Unit Tests</button>
+      <button class="btn filter" onclick="App.filterTests('minor')">Minor Tests</button>
+      <button class="btn filter" onclick="App.filterTests('full')">Full Mock Tests</button>';
+    grid.appendChild(filterButtons);
     grid.appendChild(makeTestCards(tests, map));
+  }
+  function filterTests(filterType) {
+    var buttons = document.querySelectorAll('.filterButtons .btn');
+    buttons.forEach(function(btn) {
+      btn.classList.remove('active');
+    });
+    event.target.classList.add('active');
+    // Implement filtering logic here
+    // For now, just refresh the grid
+    renderDashboard();
   }
   function makeTestCard(t, res) {
     var card = document.createElement('div');
