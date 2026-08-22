@@ -665,200 +665,111 @@ window.TestRunner = (function () {
     window.scrollTo(0, 0);
   }
 
-  // ---------- calculator (from original file) ----------
-  var CALC = { expr: '', mem: 0, deg: true, err: false };
-  (function () {
-    var bts = document.querySelectorAll('#calc .cgrid button');
-    for (var i = 0; i < bts.length; i++) {
-      (function (b) { b.addEventListener('click', function () { calcKey(b); }); })(bts[i]);
+  // ---------- Scientific Calculator (CSIR NET standalone format) ----------
+  var calcDisplay = document.getElementById("calcDisplay");
+  var memIndicatorEl = document.getElementById("memIndicator");
+  var curr = "0", prevVal = null, pendingOp = null, justEvaluated = false, memory = 0;
+  var angleMode = "Deg";
+
+  function cupdate() { if (!calcDisplay) return; calcDisplay.value = curr; if (memIndicatorEl) memIndicatorEl.textContent = memory !== 0 ? "M" : ""; }
+  function cfmt(n) { if (!isFinite(n)) return "Error"; if (Number.isInteger(n)) return String(n); return String(parseFloat(n.toPrecision(10))); }
+  function cdigit(d) { if (curr === "0" || justEvaluated || curr === "Error") { curr = d; justEvaluated = false; } else { curr += d; } cupdate(); }
+  function cdot() { if (justEvaluated) { curr = "0."; justEvaluated = false; } else if (curr.indexOf(".") < 0) { curr += "."; } cupdate(); }
+  function cop(op) { if (pendingOp && !justEvaluated) ccompute(); prevVal = parseFloat(curr); pendingOp = op; justEvaluated = true; }
+  function ccompute() {
+    if (pendingOp === null || prevVal === null) return;
+    var c = parseFloat(curr), result;
+    switch (pendingOp) {
+      case "+": result = prevVal + c; break;
+      case "-": result = prevVal - c; break;
+      case "*": result = prevVal * c; break;
+      case "/": result = prevVal / c; break;
+      case "%": case "mod": result = prevVal % c; break;
+      case "^": case "xy": result = Math.pow(prevVal, c); break;
+      case "logy": result = Math.log(c) / Math.log(prevVal); break;
+      default: result = c;
     }
-  })();
-  function cUpdate() {
-    document.getElementById('cexpr').textContent = CALC.expr.replace(/\*/g, 'x');
-    var r = tryEval(CALC.expr);
-    var main = document.getElementById('cmain');
-    if (CALC.err) { main.textContent = 'Error'; main.classList.add('err'); }
-    else { main.classList.remove('err'); main.textContent = (r !== null && isFinite(r)) ? fmtN(r) : (CALC.expr || '0'); }
+    curr = cfmt(result);
+    pendingOp = null; prevVal = null; justEvaluated = true;
+    cupdate();
   }
-  function fmtN(x) { if (!isFinite(x)) return String(x); return String(parseFloat(x.toPrecision(12))); }
-  function trailNum() {
-    var m = CALC.expr.match(/(\d+(?:\.\d+)?|\.\d+|pi|e)$/);
-    return m ? { s: CALC.expr.length - m[0].length, t: m[0] } : null;
+  function cclear() { curr = "0"; prevVal = null; pendingOp = null; justEvaluated = false; cupdate(); }
+  function cback() { curr = curr.length > 1 ? curr.slice(0, -1) : "0"; if (curr === "-") curr = "0"; cupdate(); }
+  function ctoRad(x) { return angleMode === "Deg" ? x * Math.PI / 180 : x; }
+  function cfromRad(x) { return angleMode === "Deg" ? x * 180 / Math.PI : x; }
+  function cunary(fn) { var c = parseFloat(curr); curr = cfmt(fn(c)); justEvaluated = true; cupdate(); }
+  function cconst(v) { curr = cfmt(v); justEvaluated = true; cupdate(); }
+
+  var modeDegEl = document.getElementById("modeDeg");
+  var modeRadEl = document.getElementById("modeRad");
+  if (modeDegEl) modeDegEl.onchange = function () { angleMode = "Deg"; };
+  if (modeRadEl) modeRadEl.onchange = function () { angleMode = "Rad"; };
+
+  var calcGrid = document.getElementById("calcGrid");
+  function addCalcBtn(label, handler, cls) {
+    if (!calcGrid) return;
+    var b = document.createElement("button");
+    b.type = "button";
+    b.innerHTML = label;
+    if (cls) b.classList.add(cls);
+    b.onclick = handler;
+    calcGrid.appendChild(b);
   }
-  function needMul() { var l = CALC.expr.slice(-1); return !!CALC.expr && /[0-9.)]/.test(l); }
-  function depth() { var o = 0, c = 0, i; for (i = 0; i < CALC.expr.length; i++) { if (CALC.expr[i] === '(') o++; if (CALC.expr[i] === ')') c++; } return o - c; }
-  function calcKey(b) {
-    var a = b.getAttribute('data-act'), v = b.getAttribute('data-val');
-    if (a === 'num') { if (CALC.err) { CALC.expr = ''; CALC.err = false; } if (CALC.expr.slice(-1) !== ')') CALC.expr += v; }
-    else if (a === 'dot') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      var m = CALC.expr.match(/(\d+\.?\d*|\.\d+)$/);
-      if (m) { if (m[0].indexOf('.') >= 0) return; CALC.expr += '.'; }
-      else CALC.expr += '0.';
-    }
-    else if (a === 'op') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      var l = CALC.expr.slice(-1);
-      if (!CALC.expr || '+*/%^'.indexOf(l) >= 0 || l === '(') return;
-      CALC.expr += v;
-    }
-    else if (a === 'char') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      if (v === '(') { if (needMul()) CALC.expr += '*'; CALC.expr += '('; }
-      else {
-        var l2 = CALC.expr.slice(-1);
-        if (depth() > 0 && l2 && '+*/%^('.indexOf(l2) < 0) CALC.expr += ')';
-      }
-    }
-    else if (a === 'const') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      if (needMul()) CALC.expr += '*';
-      CALC.expr += (v === 'pi' ? 'pi' : 'e');
-    }
-    else if (a === 'unary') { cUnary(v); }
-    else if (a === 'sq') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      var m2 = trailNum();
-      if (m2) { CALC.expr = CALC.expr.slice(0, m2.s) + m2.t + '^' + v; }
-      else if (needMul()) CALC.expr += '^' + v;
-    }
-    else if (a === 'post') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      var m3 = trailNum();
-      if (m3) CALC.expr = CALC.expr.slice(0, m3.s) + m3.t + '!';
-    }
-    else if (a === 'neg') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      if (/^\s*-?\d+(?:\.\d+)?\s*$/.test(CALC.expr)) CALC.expr = CALC.expr[0] === '-' ? CALC.expr.slice(1) : '-' + CALC.expr;
-      else {
-        var m4 = CALC.expr.match(/(\d+(?:\.\d+)?|\.\d+)$/);
-        if (m4) CALC.expr = CALC.expr.slice(0, CALC.expr.length - m4[0].length) + '-' + m4[0];
-      }
-    }
-    else if (a === 'eq') { cEq(); }
-    else if (a === 'clear') { CALC.expr = ''; CALC.err = false; }
-    else if (a === 'back') {
-      if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-      else {
-        var cut = 1, pats = ['sin(', 'cos(', 'tan(', 'asin(', 'acos(', 'atan(', 'log(', 'ln(', 'sqrt(', 'e^(', '^2', '^3', 'pi'];
-        for (var i = 0; i < pats.length; i++) { if (CALC.expr.slice(-pats[i].length) === pats[i]) { cut = pats[i].length; break; } }
-        CALC.expr = CALC.expr.slice(0, CALC.expr.length - cut);
-      }
-    }
-    else if (a === 'deg') { CALC.deg = !CALC.deg; b.textContent = CALC.deg ? 'Deg' : 'Rad'; }
-    else if (a === 'mem') { cMem(v); }
-    cUpdate();
-  }
-  function cUnary(f) {
-    if (CALC.err) { CALC.expr = ''; CALC.err = false; }
-    var m = trailNum();
-    if (f === 'inv') { if (m) CALC.expr = '1/(' + CALC.expr + ')'; else if (needMul()) CALC.expr += '*1/('; else CALC.expr += '1/('; return; }
-    if (f === 'e^') { if (m) { CALC.expr = CALC.expr.slice(0, m.s) + 'e^(' + m.t + ')'; } else { if (needMul()) CALC.expr += '*'; CALC.expr += 'e^('; } return; }
-    if (m) { CALC.expr = CALC.expr.slice(0, m.s) + f + '(' + m.t + ')'; }
-    else { if (needMul()) CALC.expr += '*'; CALC.expr += f + '('; }
-  }
-  function cMem(op) {
-    var r = tryEval(CALC.expr);
-    if (op === 'MC') { CALC.mem = 0; return; }
-    if (op === 'MR') { if (needMul()) CALC.expr += '*'; CALC.expr += fmtN(CALC.mem); return; }
-    if (r !== null && isFinite(r)) {
-      if (op === 'M+') CALC.mem += r;
-      else if (op === 'M-') CALC.mem -= r;
-    }
-  }
-  function cEq() {
-    if (!CALC.expr || CALC.err) return;
-    var r = tryEval(CALC.expr);
-    if (r === null || !isFinite(r)) { CALC.expr = ''; CALC.err = true; }
-    else CALC.expr = fmtN(r);
-  }
-  function tryEval(s) { try { return evalExpr(s); } catch (e) { return null; } }
-  function tokenize(s) {
-    var toks = [], i = 0, n = s.length;
-    while (i < n) {
-      var c = s[i];
-      if (/\s/.test(c)) { i++; continue; }
-      if ((c >= '0' && c <= '9') || c === '.') {
-        var j = i, dot = false;
-        while (j < n && /[0-9.]/.test(s[j])) { if (s[j] === '.') { if (dot) break; dot = true; } j++; }
-        toks.push({ t: 'num', v: parseFloat(s.slice(i, j)) }); i = j; continue;
-      }
-      var m = s.slice(i).match(/^(sin|cos|tan|asin|acos|atan|log|ln|sqrt|pi)/);
-      if (m) {
-        var nm = m[1];
-        if (nm === 'pi') toks.push({ t: 'const', v: Math.PI });
-        else toks.push({ t: 'func', v: nm });
-        i += nm.length; continue;
-      }
-      if (c === 'e') { toks.push({ t: 'const', v: Math.E }); i++; continue; }
-      if ('+-*/%^()!'.indexOf(c) >= 0) { toks.push({ t: c }); i++; continue; }
-      i++;
-    }
-    return toks;
-  }
-  function evalExpr(s) {
-    var toks = tokenize(s), p = 0;
-    function peek() { return toks[p]; }
-    function next() { return toks[p++]; }
-    function fact(x) { if (x < 0 || Math.floor(x) !== x) throw new Error('fact'); var r = 1, i; for (i = 2; i <= x; i++) r *= i; return r; }
-    function applyFunc(f, x) {
-      var d = CALC.deg;
-      function toR(v) { return d ? v * Math.PI / 180 : v; }
-      function fromR(v) { return d ? v * 180 / Math.PI : v; }
-      if (f === 'sin') return Math.sin(toR(x));
-      if (f === 'cos') return Math.cos(toR(x));
-      if (f === 'tan') return Math.tan(toR(x));
-      if (f === 'asin') { if (x < -1 || x > 1) throw new Error('dom'); return fromR(Math.asin(x)); }
-      if (f === 'acos') { if (x < -1 || x > 1) throw new Error('dom'); return fromR(Math.acos(x)); }
-      if (f === 'atan') return fromR(Math.atan(x));
-      if (f === 'log') { if (x <= 0) throw new Error('dom'); return Math.log10(x); }
-      if (f === 'ln') { if (x <= 0) throw new Error('dom'); return Math.log(x); }
-      if (f === 'sqrt') { if (x < 0) throw new Error('dom'); return Math.sqrt(x); }
-      throw new Error('fn');
-    }
-    function parseExpr() {
-      var v = parseTerm();
-      while (peek() && (peek().t === '+' || peek().t === '-')) {
-        var op = next().t, r = parseTerm();
-        v = op === '+' ? v + r : v - r;
-      }
-      return v;
-    }
-    function parseTerm() {
-      var v = parsePow();
-      while (peek() && (peek().t === '*' || peek().t === '/' || peek().t === '%')) {
-        var op = next().t, r = parsePow();
-        if (op === '*') v *= r; else if (op === '/') { if (r === 0) throw new Error('div0'); v /= r; } else v = v % r;
-      }
-      return v;
-    }
-    function parsePow() {
-      var v = parseUnary();
-      if (peek() && peek().t === '^') { next(); v = Math.pow(v, parsePow()); }
-      return v;
-    }
-    function parseUnary() {
-      var t = peek();
-      if (t && (t.t === '+' || t.t === '-')) { next(); var u = parseUnary(); return t.t === '-' ? -u : u; }
-      return parsePostfix();
-    }
-    function parsePostfix() {
-      var v = parsePrimary();
-      while (peek() && peek().t === '!') { next(); v = fact(v); }
-      return v;
-    }
-    function parsePrimary() {
-      var t = next(); if (!t) throw new Error('empty');
-      if (t.t === 'num' || t.t === 'const') return t.v;
-      if (t.t === '(') { var v = parseExpr(); var c = next(); if (!c || c.t !== ')') throw new Error('paren'); return v; }
-      if (t.t === 'func') { var o = next(); if (!o || o.t !== '(') throw new Error('func'); var x = parseExpr(); var c2 = next(); if (!c2 || c2.t !== ')') throw new Error('func'); return applyFunc(t.v, x); }
-      throw new Error('unexpected');
-    }
-    if (!toks.length) throw new Error('empty');
-    var res = parseExpr();
-    if (p < toks.length) throw new Error('trailing');
-    return res;
-  }
+  addCalcBtn("MC", function () { memory = 0; cupdate(); }, "mem");
+  addCalcBtn("MR", function () { curr = cfmt(memory); justEvaluated = true; cupdate(); }, "mem");
+  addCalcBtn("MS", function () { memory = parseFloat(curr) || 0; cupdate(); }, "mem");
+  addCalcBtn("M+", function () { memory += parseFloat(curr) || 0; cupdate(); }, "mem");
+  addCalcBtn("M-", function () { memory -= parseFloat(curr) || 0; cupdate(); }, "mem");
+  addCalcBtn("C", cclear, "clr");
+  addCalcBtn("sinh", function () { cunary(Math.sinh); });
+  addCalcBtn("cosh", function () { cunary(Math.cosh); });
+  addCalcBtn("tanh", function () { cunary(Math.tanh); });
+  addCalcBtn("sinh&#8315;&#185;", function () { cunary(Math.asinh); });
+  addCalcBtn("cosh&#8315;&#185;", function () { cunary(Math.acosh); });
+  addCalcBtn("tanh&#8315;&#185;", function () { cunary(Math.atanh); });
+  addCalcBtn("sin", function () { cunary(function (x) { return Math.sin(ctoRad(x)); }); });
+  addCalcBtn("cos", function () { cunary(function (x) { return Math.cos(ctoRad(x)); }); });
+  addCalcBtn("tan", function () { cunary(function (x) { return Math.tan(ctoRad(x)); }); });
+  addCalcBtn("sin&#8315;&#185;", function () { cunary(function (x) { return cfromRad(Math.asin(x)); }); });
+  addCalcBtn("cos&#8315;&#185;", function () { cunary(function (x) { return cfromRad(Math.acos(x)); }); });
+  addCalcBtn("tan&#8315;&#185;", function () { cunary(function (x) { return cfromRad(Math.atan(x)); }); });
+  addCalcBtn("log", function () { cunary(Math.log10); });
+  addCalcBtn("ln", function () { cunary(Math.log); });
+  addCalcBtn("log&#8322;x", function () { cunary(Math.log2); });
+  addCalcBtn("log&#7500;x", function () { cop("logy"); }, "op");
+  addCalcBtn("&pi;", function () { cconst(Math.PI); });
+  addCalcBtn("e", function () { cconst(Math.E); });
+  addCalcBtn("x^y", function () { cop("^"); }, "op");
+  addCalcBtn("x&#178;", function () { cunary(function (x) { return x * x; }); });
+  addCalcBtn("x&#179;", function () { cunary(function (x) { return x * x * x; }); });
+  addCalcBtn("&#8730;x", function () { cunary(Math.sqrt); });
+  addCalcBtn("&#8731;x", function () { cunary(Math.cbrt); });
+  addCalcBtn("1/x", function () { cunary(function (x) { return 1 / x; }); });
+  addCalcBtn("e&#7497;", function () { cunary(Math.exp); });
+  addCalcBtn("10&#7491;", function () { cunary(function (x) { return Math.pow(10, x); }); });
+  addCalcBtn("n!", function () { cunary(function (x) { var n = Math.round(x), r = 1; if (n < 0) return NaN; for (var i = 2; i <= n; i++) r *= i; return r; }); });
+  addCalcBtn("|x|", function () { cunary(Math.abs); });
+  addCalcBtn("&#8970;x&#8971;", function () { cunary(Math.floor); });
+  addCalcBtn("&#8968;x&#8971;", function () { cunary(Math.ceil); });
+  ["7", "8", "9"].forEach(function (d) { addCalcBtn(d, function () { cdigit(d); }); });
+  addCalcBtn("/", function () { cop("/"); }, "op");
+  addCalcBtn("mod", function () { cop("mod"); }, "op");
+  addCalcBtn("&#9003;", cback, "op");
+  ["4", "5", "6"].forEach(function (d) { addCalcBtn(d, function () { cdigit(d); }); });
+  addCalcBtn("*", function () { cop("*"); }, "op");
+  addCalcBtn("+/-", function () { cunary(function (x) { return -x; }); }, "op");
+  addCalcBtn("%", function () { cop("%"); }, "op");
+  ["1", "2", "3"].forEach(function (d) { addCalcBtn(d, function () { cdigit(d); }); });
+  addCalcBtn("-", function () { cop("-"); }, "op");
+  addCalcBtn("EXP", function () { if (curr !== "Error") { curr += "e"; cupdate(); } }, "op");
+  addCalcBtn("=", ccompute, "eq");
+  addCalcBtn("0", function () { cdigit("0"); });
+  addCalcBtn("00", function () { cdigit("0"); cdigit("0"); });
+  addCalcBtn(".", cdot);
+  addCalcBtn("CE", function () { curr = "0"; cupdate(); }, "op");
+  addCalcBtn("+", function () { cop("+"); }, "op");
+  addCalcBtn("=", ccompute, "eq");
+  cupdate();
 
   return {
     loadTest: loadTest,
