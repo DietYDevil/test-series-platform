@@ -751,8 +751,15 @@ window.App = (function () {
         }
         q.subject = q.subject || q.part || (secs[0] && secs[0].name) || '';
         if (q.type === 'NAT') {
-          var n = Array.isArray(q.ans) ? Number(q.ans[0]) : Number(q.natAns !== undefined ? q.natAns : q.ans);
-          if (isFinite(n)) { q.natAns = n; q.ans = [n]; }
+          if (Array.isArray(q.ans) && q.ans.length === 2 && isFinite(Number(q.ans[0])) && isFinite(Number(q.ans[1]))) {
+            q.natAnsMin = Math.min(Number(q.ans[0]), Number(q.ans[1]));
+            q.natAnsMax = Math.max(Number(q.ans[0]), Number(q.ans[1]));
+            q.natAns = q.natAnsMin;
+            q.ans = [q.natAnsMin, q.natAnsMax];
+          } else {
+            var n = Array.isArray(q.ans) ? Number(q.ans[0]) : Number(q.natAns !== undefined ? q.natAns : q.ans);
+            if (isFinite(n)) { q.natAns = n; q.ans = [n]; }
+          }
         } else if (!Array.isArray(q.ans)) {
           q.ans = (q.ans === null || q.ans === undefined) ? [] : [q.ans];
         }

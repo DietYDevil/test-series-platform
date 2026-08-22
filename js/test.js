@@ -321,6 +321,12 @@ window.TestRunner = (function () {
 
   // ---------- grading ----------
   function numEq(a, b) { return Math.abs(parseFloat(a) - b) < 1e-6; }
+  function natOk(a, q) {
+    var n = parseFloat(a);
+    if (!isFinite(n)) return false;
+    if (q.natAnsMin !== undefined && q.natAnsMax !== undefined) return n >= q.natAnsMin && n <= q.natAnsMax;
+    return numEq(n, q.natAns);
+  }
   function grade() {
     var res = [];
     for (var i = 0; i < N; i++) {
@@ -328,7 +334,7 @@ window.TestRunner = (function () {
       var status, marks;
       if (q.type === 'NAT') {
         if (a === null || a === undefined || String(a).trim() === '') { status = 'unattempted'; marks = 0; }
-        else if (numEq(a, q.natAns)) { status = 'correct'; marks = q.marksPos || 0; }
+        else if (natOk(a, q)) { status = 'correct'; marks = q.marksPos || 0; }
         else { status = 'incorrect'; marks = 0; }
       } else {
         var selected = Array.isArray(a) ? a : (a === null ? [] : [a]);
@@ -347,7 +353,7 @@ window.TestRunner = (function () {
       var q = Q[i], a = answers[i];
       if (q.type === 'NAT') {
         if (a === null || a === undefined || String(a).trim() === '') { unattempted++; }
-        else if (numEq(a, q.natAns)) { correct++; tot += (q.marksPos || 0); }
+        else if (natOk(a, q)) { correct++; tot += (q.marksPos || 0); }
         else { incorrect++; tot -= (q.marksNeg || 0); }
       } else {
         var sel = Array.isArray(a) ? a : (a === null ? [] : [a]);
@@ -583,9 +589,9 @@ window.TestRunner = (function () {
     h += '<h2 style="color:#0b2e59;border-bottom:2px solid #0e4f8f;padding-bottom:3px;font-size:15px;margin-top:18px">Question-Wise Report</h2>';
     RES.forEach(function (p) {
       var q = Q[p.i];
-      var caTxt = q.type === 'NAT' ? String(typeof q.natAns !== 'undefined' ? q.natAns : (q.ans ? q.ans[0] : '')) : (q.ans ? q.ans.map(function (a) { return KEYS[a]; }).join(', ') : '');
+      var caTxt = q.type === 'NAT' ? (q.natAnsMin !== undefined ? (q.natAnsMin + ' to ' + q.natAnsMax) : String(typeof q.natAns !== 'undefined' ? q.natAns : (q.ans ? q.ans[0] : ''))) : (q.ans ? q.ans.map(function (a) { return KEYS[a]; }).join(', ') : '');
       var statusbadge = p.status === 'correct' ? '<span style="color:#1e7a38;font-weight:700">Correct</span>' : p.status === 'incorrect' ? '<span style="color:#b82a1f;font-weight:700">Incorrect</span>' : '<span style="color:#8a99a8;font-weight:700">Unattempted</span>';
-      var markOrUnattempted = q.type === 'NAT' ? (answers[p.i] === null || answers[p.i] === undefined || String(answers[p.i]).trim() === '') ? 'Unattempted' : (numEq(String(answers[p.i]), q.natAns || NaN) ? statusbadge : statusbadge) : '';
+      var markOrUnattempted = q.type === 'NAT' ? (answers[p.i] === null || answers[p.i] === undefined || String(answers[p.i]).trim() === '') ? 'Unattempted' : (natOk(answers[p.i], q) ? statusbadge : statusbadge) : '';
       h += '<div style="border:1px solid #dbe1ea;border-radius:6px;padding:12px 14px;margin:10px 0;page-break-inside:avoid">' +
         '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:6px">' +
         '<b>Q' + (p.i + 1) + ' [' + esc(q.subject || '') + ']</b>' + statusbadge +
