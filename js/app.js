@@ -241,13 +241,14 @@ window.App = (function () {
     var usedCats = categories.filter(function (c) {
       return tests.some(function (t) { return t.category_id === c.id; });
     });
-    if (!usedCats.length && !hasUncat) {
-      grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
-      return;
-    }
-    if (!usedCats.length && hasUncat) {
-      // no folders visible -> plain flat list
-      grid.appendChild(makeTestCards(tests, map));
+    if (!usedCats.length) {
+      // No visible folders (e.g. RLS hides categories from this student).
+      // If tests exist, show them as a flat list instead of a false "no tests" message.
+      if (!tests.length) {
+        grid.innerHTML = '<div class="empty">No tests available yet. Please check back later.</div>';
+      } else {
+        grid.appendChild(makeTestCards(tests, map));
+      }
       return;
     }
     var wrap = document.createElement('div');
@@ -826,12 +827,27 @@ window.App = (function () {
     var selected = [];
     boxes.forEach(function (b) { if (b.checked) selected.push(b.getAttribute('data-uid')); });
     // remove all existing access for this test, then insert
-    await sb.from('test_access').delete().eq('test_id', testId);
+    var del = await sb.from('test_access').delete().eq('test_id', testId);
+    if (del.error) { toast('Failed: ' + del.error.message); return; }
     for (var i = 0; i < selected.length; i++) {
       await sb.from('test_access').insert({ test_id: testId, user_id: selected[i] });
     }
+    // Grant the selected students access to the test's folder (category) as well,
+    // so the folder shows them under "Students with Access" and they can see it.
+    var { data: t } = await sb.from('tests').select('category_id').eq('id', testId).maybeSingle();
+    if (t && t.category_id && selected.length) {
+      for (var j = 0; j < selected.length; j++) {
+        await sb.from('category_access').upsert({
+          category_id: t.category_id,
+          user_id: selected[j],
+          approved: true,
+          approved_at: new Date().toISOString(),
+          approved_by: state.user.id
+        });
+      }
+    }
     hideModal('assignModal');
-    toast('Assignment saved');
+    toast(selected.length + ' student(s) assigned' + (t && t.category_id ? ' + folder access granted' : ''));
     renderTests();
   }
 
