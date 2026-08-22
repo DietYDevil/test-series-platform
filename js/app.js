@@ -209,16 +209,28 @@ window.App = (function () {
 
   // ---------------- student dashboard ----------------
   var dashCatId = null; // null = show folder grid; '__none__' = General (uncategorized); otherwise category id
+  var dashTestFilter = null; // null = all | 'unit' | 'minor' | 'full'
+  var FC_ACCENTS = ['fc-a', 'fc-b', 'fc-c', 'fc-d', 'fc-e'];
 
-  function makeFolderCard(cat, tests) {
+  function classifyTest(t) {
+    var s = String(t.title || '').toLowerCase();
+    if (/unit/.test(s)) return 'unit';
+    if (/minor/.test(s)) return 'minor';
+    if (/full|mock/.test(s)) return 'full';
+    return null;
+  }
+
+  function makeFolderCard(cat, tests, accent) {
     var isGen = cat.id === null;
     var list = isGen ? tests.filter(function (t) { return !t.category_id; })
                      : tests.filter(function (t) { return t.category_id === cat.id; });
     var card = document.createElement('div');
-    card.className = 'fcard';
+    card.className = 'fcard ' + (accent || 'fc-a');
     card.innerHTML =
-      '<div class="fc-icon">' + (cat.icon || '📁') + '</div>' +
-      '<h3>' + esc(cat.name) + '</h3>' +
+      '<div class="fc-top">' +
+        '<div class="fc-icon">' + (cat.icon || '📁') + '</div>' +
+        '<h3>' + esc(cat.name) + '</h3>' +
+      '</div>' +
       '<p>' + esc(cat.description || '') + '</p>' +
       '<span class="fc-count">' + list.length + ' test' + (list.length === 1 ? '' : 's') + '</span>';
     card.onclick = function () {
@@ -253,49 +265,54 @@ window.App = (function () {
     }
     var wrap = document.createElement('div');
     wrap.className = 'folderGrid';
-    usedCats.forEach(function (c) { wrap.appendChild(makeFolderCard(c, tests)); });
+    var ai = 0;
+    usedCats.forEach(function (c) { wrap.appendChild(makeFolderCard(c, tests, FC_ACCENTS[ai++ % FC_ACCENTS.length])); });
     if (hasUncat) {
-      wrap.appendChild(makeFolderCard({ id: null, name: 'General', description: 'Tests without a folder', icon: '📄' }, tests));
+      wrap.appendChild(makeFolderCard({ id: null, name: 'General', description: 'Tests without a folder', icon: '📄' }, tests, FC_ACCENTS[ai++ % FC_ACCENTS.length]));
     }
     grid.appendChild(wrap);
   }
 
-   function renderCategoryPage(grid, cat, tests, map) {
+   function renderCategoryPage(grid, cat, testsAll, map) {
     grid.innerHTML = '';
+    var shown = dashTestFilter ? testsAll.filter(function (t) { return classifyTest(t) === dashTestFilter; }) : testsAll;
     var head = document.createElement('div');
-    head.className = 'folderNav';
+    head.className = 'catHead';
+    var left = document.createElement('div');
+    left.className = 'catLeft';
     var back = document.createElement('button');
     back.className = 'btn backbtn';
     back.textContent = '← All Folders';
-    back.onclick = function () { dashCatId = null; renderDashboard(); };
-    head.appendChild(back);
-    grid.appendChild(head);
+    back.onclick = function () { dashCatId = null; dashTestFilter = null; renderDashboard(); };
+    left.appendChild(back);
     var title = document.createElement('div');
     title.className = 'folderTitle';
-    title.innerHTML = (cat.icon || '📁') + ' <b>' + esc(cat.name) + '</b> <span class="ftcount">(' + tests.length + ')</span>';
-    grid.appendChild(title);
-    if (!tests.length) {
+    title.innerHTML = '<span>' + (cat.icon || '📁') + '</span> <b>' + esc(cat.name) + '</b> <span class="ftcount">(' + shown.length + ')</span>';
+    left.appendChild(title);
+    head.appendChild(left);
+    if (testsAll.length) {
+      var filterButtons = document.createElement('div');
+      filterButtons.className = 'filterButtons';
+      var defs = [['none', 'All Tests'], ['unit', 'Unit Tests'], ['minor', 'Minor Tests'], ['full', 'Full Mock Tests']];
+      defs.forEach(function (d) {
+        var b = document.createElement('button');
+        b.textContent = d[1];
+        if ((dashTestFilter || 'none') === d[0]) b.classList.add('active');
+        b.onclick = function () { dashTestFilter = d[0] === 'none' ? null : d[0]; renderDashboard(); };
+        filterButtons.appendChild(b);
+      });
+      head.appendChild(filterButtons);
+    }
+    grid.appendChild(head);
+    if (!testsAll.length) {
       grid.insertAdjacentHTML('beforeend', '<div class="empty">No tests in this folder yet.</div>');
       return;
     }
-    var filterButtons = document.createElement('div');
-    filterButtons.className = 'filterButtons';
-    filterButtons.innerHTML = '<button class="btn filter active" onclick="App.filterTests(\'none\')">All Tests</button>' +
-                              '<button class="btn filter" onclick="App.filterTests(\'unit\')">Unit Tests</button>' +
-                              '<button class="btn filter" onclick="App.filterTests(\'minor\')">Minor Tests</button>' +
-                              '<button class="btn filter" onclick="App.filterTests(\'full\')">Full Mock Tests</button>';
-    grid.appendChild(filterButtons);
-    grid.appendChild(makeTestCards(tests, map));
-  }
-  function filterTests(filterType) {
-    var buttons = document.querySelectorAll('.filterButtons .btn');
-    buttons.forEach(function(btn) {
-      btn.classList.remove('active');
-    });
-    event.target.classList.add('active');
-    // Implement filtering logic here
-    // For now, just refresh the grid
-    renderDashboard();
+    if (!shown.length) {
+      grid.insertAdjacentHTML('beforeend', '<div class="empty">No tests match this filter.</div>');
+      return;
+    }
+    grid.appendChild(makeTestCards(shown, map));
   }
   function makeTestCard(t, res) {
     var card = document.createElement('div');
