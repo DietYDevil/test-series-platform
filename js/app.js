@@ -498,6 +498,18 @@ window.App = (function () {
       if (!accessMap[a.category_id]) accessMap[a.category_id] = [];
       accessMap[a.category_id].push({ name: a.profiles ? a.profiles.name : '?', phone: a.profiles ? a.profiles.phone : '', approved: a.approved, user_id: a.user_id });
     });
+    // Also count students who got access via individual test assignments
+    // (tests inside this folder) so the folder view stays consistent.
+    var { data: viaTests } = await sb.from('test_access').select('user_id, tests(category_id), profiles(name, phone)').order('user_id');
+    (viaTests || []).forEach(function (ta) {
+      var cid = ta.tests && ta.tests.category_id;
+      if (!cid) return;
+      if (!accessMap[cid]) accessMap[cid] = [];
+      var already = accessMap[cid].some(function (x) { return x.user_id === ta.user_id; });
+      if (!already) {
+        accessMap[cid].push({ name: ta.profiles ? ta.profiles.name : '?', phone: ta.profiles ? ta.profiles.phone : '', approved: true, user_id: ta.user_id, viaTest: true });
+      }
+    });
     var { data: testsCount } = await sb.from('tests').select('category_id');
     var testCountMap = {};
     (testsCount || []).forEach(function (t) {
@@ -518,7 +530,8 @@ window.App = (function () {
         var status = c.is_active ? '<span class="badge ok">Active</span>' : '<span class="badge u">Inactive</span>';
         var assigned = accessMap[c.id] ? accessMap[c.id].map(function (a) {
           return '<span class="u" style="margin-right:8px">' + esc(a.name) + ' · ' + esc(a.phone) + ' ' +
-            (a.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>') +
+            (a.viaTest ? '<span class="badge info" style="font-size:10px;padding:1px 6px">via tests</span>'
+                       : (a.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>')) +
             '<button class="danger" style="margin-left:4px;font-size:11px;padding:2px 8px" onclick="App.toggleCategoryAccess(' + "'" + c.id + "'" + ',' + "'" + a.user_id + "'" + ',' + (!a.approved) + ')">' + (a.approved ? 'Revoke' : 'Approve') + '</button>' +
             '</span>';
         }).join('') : '';
@@ -594,12 +607,20 @@ window.App = (function () {
   }
 
   async function assignAllStudentsToCategory(categoryId) {
-    var { data: students } = await sb.from('profiles').select('id').eq('role', 'student').eq('approved', true);
-    if (!students || !students.length) { toast('No approved students available.'); return; }
-    for (var i = 0; i < students.length; i++) {
-      await sb.from('category_access').upsert({ category_id: categoryId, user_id: students[i].id, approved: true, approved_at: new Date().toISOString(), approved_by: state.user.id });
-    }
-    toast('All approved students have been assigned to this category!');
+    var { data: students } = await sb.from('profiles').select('id, name').eq('role', 'student').eq('approved', true);
+    if (!students || !students.length) { toast('No approved students found.'); return; }
+    var rows = students.map(function (s) {
+      return {
+        category_id: categoryId,
+        user_id: s.id,
+        approved: true,
+        approved_at: new Date().toISOString(),
+        approved_by: state.user.id
+      };
+    });
+    var { error } = await sb.from('category_access').upsert(rows, { onConflict: 'category_id,user_id' });
+    if (error) { toast('Failed: ' + error.message); return; }
+    toast('Assigned ' + rows.length + ' student(s) to this folder!');
     renderCategories();
   }
 
@@ -944,6 +965,7 @@ window.App = (function () {
     toggleCategoryStatus: toggleCategoryStatus,
     deleteCategory: deleteCategory,
     toggleCategoryAccess: toggleCategoryAccess,
+    assignAllStudentsToCategory: assignAllStudentsToCategory,
     renderTests: renderTests,
     uploadTest: uploadTest,
     readFile: readFile,
