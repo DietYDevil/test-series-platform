@@ -1,0 +1,1111 @@
+{
+  "testName": "Unit Test 01 [Mathematical Physics-1].",
+  "timeLimitMin": "60",
+  "totalQs": 20,
+  "maxScore": 85,
+  "lang": "EN",
+  "subjects": [
+    "Part A",
+    "Part B"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "Part A MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 5,
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/0252a147af9904ed9e9afe9559dfe29c.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fac4390e481ff41e7d472ad072e530b9.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/21b3d2822d240d385fa01b7194cd94dc.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/7a657a584d644d5e2f65866c12d28bd7.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/3f2acc91617f3f2bf2383b8704025c1a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Zero</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6b199f4e449f2be423217ee637f188b5.png\" /></p>\n\n<p> </p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/5d69606138ad30630ee23a0b0c4a5fa8.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6600d0c02a48cddb0a95e5acf8163ec7.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1fcd2ced09c2de2f7824d8df60892a6c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6cec0a32c04fa8a6279433a1f3658a9b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/eed5be9efc9da0dc584775d57a6d91e1.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/99a95dd911175a4132e391c237bfed43.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6244ddfd2263b4a167b508452c23f5a8.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/29845a5062305e0b5c0d92a67037c2ba.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/3f5851dde3846c95f9a2a86b52d31486.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/92d73c52b03d5b7a8d3a503f347032bd.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c8dc9352d458939d10ec1ccd98527a78.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fc05a1632aeeff1529c33974cd52200a.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Consider the following differential equation,</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c73a8de31f312f9b001ec05142a8f3a4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a3e65beef695dc361766c09ad1b02f8b.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/b7c5f374a50bca82dd14dcf3cfde8ebb.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/f14205d5815bd4fd1d7b834bb4ff3af9.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a69a13523c263d71ff2beacddf2df533.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e335808802de4fdf81717560ff6ef01e.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1dd4d4840d6a7edc713f567b84b6112e.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>The generating function of the Hermite polynomials are given as following:</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/48de9c34fd50cc8971c8e6a3c252f5bd.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d25f0398e1ec9918e6f016f19872bbdc.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/89cfe28eceb6aebe11f400d4b8ec6a72.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/4b3d672551b592e389af60627bcf30d9.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9f8d6ca90e542b59bccf39af0b719656.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/f534502f090bef14058d9d7b1e419285.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d3561f1d59659126837e38b2680bc4a1.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bc2dbde6579e7586b3f1bd14b24b40ff.png\" /></p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c5dfe164810f0c18efd609fedb171f56.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c06c421ac1ea7bc9cc4507cbb15f5dfa.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/09cd982bb64e1052f48f8bc001f21172.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a555f08bd6aa217b9afb41db5703d11c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1a19af19743b682229ba454c0b107bf2.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/01372efc5090c1413b2109019eca6c3a.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/35d235c543c74b11b48af975aedf18bb.png\" /></p>\n\n<p> </p>\n\n<p> </p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97000.png\" style=\"height:124px; width:755px\" /></p>",
+          "options": [
+            "<p>3</p>",
+            "<p>5</p>",
+            "<p>7</p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32927.png\" style=\"height:23px; width:26px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59341.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65683.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/68fb2550f6110e600d8a9ae9cad5d4e8.png\" /></p>\n\n<p>&nbsp;</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bf4be09a796a42e25d43d61fb626b5f2.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/66067fdd72c473c097f34326955d822d.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/da0bf63a931d95421e5e372630f41cb0.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/aa0f332b2484d32575aa313077f2163d.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6bb26ac4d9db322c419c2dcf0397b3a7.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/cfeba85fbc0797c52c5d4720973a9541.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/7ac6921ec7e41efce40b224747275626.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/076858a3865f120df106243df77bca8f.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/cb35476343e41251c94480ebe396a6a8.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16542.png\" style=\"height:38px; width:672px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65676.png\" style=\"height:98px; width:204px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/2331.png\" style=\"height:50px; width:44px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57406.png\" style=\"height:52px; width:51px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23983.png\" style=\"height:50px; width:59px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93092.png\" style=\"height:61px; width:58px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40052.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22693.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/31723.png\" xss=removed></p>",
+          "haveSol": true
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "id": "B",
+      "name": "Part B MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 3.5,
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p>The solution of the differential equation,</p>\r\n\r\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a35886560d77dc114ded68f1911e65a7.png\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/af308d4e5605d9546cb5fb558654b134.png\" /></p>",
+          "options": [
+            "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d63d4c384e148f92ec38e13c47fb99b2.png\" /></p>",
+            "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d57fc841305ee759ae52b7bf279bd294.png\" /></p>",
+            "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9040a67ea44b78b08776befd8d97a58a.png\" /></p>",
+            "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/8fd429a02b3b4c007cf946aa2b172bc6.png\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"http://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32258.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d8b7d8f041ff9c87db2caa76c826281a.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/17199e8bf9c29093fb5c7331d65d9344.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d863d06a37a8c85f172f5f261216deab.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bde9aab43b8a41bfc9ab311a134c8bdc.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e562d3344a88ca2eefd9384af3d5401d.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/caf39e176f3e4c6bdaf8b5368f47e433.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/5de7f664c084c7dd93c5a2b82f4efd11.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Consider {A} to be the set of all (3&times;3) Hermitian matrices with trace equal to 10. The number of independent real parameters of A is,</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p> 9</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None of these</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9624fb877a46c074297b82836c89bd8e.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6781cff2b53202021178bebbfb2a4fc8.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/840e17d997915356f0f2c8fdc94a6745.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/4e4abcc48ce7edfed3ce4a8822cf4480.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/243a2906cb458edc59a44c6a315b35e8.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/aa3ed1de8b0c31810d677b163dc2f9c9.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/64c2c396e7840c1f4fa041657ecd1768.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/7620.png\" style=\"height:63px; width:750px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88318.png\" style=\"height:23px; width:19px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/61668.png\" style=\"height:27px; width:18px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/15253.png\" style=\"height:23px; width:17px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40932.png\" style=\"height:27px; width:21px\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33613.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/44197.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>The eigenvalues of a matrix <em>A </em>&nbsp;are <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/94877.png\" style=\"height:57px; width:166px\" /> The matrix can possibly be&nbsp;</p>",
+          "options": [
+            "<p>Hermitian</p>",
+            "<p>Anti-hermitian</p>",
+            "<p>Unitary</p>",
+            "<p>None of the above&nbsp;</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p>We know that for unitary matrices, the modulus of each eigenvalues is 1.</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/31157.png\" xss=removed></p>\r\n\r\n<p>Therefore, the matrix can be a Unitary matrix.</p>",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>&nbsp;<img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/db78e1824af4a7136f39de0ca8ddcbf0.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/31ae848e2161e58d7e7d9c017c431561.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Given three vectors,</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e342b1dd1093c2a7f6a930db17dbe7fa.png\" /></p>\n\n<p>Which one of the following statements is true for this set of vectors ?</p>\n\n<p>&nbsp;</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are orthonormal vectors.</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are orthogonal vectors.</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are linearly dependent vectors.</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They can constitute a basis for spanning a 3-D real vector space.</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/513f8ce7f26896170af9a441c8fb9317.png\" /></p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/60dd2f4cd0b3c7337664c5fce43fbccb.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>–2</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>–6</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e1b1044b95768cf5fcaf7f82002cf3fe.png\" /></p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Consider the following set of differential equations:</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d7d2d36a0a1a63a574faa5268fca4983.png\" /></p>\n\n<p>The solution of&nbsp; y<sub>1</sub> will be of the form</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fa8fc6284ea8f0685f4fc36130f9072c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c33959058c140592f6f3f5f4e81e83e3.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/332621faf895437a336daac65db17ea6.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/54d9f7b38ce1499832305ac40093a3ac.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/706348e26624f908953c4409cd34a171.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/dd006df5edb2459032909ffd2e930806.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "Nashit Farooq",
+    "score": 73.75,
+    "correct": 18,
+    "incorrect": 1,
+    "timeMin": 16.87
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "Nashit Farooq",
+      "score": 73.75,
+      "correct": 18,
+      "incorrect": 1,
+      "timeMin": 16.87
+    },
+    {
+      "rank": 2,
+      "name": "Puspanjali Nanda",
+      "score": 70.25,
+      "correct": 17,
+      "incorrect": 1,
+      "timeMin": 51.43
+    },
+    {
+      "rank": 3,
+      "name": "Chandan Mahapatra",
+      "score": 68.13,
+      "correct": 17,
+      "incorrect": 3,
+      "timeMin": 5.07
+    },
+    {
+      "rank": 4,
+      "name": "itika choudhary",
+      "score": 60,
+      "correct": 15,
+      "incorrect": 0,
+      "timeMin": 19.7
+    },
+    {
+      "rank": 5,
+      "name": "SONAKSHI BEHERA",
+      "score": 55,
+      "correct": 14,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 6,
+      "name": "Girija Shankar Tripathy",
+      "score": 54.38,
+      "correct": 14,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 7,
+      "name": "NIKHIL AGRAWAL",
+      "score": 51.25,
+      "correct": 12,
+      "incorrect": 1,
+      "timeMin": 59.52
+    },
+    {
+      "rank": 8,
+      "name": "Shreyansh srivatava",
+      "score": 50,
+      "correct": 13,
+      "incorrect": 0,
+      "timeMin": 59.73
+    },
+    {
+      "rank": 9,
+      "name": "Jyoti Yadav",
+      "score": 46.75,
+      "correct": 12,
+      "incorrect": 1,
+      "timeMin": 54.1
+    },
+    {
+      "rank": 10,
+      "name": "Harsh Maurya",
+      "score": 46.5,
+      "correct": 12,
+      "incorrect": 6,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 11,
+      "name": "Simran jeet",
+      "score": 44,
+      "correct": 11,
+      "incorrect": 4,
+      "timeMin": 41.07
+    },
+    {
+      "rank": 12,
+      "name": ".. ...",
+      "score": 39.5,
+      "correct": 10,
+      "incorrect": 3,
+      "timeMin": 56.02
+    },
+    {
+      "rank": 13,
+      "name": "Avhs yaahsj",
+      "score": 36.75,
+      "correct": 10,
+      "incorrect": 4,
+      "timeMin": 59.4
+    },
+    {
+      "rank": 14,
+      "name": "(Unnamed)",
+      "score": 34.5,
+      "correct": 9,
+      "incorrect": 0,
+      "timeMin": 39.27
+    },
+    {
+      "rank": 15,
+      "name": "Vishal Khatkar",
+      "score": 34.5,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 52.82
+    },
+    {
+      "rank": 16,
+      "name": "seven t",
+      "score": 33.38,
+      "correct": 9,
+      "incorrect": 9,
+      "timeMin": 47.15
+    },
+    {
+      "rank": 17,
+      "name": "Narayan Lal Balai",
+      "score": 33,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 59.12
+    },
+    {
+      "rank": 18,
+      "name": "JAMEELA ASHRAF",
+      "score": 31,
+      "correct": 8,
+      "incorrect": 0,
+      "timeMin": 1.65
+    },
+    {
+      "rank": 19,
+      "name": "(Unnamed)",
+      "score": 30.75,
+      "correct": 8,
+      "incorrect": 2,
+      "timeMin": 51.27
+    },
+    {
+      "rank": 20,
+      "name": "Angel Shiny Arockia Jayaseelan",
+      "score": 30.38,
+      "correct": 8,
+      "incorrect": 2,
+      "timeMin": 60.02
+    }
+  ],
+  "questions": [
+    {
+      "id": "6216f9fae7f64f208359561f",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/0252a147af9904ed9e9afe9559dfe29c.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fac4390e481ff41e7d472ad072e530b9.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/21b3d2822d240d385fa01b7194cd94dc.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/7a657a584d644d5e2f65866c12d28bd7.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/3f2acc91617f3f2bf2383b8704025c1a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Zero</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6b199f4e449f2be423217ee637f188b5.png\" /></p>\n\n<p> </p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595620",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/5d69606138ad30630ee23a0b0c4a5fa8.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6600d0c02a48cddb0a95e5acf8163ec7.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1fcd2ced09c2de2f7824d8df60892a6c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6cec0a32c04fa8a6279433a1f3658a9b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/eed5be9efc9da0dc584775d57a6d91e1.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/99a95dd911175a4132e391c237bfed43.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595621",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6244ddfd2263b4a167b508452c23f5a8.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/29845a5062305e0b5c0d92a67037c2ba.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/3f5851dde3846c95f9a2a86b52d31486.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/92d73c52b03d5b7a8d3a503f347032bd.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c8dc9352d458939d10ec1ccd98527a78.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fc05a1632aeeff1529c33974cd52200a.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595622",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p>Consider the following differential equation,</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c73a8de31f312f9b001ec05142a8f3a4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a3e65beef695dc361766c09ad1b02f8b.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/b7c5f374a50bca82dd14dcf3cfde8ebb.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/f14205d5815bd4fd1d7b834bb4ff3af9.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a69a13523c263d71ff2beacddf2df533.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e335808802de4fdf81717560ff6ef01e.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1dd4d4840d6a7edc713f567b84b6112e.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595623",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p>The generating function of the Hermite polynomials are given as following:</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/48de9c34fd50cc8971c8e6a3c252f5bd.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d25f0398e1ec9918e6f016f19872bbdc.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/89cfe28eceb6aebe11f400d4b8ec6a72.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/4b3d672551b592e389af60627bcf30d9.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9f8d6ca90e542b59bccf39af0b719656.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/f534502f090bef14058d9d7b1e419285.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d3561f1d59659126837e38b2680bc4a1.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bc2dbde6579e7586b3f1bd14b24b40ff.png\" /></p>\n\n<p> </p>\n\n<p> </p>\n\n<p> </p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595624",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c5dfe164810f0c18efd609fedb171f56.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c06c421ac1ea7bc9cc4507cbb15f5dfa.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/09cd982bb64e1052f48f8bc001f21172.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a555f08bd6aa217b9afb41db5703d11c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/1a19af19743b682229ba454c0b107bf2.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/01372efc5090c1413b2109019eca6c3a.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/35d235c543c74b11b48af975aedf18bb.png\" /></p>\n\n<p> </p>\n\n<p> </p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595625",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97000.png\" style=\"height:124px; width:755px\" /></p>",
+      "options": [
+        "<p>3</p>",
+        "<p>5</p>",
+        "<p>7</p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32927.png\" style=\"height:23px; width:26px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59341.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65683.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595626",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/68fb2550f6110e600d8a9ae9cad5d4e8.png\" /></p>\n\n<p>&nbsp;</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bf4be09a796a42e25d43d61fb626b5f2.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/66067fdd72c473c097f34326955d822d.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/da0bf63a931d95421e5e372630f41cb0.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/aa0f332b2484d32575aa313077f2163d.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6bb26ac4d9db322c419c2dcf0397b3a7.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595627",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/cfeba85fbc0797c52c5d4720973a9541.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/7ac6921ec7e41efce40b224747275626.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/076858a3865f120df106243df77bca8f.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/cb35476343e41251c94480ebe396a6a8.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595628",
+      "part": "Part A",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16542.png\" style=\"height:38px; width:672px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65676.png\" style=\"height:98px; width:204px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/2331.png\" style=\"height:50px; width:44px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57406.png\" style=\"height:52px; width:51px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23983.png\" style=\"height:50px; width:59px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93092.png\" style=\"height:61px; width:58px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40052.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22693.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/31723.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595629",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>The solution of the differential equation,</p>\r\n\r\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/a35886560d77dc114ded68f1911e65a7.png\" /></p>\r\n\r\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/af308d4e5605d9546cb5fb558654b134.png\" /></p>",
+      "options": [
+        "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d63d4c384e148f92ec38e13c47fb99b2.png\" /></p>",
+        "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d57fc841305ee759ae52b7bf279bd294.png\" /></p>",
+        "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9040a67ea44b78b08776befd8d97a58a.png\" /></p>",
+        "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/8fd429a02b3b4c007cf946aa2b172bc6.png\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"http://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32258.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562a",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d8b7d8f041ff9c87db2caa76c826281a.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/17199e8bf9c29093fb5c7331d65d9344.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d863d06a37a8c85f172f5f261216deab.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/bde9aab43b8a41bfc9ab311a134c8bdc.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e562d3344a88ca2eefd9384af3d5401d.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/caf39e176f3e4c6bdaf8b5368f47e433.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/5de7f664c084c7dd93c5a2b82f4efd11.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562b",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p>Consider {A} to be the set of all (3&times;3) Hermitian matrices with trace equal to 10. The number of independent real parameters of A is,</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p> 9</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None of these</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/9624fb877a46c074297b82836c89bd8e.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562c",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/6781cff2b53202021178bebbfb2a4fc8.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/840e17d997915356f0f2c8fdc94a6745.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/4e4abcc48ce7edfed3ce4a8822cf4480.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/243a2906cb458edc59a44c6a315b35e8.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/aa3ed1de8b0c31810d677b163dc2f9c9.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/64c2c396e7840c1f4fa041657ecd1768.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562d",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/7620.png\" style=\"height:63px; width:750px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88318.png\" style=\"height:23px; width:19px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/61668.png\" style=\"height:27px; width:18px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/15253.png\" style=\"height:23px; width:17px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40932.png\" style=\"height:27px; width:21px\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33613.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/44197.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562e",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>The eigenvalues of a matrix <em>A </em>&nbsp;are <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/94877.png\" style=\"height:57px; width:166px\" /> The matrix can possibly be&nbsp;</p>",
+      "options": [
+        "<p>Hermitian</p>",
+        "<p>Anti-hermitian</p>",
+        "<p>Unitary</p>",
+        "<p>None of the above&nbsp;</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>We know that for unitary matrices, the modulus of each eigenvalues is 1.</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/31157.png\" xss=removed></p>\r\n\r\n<p>Therefore, the matrix can be a Unitary matrix.</p>",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f208359562f",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p>&nbsp;<img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/db78e1824af4a7136f39de0ca8ddcbf0.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/31ae848e2161e58d7e7d9c017c431561.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595630",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p>Given three vectors,</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e342b1dd1093c2a7f6a930db17dbe7fa.png\" /></p>\n\n<p>Which one of the following statements is true for this set of vectors ?</p>\n\n<p>&nbsp;</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are orthonormal vectors.</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are orthogonal vectors.</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They are linearly dependent vectors.</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>They can constitute a basis for spanning a 3-D real vector space.</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/513f8ce7f26896170af9a441c8fb9317.png\" /></p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595631",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/60dd2f4cd0b3c7337664c5fce43fbccb.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>–2</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>–6</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/e1b1044b95768cf5fcaf7f82002cf3fe.png\" /></p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    },
+    {
+      "id": "6216f9fae7f64f2083595632",
+      "part": "Part B",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<div class=\"q-part\"> <p>Consider the following set of differential equations:</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/d7d2d36a0a1a63a574faa5268fca4983.png\" /></p>\n\n<p>The solution of&nbsp; y<sub>1</sub> will be of the form</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/fa8fc6284ea8f0685f4fc36130f9072c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/c33959058c140592f6f3f5f4e81e83e3.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/332621faf895437a336daac65db17ea6.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/54d9f7b38ce1499832305ac40093a3ac.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/706348e26624f908953c4409cd34a171.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/64b200b06004fa62b75b327c/dd006df5edb2459032909ffd2e930806.png\" /></p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Part A"
+    }
+  ]
+}

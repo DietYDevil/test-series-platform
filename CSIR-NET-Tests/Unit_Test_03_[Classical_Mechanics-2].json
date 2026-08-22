@@ -1,0 +1,1111 @@
+{
+  "testName": "Unit Test 03 [Classical Mechanics-2]",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 85,
+  "lang": "EN",
+  "subjects": [
+    "PART-A MCQ",
+    "PART-B MCQ"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "PART-A MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 3.5,
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54424.png\" style=\"height:87px; width:682px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13911.png\" style=\"height:53px; width:113px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46205.png\" style=\"height:53px; width:100px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/1853.png\" style=\"height:30px; width:68px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22581.png\" style=\"height:28px; width:111px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/26646.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/95880.png\" style=\"height:131px; width:569px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9580.png\" style=\"height:57px; width:103px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50391.png\" style=\"height:63px; width:146px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/14659.png\" style=\"height:41px; width:85px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/25015.png\" style=\"height:65px; width:196px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86353.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/39067.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Consider a dynamical system of equations,</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64284.png\" style=\"height:65px; width:87px\" /></p>\r\n\r\n<p>The phase space trajectory in <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90298.png\" style=\"height:28px; width:36px\" />&nbsp;plane should be</p>",
+          "options": [
+            "<p>circle&nbsp;&nbsp; &nbsp;</p>",
+            "<p>ellipse</p>",
+            "<p>hyperbola&nbsp;&nbsp; &nbsp;</p>",
+            "<p>catinary</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/399061.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33240.png\" style=\"height:65px; width:699px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/28912.png\" style=\"height:58px; width:39px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/335781.png\" style=\"height:65px; width:92px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62421.png\" style=\"height:54px; width:55px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47824.png\" style=\"height:79px; width:76px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99934.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70220.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>The potential energy function between two atoms in a diatomic molecule is defined for <em>x</em> &gt; 0 and given by</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75115.png\" style=\"height:68px; width:200px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/11138.png\" style=\"height:23px; width:563px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/79232.png\" style=\"height:22px; width:256px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/29896.png\" style=\"height:18px; width:264px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/30840.png\" style=\"height:19px; width:271px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3931.png\" style=\"height:21px; width:280px\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/15637.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/27987.png\" style=\"height:54px; width:702px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/60330.png\" style=\"height:55px; width:231px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50405.png\" style=\"height:36px; width:376px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12120.png\" style=\"height:26px; width:179px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87792.png\" style=\"height:26px; width:110px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16084.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>The Lagrangian of a particle of mass &lsquo;<em>m</em>&rsquo; in plane-polar co-ordinates is given by,</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38677.png\" style=\"height:46px; width:514px\" /></p>\r\n\r\n<p>The equilibrium position of the particle in polar co-ordinates <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/77357.png\" style=\"height:33px; width:49px\" />&nbsp;is equal to,&nbsp;</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82472.png\" style=\"height:50px; width:83px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36615.png\" style=\"height:54px; width:96px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41117.png\" style=\"height:56px; width:90px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87835.png\" style=\"height:55px; width:96px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13498.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Lagrangian of a particle is <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47196.png\" style=\"height:51px; width:119px\" />&nbsp;If at <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88618.png\" style=\"height:25px; width:124px\" />&nbsp;then the distance covered at <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74772.png\" style=\"height:56px; width:56px\" />&nbsp;is&nbsp;</p>",
+          "options": [
+            "<p>1</p>",
+            "<p>2</p>",
+            "<p>1/2</p>",
+            "<p>4</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/72241.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/55459.png\" style=\"height:105px; width:402px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85983.png\" style=\"height:34px; width:171px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91062.png\" style=\"height:36px; width:171px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/72346.png\" style=\"height:34px; width:173px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/95751.png\" style=\"height:34px; width:169px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/19983.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97778.png\" style=\"height:54px; width:700px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23210.png\" style=\"height:27px; width:270px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59515.png\" style=\"height:27px; width:273px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41634.png\" style=\"height:29px; width:268px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32673.png\" style=\"height:26px; width:268px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12968.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74742.png\" xss=removed></p>",
+          "haveSol": true
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "id": "B",
+      "name": "PART-B MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 5,
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73379.png\" style=\"height:93px; width:426px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/29411.png\" style=\"height:22px; width:198px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92698.png\" style=\"height:25px; width:215px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38363.png\" style=\"height:21px; width:195px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40228.png\" style=\"height:24px; width:219px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40433.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/28377.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43140.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70254.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62176.png\" style=\"height:82px; width:699px\" /></p>",
+          "options": [
+            "<p>&ndash;1</p>",
+            "<p>1</p>",
+            "<p>0</p>",
+            "<p>1/2</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22570.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65210.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/76613.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54692.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/45956.png\" style=\"height:106px; width:356px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71451.png\" style=\"height:47px; width:40px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/34489.png\" style=\"height:37px; width:34px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/277691.png\" style=\"height:28px; width:33px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21534.png\" style=\"height:50px; width:26px\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81597.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96156.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/42582.png\" style=\"height:115px; width:710px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/98469.png\" style=\"height:21px; width:65px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62924.png\" style=\"height:33px; width:66px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22893.png\" style=\"height:31px; width:62px\" /></p>",
+            "<p>None of these&nbsp;</p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33449.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99089.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50487.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85782.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/67753.png\" style=\"height:23px; width:392px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49931.png\" style=\"height:51px; width:233px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85389.png\" style=\"height:25px; width:699px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/76444.png\" style=\"height:26px; width:187px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/53570.png\" style=\"height:24px; width:163px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56241.png\" style=\"height:28px; width:188px\" /></p>",
+            "<p>None of these&nbsp;</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57777.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90204.png\" style=\"height:112px; width:259px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73115.png\" style=\"height:29px; width:90px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13053.png\" style=\"height:30px; width:83px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/84248.png\" style=\"height:29px; width:83px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/538.png\" style=\"height:28px; width:92px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43548.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>The spherical pendulum is a particle of mass <em>m</em> attached to a fixed point by a light inextensible string of length <em>a</em> and moving under uniform gravity. Its Lagrangian in polar angles <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/84486.png\" style=\"height:20px; width:33px\" />&nbsp;is given by&nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93965.png\" style=\"height:44px; width:281px\" /></p>\r\n\r\n<p>If &nbsp;<img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6273.png\" style=\"height:27px; width:74px\" />&nbsp;are conjugate momenta corresponding to <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/667391.png\" style=\"height:20px; width:54px\" />&nbsp;respectively, then Hamiltonian is</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9845.png\" style=\"height:70px; width:223px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99362.png\" style=\"height:55px; width:228px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70279.png\" style=\"height:62px; width:242px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50316.png\" style=\"height:66px; width:230px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/1300.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Consider the following canonical transformation for a system with one degree of freedom:</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/83278.png\" style=\"height:53px; width:211px\" /></p>\r\n\r\n<p>Here&nbsp;<img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/588.png\" style=\"height:19px; width:14px\" /> is the angle by which <em>Q</em> and <em>P</em> is rotated in phase space from <em>q</em> and <em>p</em>. The generating function of this transformation is given by&nbsp;</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/8034.png\" style=\"height:54px; width:181px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82727.png\" style=\"height:44px; width:187px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49887.png\" style=\"height:46px; width:193px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85870.png\" style=\"height:46px; width:178px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/27085.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/2237.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57369.png\" style=\"height:141px; width:700px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81570.png\" style=\"height:49px; width:129px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46200.png\" style=\"height:41px; width:211px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73347.png\" style=\"height:37px; width:174px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54418.png\" style=\"height:42px; width:97px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/51291.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Consider a one-dimensional system with the Hamiltonian</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38462.png\" style=\"height:51px; width:144px\" /></p>\r\n\r\n<p>The set of canonical transformation (P, Q) that reduces H to the form of a harmonic oscillator, is</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89891.png\" style=\"height:51px; width:112px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75109.png\" style=\"height:54px; width:121px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71529.png\" style=\"height:54px; width:111px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57402.png\" style=\"height:57px; width:135px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90586.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/37911.png\" xss=removed></p>",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "Puspanjali Nanda",
+    "score": 62.75,
+    "correct": 15,
+    "incorrect": 2,
+    "timeMin": 59.02
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "Puspanjali Nanda",
+      "score": 62.75,
+      "correct": 15,
+      "incorrect": 2,
+      "timeMin": 59.02
+    },
+    {
+      "rank": 2,
+      "name": "SONAKSHI BEHERA",
+      "score": 49.75,
+      "correct": 12,
+      "incorrect": 1,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 3,
+      "name": "Vinod H N",
+      "score": 45.25,
+      "correct": 12,
+      "incorrect": 4,
+      "timeMin": 59.67
+    },
+    {
+      "rank": 4,
+      "name": ".. ...",
+      "score": 44.75,
+      "correct": 11,
+      "incorrect": 1,
+      "timeMin": 57.27
+    },
+    {
+      "rank": 5,
+      "name": "Ezhilmathi V",
+      "score": 44.63,
+      "correct": 12,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 6,
+      "name": "CHIRAG .",
+      "score": 43.25,
+      "correct": 11,
+      "incorrect": 1,
+      "timeMin": 48.02
+    },
+    {
+      "rank": 7,
+      "name": "NIKHIL AGRAWAL",
+      "score": 39.63,
+      "correct": 11,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 8,
+      "name": "Sad Nom",
+      "score": 39,
+      "correct": 11,
+      "incorrect": 5,
+      "timeMin": 57.97
+    },
+    {
+      "rank": 9,
+      "name": "Harsh Maurya",
+      "score": 36.13,
+      "correct": 10,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 10,
+      "name": "Srabani Tungabidya",
+      "score": 35.38,
+      "correct": 9,
+      "incorrect": 2,
+      "timeMin": 49.07
+    },
+    {
+      "rank": 11,
+      "name": "Megha Dangi",
+      "score": 29.75,
+      "correct": 8,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 12,
+      "name": "Poorna Chandra",
+      "score": 29.25,
+      "correct": 9,
+      "incorrect": 6,
+      "timeMin": 59.85
+    },
+    {
+      "rank": 13,
+      "name": "Angel Shiny Arockia Jayaseelan",
+      "score": 29.13,
+      "correct": 8,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 14,
+      "name": "Ranjana Sain",
+      "score": 27,
+      "correct": 8,
+      "incorrect": 5,
+      "timeMin": 50.45
+    },
+    {
+      "rank": 15,
+      "name": "Utsav Singh,",
+      "score": 25.75,
+      "correct": 7,
+      "incorrect": 2,
+      "timeMin": 48.57
+    },
+    {
+      "rank": 16,
+      "name": "Pooja Patidar",
+      "score": 23.63,
+      "correct": 8,
+      "incorrect": 5,
+      "timeMin": 56.53
+    },
+    {
+      "rank": 17,
+      "name": "Bhavyanshi Gakkhar",
+      "score": 22.38,
+      "correct": 8,
+      "incorrect": 6,
+      "timeMin": 58.48
+    },
+    {
+      "rank": 18,
+      "name": "Proyas Dutta",
+      "score": 21.5,
+      "correct": 6,
+      "incorrect": 5,
+      "timeMin": 60
+    },
+    {
+      "rank": 19,
+      "name": "Narayan Lal Balai",
+      "score": 21.25,
+      "correct": 6,
+      "incorrect": 4,
+      "timeMin": 56.92
+    },
+    {
+      "rank": 20,
+      "name": "Chandan Mavinakod",
+      "score": 20.63,
+      "correct": 6,
+      "incorrect": 3,
+      "timeMin": 60.02
+    }
+  ],
+  "questions": [
+    {
+      "id": "62231ad17ee91857187c7f0a",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54424.png\" style=\"height:87px; width:682px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13911.png\" style=\"height:53px; width:113px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46205.png\" style=\"height:53px; width:100px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/1853.png\" style=\"height:30px; width:68px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22581.png\" style=\"height:28px; width:111px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/26646.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6229963d3d9d76246f0b1a6c",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/95880.png\" style=\"height:131px; width:569px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9580.png\" style=\"height:57px; width:103px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50391.png\" style=\"height:63px; width:146px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/14659.png\" style=\"height:41px; width:85px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/25015.png\" style=\"height:65px; width:196px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86353.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/39067.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6229967690edab2fa0651847",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>Consider a dynamical system of equations,</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64284.png\" style=\"height:65px; width:87px\" /></p>\r\n\r\n<p>The phase space trajectory in <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90298.png\" style=\"height:28px; width:36px\" />&nbsp;plane should be</p>",
+      "options": [
+        "<p>circle&nbsp;&nbsp; &nbsp;</p>",
+        "<p>ellipse</p>",
+        "<p>hyperbola&nbsp;&nbsp; &nbsp;</p>",
+        "<p>catinary</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/399061.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622996acfb90db295803aeb7",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33240.png\" style=\"height:65px; width:699px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/28912.png\" style=\"height:58px; width:39px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/335781.png\" style=\"height:65px; width:92px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62421.png\" style=\"height:54px; width:55px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47824.png\" style=\"height:79px; width:76px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99934.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70220.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622996f74930f13c133a5e85",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>The potential energy function between two atoms in a diatomic molecule is defined for <em>x</em> &gt; 0 and given by</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75115.png\" style=\"height:68px; width:200px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/11138.png\" style=\"height:23px; width:563px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/79232.png\" style=\"height:22px; width:256px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/29896.png\" style=\"height:18px; width:264px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/30840.png\" style=\"height:19px; width:271px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3931.png\" style=\"height:21px; width:280px\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/15637.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6229972690edab2fa065184c",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/27987.png\" style=\"height:54px; width:702px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/60330.png\" style=\"height:55px; width:231px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50405.png\" style=\"height:36px; width:376px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12120.png\" style=\"height:26px; width:179px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87792.png\" style=\"height:26px; width:110px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16084.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299755c366a7652b54fe8b",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>The Lagrangian of a particle of mass &lsquo;<em>m</em>&rsquo; in plane-polar co-ordinates is given by,</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38677.png\" style=\"height:46px; width:514px\" /></p>\r\n\r\n<p>The equilibrium position of the particle in polar co-ordinates <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/77357.png\" style=\"height:33px; width:49px\" />&nbsp;is equal to,&nbsp;</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82472.png\" style=\"height:50px; width:83px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36615.png\" style=\"height:54px; width:96px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41117.png\" style=\"height:56px; width:90px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87835.png\" style=\"height:55px; width:96px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13498.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622997ac35abb8478e42064e",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>Lagrangian of a particle is <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47196.png\" style=\"height:51px; width:119px\" />&nbsp;If at <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88618.png\" style=\"height:25px; width:124px\" />&nbsp;then the distance covered at <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74772.png\" style=\"height:56px; width:56px\" />&nbsp;is&nbsp;</p>",
+      "options": [
+        "<p>1</p>",
+        "<p>2</p>",
+        "<p>1/2</p>",
+        "<p>4</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/72241.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622997e0fc1d626a4c1cba43",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/55459.png\" style=\"height:105px; width:402px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85983.png\" style=\"height:34px; width:171px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91062.png\" style=\"height:36px; width:171px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/72346.png\" style=\"height:34px; width:173px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/95751.png\" style=\"height:34px; width:169px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/19983.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299817dd25552ca4616cf7",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97778.png\" style=\"height:54px; width:700px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23210.png\" style=\"height:27px; width:270px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59515.png\" style=\"height:27px; width:273px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41634.png\" style=\"height:29px; width:268px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32673.png\" style=\"height:26px; width:268px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12968.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74742.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299892fa38bb30aa72967f",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73379.png\" style=\"height:93px; width:426px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/29411.png\" style=\"height:22px; width:198px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92698.png\" style=\"height:25px; width:215px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38363.png\" style=\"height:21px; width:195px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40228.png\" style=\"height:24px; width:219px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40433.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/28377.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43140.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70254.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622998dba182c836880ff330",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62176.png\" style=\"height:82px; width:699px\" /></p>",
+      "options": [
+        "<p>&ndash;1</p>",
+        "<p>1</p>",
+        "<p>0</p>",
+        "<p>1/2</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22570.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/65210.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/76613.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54692.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622999103d9d76246f0b1a7d",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/45956.png\" style=\"height:106px; width:356px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71451.png\" style=\"height:47px; width:40px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/34489.png\" style=\"height:37px; width:34px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/277691.png\" style=\"height:28px; width:33px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21534.png\" style=\"height:50px; width:26px\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81597.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96156.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299981df190861be1b3188",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/42582.png\" style=\"height:115px; width:710px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/98469.png\" style=\"height:21px; width:65px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/62924.png\" style=\"height:33px; width:66px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22893.png\" style=\"height:31px; width:62px\" /></p>",
+        "<p>None of these&nbsp;</p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33449.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99089.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50487.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85782.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622999bbdd25552ca4616cfe",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/67753.png\" style=\"height:23px; width:392px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49931.png\" style=\"height:51px; width:233px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85389.png\" style=\"height:25px; width:699px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/76444.png\" style=\"height:26px; width:187px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/53570.png\" style=\"height:24px; width:163px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56241.png\" style=\"height:28px; width:188px\" /></p>",
+        "<p>None of these&nbsp;</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57777.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "622999e6d71b957c0f00d5bc",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90204.png\" style=\"height:112px; width:259px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73115.png\" style=\"height:29px; width:90px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/13053.png\" style=\"height:30px; width:83px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/84248.png\" style=\"height:29px; width:83px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/538.png\" style=\"height:28px; width:92px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43548.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299a4cdd25552ca4616d00",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>The spherical pendulum is a particle of mass <em>m</em> attached to a fixed point by a light inextensible string of length <em>a</em> and moving under uniform gravity. Its Lagrangian in polar angles <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/84486.png\" style=\"height:20px; width:33px\" />&nbsp;is given by&nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93965.png\" style=\"height:44px; width:281px\" /></p>\r\n\r\n<p>If &nbsp;<img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6273.png\" style=\"height:27px; width:74px\" />&nbsp;are conjugate momenta corresponding to <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/667391.png\" style=\"height:20px; width:54px\" />&nbsp;respectively, then Hamiltonian is</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9845.png\" style=\"height:70px; width:223px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99362.png\" style=\"height:55px; width:228px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/70279.png\" style=\"height:62px; width:242px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50316.png\" style=\"height:66px; width:230px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/1300.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299b11c366a7652b54fe99",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>Consider the following canonical transformation for a system with one degree of freedom:</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/83278.png\" style=\"height:53px; width:211px\" /></p>\r\n\r\n<p>Here&nbsp;<img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/588.png\" style=\"height:19px; width:14px\" /> is the angle by which <em>Q</em> and <em>P</em> is rotated in phase space from <em>q</em> and <em>p</em>. The generating function of this transformation is given by&nbsp;</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/8034.png\" style=\"height:54px; width:181px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82727.png\" style=\"height:44px; width:187px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49887.png\" style=\"height:46px; width:193px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85870.png\" style=\"height:46px; width:178px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/27085.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/2237.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299b4b6c96ba1cd177158d",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57369.png\" style=\"height:141px; width:700px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81570.png\" style=\"height:49px; width:129px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46200.png\" style=\"height:41px; width:211px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73347.png\" style=\"height:37px; width:174px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54418.png\" style=\"height:42px; width:97px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/51291.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "62299b9aa182c836880ff33f",
+      "part": "PART-B MCQ",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>Consider a one-dimensional system with the Hamiltonian</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38462.png\" style=\"height:51px; width:144px\" /></p>\r\n\r\n<p>The set of canonical transformation (P, Q) that reduces H to the form of a harmonic oscillator, is</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89891.png\" style=\"height:51px; width:112px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75109.png\" style=\"height:54px; width:121px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71529.png\" style=\"height:54px; width:111px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57402.png\" style=\"height:57px; width:135px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90586.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/37911.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "PART-A MCQ"
+    }
+  ]
+}

@@ -1,0 +1,1146 @@
+{
+  "testName": "MATHEMATICAL PHYSICS_MATRICES_P_CLASS TEST_21-08-2026",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 80,
+  "lang": "EN",
+  "subjects": [
+    "PART-A MCQ",
+    "PART-B MSQ",
+    "PART-C NAT"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "PART-A MCQ",
+      "type": "MCQ",
+      "count": 12,
+      "marks": 4,
+      "marksPos": 4,
+      "marksNeg": 1,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a192b6image-20260821112555-1.png\" style=\"height:22px; width:14px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1aa43image-20260821112555-2.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrix such that <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1dd08image-20260821112555-3.png\" style=\"height:22px; width:79px\" /> . A new matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1dfaaimage-20260821112555-4.png\" style=\"height:22px; width:12px\" /> &nbsp;is formed by performing the following row operations on <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e869edcc0image-20260821112555-5.png\" style=\"height:22px; width:14px\" /> : the first row is multiplied by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a23c09image-20260821112555-6.png\" style=\"height:22px; width:9px\" /> , the second row by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e869ee9bdimage-20260821112555-7.png\" style=\"height:22px; width:21px\" /> , and the third row by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1ee85image-20260821112555-8.png\" style=\"height:22px; width:9px\" /> . The value of&nbsp;&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1a2a8image-20260821112555-9.png\" style=\"height:22px; width:65px\" /> is equal to</p>",
+          "options": [
+            "<p>&ndash;60</p>",
+            "<p>&ndash;120</p>",
+            "<p>&ndash;240</p>",
+            "<p>&ndash;480</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e98134693image-20260821113034-10.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e981394acimage-20260821113034-11.png\" style=\"height:22px; width:10px\" /> &nbsp;has a trace of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9813ec20image-20260821113034-12.png\" style=\"height:24px; width:28px\" /> &nbsp;and a determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9814020fimage-20260821113034-13.png\" style=\"height:22px; width:9px\" /> . If the eigenvalues of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e98132007image-20260821113034-14.png\" style=\"height:22px; width:10px\" /> &nbsp;are complex numbers, then the phase difference between the two eigenvalues is equal to</p>",
+          "options": [
+            "<p>30&ordm;</p>",
+            "<p>60&ordm;</p>",
+            "<p>90&ordm;</p>",
+            "<p>120&ordm;</p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9e501040image-20260821113214-15.png\" style=\"height:22px; width:10px\" /> be a non-null idempotent matrix. Which of the following represents the inverse of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9e502237image-20260821113214-16.png\" style=\"height:32px; width:49px\" /> ?</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea0033ab9image-20260821113241-17.png\" style=\"height:22px; width:43px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea0a4c295image-20260821113251-18.png\" style=\"height:39px; width:36px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea1c7b22bimage-20260821113309-19.png\" style=\"height:39px; width:36px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea227890aimage-20260821113315-20.png\" style=\"height:22px; width:43px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318ebe0image-20260821113330-21.png\" style=\"height:22px; width:17px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318ebb7image-20260821113330-22.png\" style=\"height:24px; width:17px\" /> &nbsp;be thePauli spin matrices. The eigenvalues of the matrix</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318d180image-20260821113330-23.png\" style=\"height:24px; width:94px\" /></p>\r\n\r\n<p>is equal to</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea40719cdimage-20260821113345-24.png\" style=\"height:22px; width:36px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea46e90a1image-20260821113352-25.png\" style=\"height:22px; width:36px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea4eee191image-20260821113400-26.png\" style=\"height:22px; width:24px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea55be957image-20260821113406-27.png\" style=\"height:22px; width:29px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64e3941image-20260821113422-28.png\" style=\"height:22px; width:17px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64dd8b1image-20260821113422-29.png\" style=\"height:22px; width:17px\" /> &nbsp;be two arbitrary <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64e4e07image-20260821113422-30.png\" style=\"height:22px; width:41px\" /> &nbsp;Unitary matrices. Which of the following operations does <strong>NOT</strong> necessarily result in a Unitary matrix? (where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64ddc79image-20260821113422-31.png\" style=\"height:22px; width:9px\" /> &nbsp;is a real constant)</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea817b693image-20260821113450-32.png\" style=\"height:22px; width:34px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea9103deeimage-20260821113506-33.png\" style=\"height:25px; width:36px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaa2aff62image-20260821113523-34.png\" style=\"height:23px; width:37px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eab1a4aefimage-20260821113538-35.png\" style=\"height:22px; width:53px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed57a92image-20260821113638-36.png\" style=\"height:22px; width:14px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed56203image-20260821113638-37.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix defined in block form as</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed3527aimage-20260821113638-38.png\" style=\"height:35px; width:88px\" /> where</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed50bd0image-20260821113638-39.png\" style=\"height:35px; width:220px\" /></p>\r\n\r\n<p>The determinant of the block matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed5249fimage-20260821113638-40.png\" style=\"height:22px; width:14px\" /> &nbsp;is</p>",
+          "options": [
+            "<p>12</p>",
+            "<p>&ndash;12</p>",
+            "<p>0</p>",
+            "<p>24</p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f6d359image-20260821113800-41.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f62d98image-20260821113800-42.png\" style=\"height:22px; width:10px\" /> &nbsp;has the characteristic polynomial</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f73ddcimage-20260821113800-43.png\" style=\"height:22px; width:157px\" /></p>\r\n\r\n<p>Which of the following conditions is <strong>necessary and sufficient</strong> for the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f6cc98image-20260821113800-44.png\" style=\"height:22px; width:10px\" /> &nbsp;to be diagonalizable?</p>",
+          "options": [
+            "<p>The geometric multiplicity of the eigenvalue <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb9a2efd2image-20260821113931-45.png\" style=\"height:22px; width:38px\" /> &nbsp;must be 2.</p>",
+            "<p>The minimal polynomial of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eba8c4ee1image-20260821113945-46.png\" style=\"height:22px; width:10px\" /> &nbsp;must be <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eba8c3edcimage-20260821113945-47.png\" style=\"height:22px; width:154px\" /> .</p>",
+            "<p>The trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebb7e0f64image-20260821114001-48.png\" style=\"height:22px; width:10px\" /> &nbsp;must be exactly 9.</p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebc266e5eimage-20260821114011-49.png\" style=\"height:22px; width:10px\" /> &nbsp;must be a symmetric matrix.</p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe98f0cdimage-20260821114050-50.png\" style=\"height:25px; width:106px\" /> &nbsp;be the vector of Pauli spin matrices and let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe999f76image-20260821114050-51.png\" style=\"height:32px; width:100px\" /> &nbsp;be a unit vector. The Trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe990150image-20260821114050-52.png\" style=\"height:32px; width:91px\" /> &nbsp;is</p>",
+          "options": [
+            "<p>0</p>",
+            "<p>2</p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec01d224fimage-20260821114115-53.png\" style=\"height:24px; width:25px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec0822372image-20260821114121-54.png\" style=\"height:24px; width:19px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Consider an active spatial rotation in 3D represented by the orthogonal matrix:</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec25977ecimage-20260821114150-55.png\" style=\"height:54px; width:110px\" /></p>\r\n\r\n<p>What is angle of rotation <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec25941b5image-20260821114150-56.png\" style=\"height:22px; width:9px\" /> &nbsp;and its corresponding normalized axis of rotation <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec259803bimage-20260821114150-57.png\" style=\"height:22px; width:9px\" /> ?</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec354ca1aimage-20260821114206-58.png\" style=\"height:22px; width:53px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec4846e2bimage-20260821114225-60.png\" style=\"height:43px; width:107px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec554687bimage-20260821114238-61.png\" style=\"height:22px; width:62px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec6c30db9image-20260821114301-62.png\" style=\"height:43px; width:107px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec77bf84bimage-20260821114312-63.png\" style=\"height:22px; width:62px\" />,&nbsp;<em>&nbsp;</em><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec926255fimage-20260821114339-64.png\" style=\"height:43px; width:121px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec9ad7beaimage-20260821114348-65.png\" style=\"height:22px; width:62px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eca4015d7image-20260821114357-66.png\" style=\"height:43px; width:107px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Which of the following <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecb6e6030image-20260821114416-67.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrices is diagonalizable over the field of complex numbers <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecb6e5fe4image-20260821114416-68.png\" style=\"height:22px; width:10px\" /> ?</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecc53b9deimage-20260821114430-69.png\" style=\"height:54px; width:109px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eccbef589image-20260821114437-70.png\" style=\"height:54px; width:122px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ece74fdc8image-20260821114504-71.png\" style=\"height:54px; width:109px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eced95f8bimage-20260821114510-72.png\" style=\"height:54px; width:134px\" /></p>"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19bd1afimage-20260821114554-1.png\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ab299image-20260821114554-2.png\" /> &nbsp;be two <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19b8380image-20260821114554-3.png\" /> &nbsp;matrices that are related by a similarity transformation such that <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ad82cimage-20260821114554-4.png\" /> , where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ab877image-20260821114554-5.png\" /> &nbsp;is a non-singular matrix. If the characteristic polynomial of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed199ff58image-20260821114554-6.png\" /> &nbsp;is given by</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19abd58image-20260821114554-7.png\" /></p>\r\n\r\n<p>The trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ac818image-20260821114554-8.png\" /> &nbsp;is equal to</p>",
+          "options": [
+            "<p>10</p>",
+            "<p>4</p>",
+            "<p>16</p>",
+            "<p>64</p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99a7a26image-20260821114802-1.png\" style=\"height:22px; width:11px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99989a1image-20260821114802-2.png\" style=\"height:22px; width:40px\" /> &nbsp;standard reflection matrix that reflects <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed998e3abimage-20260821114802-3.png\" style=\"height:22px; width:20px\" /> &nbsp;vectors across a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed998d5bbimage-20260821114802-4.png\" style=\"height:22px; width:20px\" /> &nbsp;plane passing through the origin. Consider a new matrix constructed from <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99a4641image-20260821114802-5.png\" style=\"height:22px; width:11px\" /> defined as</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed9997171image-20260821114802-6.png\" style=\"height:22px; width:137px\" /></p>\r\n\r\n<p>The product of the eigenvalues of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed9998ff9image-20260821114802-7.png\" style=\"height:22px; width:14px\" /> &nbsp;is equal to</p>",
+          "options": [
+            "<p>8</p>",
+            "<p>12</p>",
+            "<p>16</p>",
+            "<p>&ndash;16</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 4,
+          "marksNeg": 1,
+          "solution": "",
+          "haveSol": false
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "id": "B",
+      "name": "PART-B MSQ",
+      "type": "MSQ",
+      "count": 3,
+      "marks": 4,
+      "marksPos": 4,
+      "marksNeg": 0,
+      "neg": false,
+      "questions": [
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd8efe37image-20260821114906-1.png\" style=\"height:22px; width:11px\" /> &nbsp;be a real orthogonal matrix of order <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd8f3d0aimage-20260821114906-2.png\" style=\"height:22px; width:41px\" /> &nbsp;such that its determinant is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd904ca5image-20260821114906-3.png\" style=\"height:22px; width:88px\" /> . Which of the following statements <strong>is/are TRUE</strong>?</p>",
+          "options": [
+            "<p>At least one eigenvalue of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ede9e115bimage-20260821114923-4.png\" style=\"height:22px; width:11px\" /> &nbsp;must be exactly <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ede9e1a2cimage-20260821114923-5.png\" style=\"height:22px; width:21px\" /> .</p>",
+            "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edf6e2dffimage-20260821114936-6.png\" style=\"height:22px; width:57px\" /> &nbsp;is necessarily a singular matrix.</p>",
+            "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee01cb217image-20260821114947-7.png\" style=\"height:22px; width:57px\" /> &nbsp;is necessarily a singular matrix.</p>",
+            "<p>The transpose <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee09ec99cimage-20260821114955-8.png\" style=\"height:22px; width:19px\" /> &nbsp;is also an orthogonal matrix with a determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee09ec99cimage-20260821114955-9.png\" style=\"height:22px; width:21px\" /> .</p>"
+          ],
+          "ans": [
+            0,
+            1,
+            3
+          ],
+          "type": "MSQ",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee2480eb1image-20260821115021-10.png\" style=\"height:22px; width:9px\" /> &nbsp;be a real skew-symmetric matrix of order <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee2481614image-20260821115021-11.png\" style=\"height:22px; width:41px\" /> . Which of the following statements <strong>is/are ALWAYS true?</strong></p>",
+          "options": [
+            "<p>If <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee32ba39cimage-20260821115035-12.png\" style=\"height:22px; width:9px\" /> &nbsp;is an odd number, the determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee32c36caimage-20260821115035-13.png\" style=\"height:22px; width:9px\" /> &nbsp;is zero.</p>",
+            "<p>All non-zero eigenvalues of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee402e729image-20260821115049-14.png\" style=\"height:22px; width:9px\" /> &nbsp;are purely imaginary.</p>",
+            "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee45f2d33image-20260821115055-15.png\" style=\"height:22px; width:48px\" /> &nbsp;is always invertible.</p>",
+            "<p>The matrix exponential <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee4f1702aimage-20260821115104-16.png\" style=\"height:22px; width:16px\" /> &nbsp;is an orthogonal matrix.</p>"
+          ],
+          "ans": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "type": "MSQ",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee6b22742image-20260821115132-17.png\" style=\"height:22px; width:12px\" /> &nbsp;be aHermitian matrix. Which of the following matrices <strong>is/are Unitary?</strong></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee7196ce4image-20260821115138-18.png\" style=\"height:23px; width:22px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee7841500image-20260821115145-19.png\" style=\"height:22px; width:128px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee80a35eaimage-20260821115153-20.png\" style=\"height:22px; width:18px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee87223afimage-20260821115200-21.png\" style=\"height:22px; width:128px\" /></p>"
+          ],
+          "ans": [
+            0,
+            1,
+            3
+          ],
+          "type": "MSQ",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        }
+      ]
+    },
+    {
+      "key": "C",
+      "id": "C",
+      "name": "PART-C NAT",
+      "type": "NAT",
+      "count": 5,
+      "marks": 4,
+      "marksPos": 4,
+      "marksNeg": 0,
+      "neg": false,
+      "questions": [
+        {
+          "q": "<p>Let</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eeb2c6167image-20260821115243-1.png\" style=\"height:54px; width:121px\" /></p>\r\n\r\n<p>The trace of the matrix polynomial <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eeb2c64d8image-20260821115243-2.png\" style=\"height:22px; width:135px\" /> &nbsp;is equal to _____________________________<strong>(Answer should be AN INTEGER)</strong></p>",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "ans": [
+            -6
+          ],
+          "type": "NAT",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed185742image-20260821115314-3.png\" style=\"height:22px; width:10px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed18b4f3image-20260821115314-4.png\" style=\"height:22px; width:40px\" /> &nbsp;idempotent matrix such that its trace is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed18daabimage-20260821115314-5.png\" style=\"height:22px; width:71px\" /> . The absolute value of the determinant of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed17ba1cimage-20260821115314-6.png\" style=\"height:22px; width:58px\" /> &nbsp;is equal to ____________________________<strong>(Answer should be AN INTEGER)</strong></p>",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "ans": [
+            6
+          ],
+          "type": "NAT",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>The minimum number of independent real parameters needed to define a general <em>4 </em>&times;<em>4</em><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef016df94image-20260821115402-7.png\" style=\"height:22px; width:40px\" /> &nbsp;complex Hermitian matrix that having zero Trace, is equal to ____________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "ans": [
+            15
+          ],
+          "type": "NAT",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d30bcdimage-20260821115414-8.png\" style=\"height:54px; width:71px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d4117cimage-20260821115414-9.png\" style=\"height:54px; width:70px\" /> &nbsp;be two column vectors. A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d308d8image-20260821115414-10.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix is defined by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d379feimage-20260821115414-11.png\" style=\"height:22px; width:58px\" /> . The sum of the squares of the eigenvalues of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d336f2image-20260821115414-12.png\" style=\"height:22px; width:10px\" /> , is equal to _____________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "ans": [
+            1
+          ],
+          "type": "NAT",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        },
+        {
+          "q": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2518753image-20260821115438-13.png\" style=\"height:22px; width:10px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251a044image-20260821115438-14.png\" style=\"height:22px; width:40px\" /> &nbsp;non-singular matrix such that its determinant is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2517d93image-20260821115438-15.png\" style=\"height:22px; width:75px\" /> . The value of the <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251cbebimage-20260821115438-16.png\" style=\"height:25px; width:127px\" /> , where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251a8cdimage-20260821115438-17.png\" style=\"height:22px; width:53px\" /> &nbsp;represents the adjoint matrix of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2517183image-20260821115438-18.png\" style=\"height:22px; width:19px\" /> , is equal to __________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "ans": [
+            46656
+          ],
+          "type": "NAT",
+          "marksPos": 4,
+          "marksNeg": 0,
+          "solution": "",
+          "haveSol": false
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "ARPITA LENKA",
+    "score": 64,
+    "correct": 16,
+    "incorrect": 3,
+    "timeMin": 23.43
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "ARPITA LENKA",
+      "score": 64,
+      "correct": 16,
+      "incorrect": 3,
+      "timeMin": 23.43
+    },
+    {
+      "rank": 2,
+      "name": "Piyush Mishra",
+      "score": 63,
+      "correct": 16,
+      "incorrect": 3,
+      "timeMin": 44.42
+    },
+    {
+      "rank": 3,
+      "name": "Nidhi Sharma",
+      "score": 59,
+      "correct": 15,
+      "incorrect": 2,
+      "timeMin": 37.8
+    },
+    {
+      "rank": 4,
+      "name": "Sakshi Tripathi",
+      "score": 50,
+      "correct": 13,
+      "incorrect": 2,
+      "timeMin": 3.82
+    },
+    {
+      "rank": 5,
+      "name": "Anurag Gupta",
+      "score": 39,
+      "correct": 11,
+      "incorrect": 7,
+      "timeMin": 14.55
+    },
+    {
+      "rank": 6,
+      "name": "AKSHAYA VENNELA GUBBALA",
+      "score": 32,
+      "correct": 9,
+      "incorrect": 10,
+      "timeMin": 46.97
+    },
+    {
+      "rank": 7,
+      "name": "KHUSHI SINGH",
+      "score": 30,
+      "correct": 8,
+      "incorrect": 9,
+      "timeMin": 40.47
+    },
+    {
+      "rank": 8,
+      "name": "Muskan Yadav",
+      "score": 30,
+      "correct": 8,
+      "incorrect": 4,
+      "timeMin": 40.28
+    },
+    {
+      "rank": 9,
+      "name": "Ayusuman Paikray",
+      "score": 27,
+      "correct": 7,
+      "incorrect": 5,
+      "timeMin": 59.92
+    },
+    {
+      "rank": 10,
+      "name": "Ameera PB",
+      "score": 26,
+      "correct": 7,
+      "incorrect": 2,
+      "timeMin": 47.03
+    },
+    {
+      "rank": 11,
+      "name": "swapnil patil",
+      "score": 17,
+      "correct": 5,
+      "incorrect": 8,
+      "timeMin": 45.5
+    },
+    {
+      "rank": 12,
+      "name": "yashvardhan Gurjar",
+      "score": 17,
+      "correct": 5,
+      "incorrect": 7,
+      "timeMin": 34.17
+    },
+    {
+      "rank": 13,
+      "name": "VAISHNAVI KUMARI",
+      "score": 16,
+      "correct": 4,
+      "incorrect": 0,
+      "timeMin": 7.95
+    },
+    {
+      "rank": 14,
+      "name": "Abhay Tiwari",
+      "score": 13,
+      "correct": 5,
+      "incorrect": 10,
+      "timeMin": 3.68
+    },
+    {
+      "rank": 15,
+      "name": "Aman .",
+      "score": 13,
+      "correct": 4,
+      "incorrect": 8,
+      "timeMin": 31.63
+    },
+    {
+      "rank": 16,
+      "name": "Palak Verma",
+      "score": 11,
+      "correct": 3,
+      "incorrect": 2,
+      "timeMin": 24.5
+    },
+    {
+      "rank": 17,
+      "name": "Manjusha Neit",
+      "score": 11,
+      "correct": 3,
+      "incorrect": 1,
+      "timeMin": 3.03
+    },
+    {
+      "rank": 18,
+      "name": "AALIYA FATIMA",
+      "score": 11,
+      "correct": 3,
+      "incorrect": 2,
+      "timeMin": 25.25
+    },
+    {
+      "rank": 19,
+      "name": "Bharat Sakharam Choudhary",
+      "score": 8,
+      "correct": 4,
+      "incorrect": 16,
+      "timeMin": 22.88
+    },
+    {
+      "rank": 20,
+      "name": "Anshika Mishra",
+      "score": 8,
+      "correct": 4,
+      "incorrect": 10,
+      "timeMin": 0.5
+    }
+  ],
+  "questions": [
+    {
+      "id": "6a87e97915d161032b0f0b53",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a192b6image-20260821112555-1.png\" style=\"height:22px; width:14px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1aa43image-20260821112555-2.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrix such that <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1dd08image-20260821112555-3.png\" style=\"height:22px; width:79px\" /> . A new matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1dfaaimage-20260821112555-4.png\" style=\"height:22px; width:12px\" /> &nbsp;is formed by performing the following row operations on <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e869edcc0image-20260821112555-5.png\" style=\"height:22px; width:14px\" /> : the first row is multiplied by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a23c09image-20260821112555-6.png\" style=\"height:22px; width:9px\" /> , the second row by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e869ee9bdimage-20260821112555-7.png\" style=\"height:22px; width:21px\" /> , and the third row by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1ee85image-20260821112555-8.png\" style=\"height:22px; width:9px\" /> . The value of&nbsp;&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e86a1a2a8image-20260821112555-9.png\" style=\"height:22px; width:65px\" /> is equal to</p>",
+      "options": [
+        "<p>&ndash;60</p>",
+        "<p>&ndash;120</p>",
+        "<p>&ndash;240</p>",
+        "<p>&ndash;480</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87e9a54ba76ea84f08cf45",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e98134693image-20260821113034-10.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e981394acimage-20260821113034-11.png\" style=\"height:22px; width:10px\" /> &nbsp;has a trace of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9813ec20image-20260821113034-12.png\" style=\"height:24px; width:28px\" /> &nbsp;and a determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9814020fimage-20260821113034-13.png\" style=\"height:22px; width:9px\" /> . If the eigenvalues of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e98132007image-20260821113034-14.png\" style=\"height:22px; width:10px\" /> &nbsp;are complex numbers, then the phase difference between the two eigenvalues is equal to</p>",
+      "options": [
+        "<p>30&ordm;</p>",
+        "<p>60&ordm;</p>",
+        "<p>90&ordm;</p>",
+        "<p>120&ordm;</p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ea2a4525a91ae9047794",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9e501040image-20260821113214-15.png\" style=\"height:22px; width:10px\" /> be a non-null idempotent matrix. Which of the following represents the inverse of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87e9e502237image-20260821113214-16.png\" style=\"height:32px; width:49px\" /> ?</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea0033ab9image-20260821113241-17.png\" style=\"height:22px; width:43px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea0a4c295image-20260821113251-18.png\" style=\"height:39px; width:36px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea1c7b22bimage-20260821113309-19.png\" style=\"height:39px; width:36px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea227890aimage-20260821113315-20.png\" style=\"height:22px; width:43px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ea5d2bc27ac8710bcb82",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318ebe0image-20260821113330-21.png\" style=\"height:22px; width:17px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318ebb7image-20260821113330-22.png\" style=\"height:24px; width:17px\" /> &nbsp;be thePauli spin matrices. The eigenvalues of the matrix</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea318d180image-20260821113330-23.png\" style=\"height:24px; width:94px\" /></p>\r\n\r\n<p>is equal to</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea40719cdimage-20260821113345-24.png\" style=\"height:22px; width:36px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea46e90a1image-20260821113352-25.png\" style=\"height:22px; width:36px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea4eee191image-20260821113400-26.png\" style=\"height:22px; width:24px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea55be957image-20260821113406-27.png\" style=\"height:22px; width:29px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87eae515d161032b0f0b54",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64e3941image-20260821113422-28.png\" style=\"height:22px; width:17px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64dd8b1image-20260821113422-29.png\" style=\"height:22px; width:17px\" /> &nbsp;be two arbitrary <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64e4e07image-20260821113422-30.png\" style=\"height:22px; width:41px\" /> &nbsp;Unitary matrices. Which of the following operations does <strong>NOT</strong> necessarily result in a Unitary matrix? (where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea64ddc79image-20260821113422-31.png\" style=\"height:22px; width:9px\" /> &nbsp;is a real constant)</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea817b693image-20260821113450-32.png\" style=\"height:22px; width:34px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ea9103deeimage-20260821113506-33.png\" style=\"height:25px; width:36px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaa2aff62image-20260821113523-34.png\" style=\"height:23px; width:37px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eab1a4aefimage-20260821113538-35.png\" style=\"height:22px; width:53px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87eb1ba6d5f697370be962",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed57a92image-20260821113638-36.png\" style=\"height:22px; width:14px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed56203image-20260821113638-37.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix defined in block form as</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed3527aimage-20260821113638-38.png\" style=\"height:35px; width:88px\" /> where</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed50bd0image-20260821113638-39.png\" style=\"height:35px; width:220px\" /></p>\r\n\r\n<p>The determinant of the block matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eaed5249fimage-20260821113638-40.png\" style=\"height:22px; width:14px\" /> &nbsp;is</p>",
+      "options": [
+        "<p>12</p>",
+        "<p>&ndash;12</p>",
+        "<p>0</p>",
+        "<p>24</p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ebe14f59781e4b0e54c3",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f6d359image-20260821113800-41.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f62d98image-20260821113800-42.png\" style=\"height:22px; width:10px\" /> &nbsp;has the characteristic polynomial</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f73ddcimage-20260821113800-43.png\" style=\"height:22px; width:157px\" /></p>\r\n\r\n<p>Which of the following conditions is <strong>necessary and sufficient</strong> for the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb3f6cc98image-20260821113800-44.png\" style=\"height:22px; width:10px\" /> &nbsp;to be diagonalizable?</p>",
+      "options": [
+        "<p>The geometric multiplicity of the eigenvalue <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eb9a2efd2image-20260821113931-45.png\" style=\"height:22px; width:38px\" /> &nbsp;must be 2.</p>",
+        "<p>The minimal polynomial of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eba8c4ee1image-20260821113945-46.png\" style=\"height:22px; width:10px\" /> &nbsp;must be <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eba8c3edcimage-20260821113945-47.png\" style=\"height:22px; width:154px\" /> .</p>",
+        "<p>The trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebb7e0f64image-20260821114001-48.png\" style=\"height:22px; width:10px\" /> &nbsp;must be exactly 9.</p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebc266e5eimage-20260821114011-49.png\" style=\"height:22px; width:10px\" /> &nbsp;must be a symmetric matrix.</p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ec1c7cbbbcd1270d6f82",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe98f0cdimage-20260821114050-50.png\" style=\"height:25px; width:106px\" /> &nbsp;be the vector of Pauli spin matrices and let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe999f76image-20260821114050-51.png\" style=\"height:32px; width:100px\" /> &nbsp;be a unit vector. The Trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ebe990150image-20260821114050-52.png\" style=\"height:32px; width:91px\" /> &nbsp;is</p>",
+      "options": [
+        "<p>0</p>",
+        "<p>2</p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec01d224fimage-20260821114115-53.png\" style=\"height:24px; width:25px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec0822372image-20260821114121-54.png\" style=\"height:24px; width:19px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ecb0a8ca60a10305e845",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Consider an active spatial rotation in 3D represented by the orthogonal matrix:</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec25977ecimage-20260821114150-55.png\" style=\"height:54px; width:110px\" /></p>\r\n\r\n<p>What is angle of rotation <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec25941b5image-20260821114150-56.png\" style=\"height:22px; width:9px\" /> &nbsp;and its corresponding normalized axis of rotation <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec259803bimage-20260821114150-57.png\" style=\"height:22px; width:9px\" /> ?</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec354ca1aimage-20260821114206-58.png\" style=\"height:22px; width:53px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec4846e2bimage-20260821114225-60.png\" style=\"height:43px; width:107px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec554687bimage-20260821114238-61.png\" style=\"height:22px; width:62px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec6c30db9image-20260821114301-62.png\" style=\"height:43px; width:107px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec77bf84bimage-20260821114312-63.png\" style=\"height:22px; width:62px\" />,&nbsp;<em>&nbsp;</em><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec926255fimage-20260821114339-64.png\" style=\"height:43px; width:121px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ec9ad7beaimage-20260821114348-65.png\" style=\"height:22px; width:62px\" />,&nbsp;<img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eca4015d7image-20260821114357-66.png\" style=\"height:43px; width:107px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ecf55edeba3ae70af9b2",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Which of the following <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecb6e6030image-20260821114416-67.png\" style=\"height:22px; width:40px\" /> &nbsp;real matrices is diagonalizable over the field of complex numbers <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecb6e5fe4image-20260821114416-68.png\" style=\"height:22px; width:10px\" /> ?</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ecc53b9deimage-20260821114430-69.png\" style=\"height:54px; width:109px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eccbef589image-20260821114437-70.png\" style=\"height:54px; width:122px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ece74fdc8image-20260821114504-71.png\" style=\"height:54px; width:109px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eced95f8bimage-20260821114510-72.png\" style=\"height:54px; width:134px\" /></p>"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ed606887a8f21c09fc95",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19bd1afimage-20260821114554-1.png\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ab299image-20260821114554-2.png\" /> &nbsp;be two <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19b8380image-20260821114554-3.png\" /> &nbsp;matrices that are related by a similarity transformation such that <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ad82cimage-20260821114554-4.png\" /> , where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ab877image-20260821114554-5.png\" /> &nbsp;is a non-singular matrix. If the characteristic polynomial of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed199ff58image-20260821114554-6.png\" /> &nbsp;is given by</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19abd58image-20260821114554-7.png\" /></p>\r\n\r\n<p>The trace of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed19ac818image-20260821114554-8.png\" /> &nbsp;is equal to</p>",
+      "options": [
+        "<p>10</p>",
+        "<p>4</p>",
+        "<p>16</p>",
+        "<p>64</p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87edc70f5062f84d0eea74",
+      "part": "PART-A MCQ",
+      "type": "MCQ",
+      "marksPos": 4,
+      "marksNeg": 1,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99a7a26image-20260821114802-1.png\" style=\"height:22px; width:11px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99989a1image-20260821114802-2.png\" style=\"height:22px; width:40px\" /> &nbsp;standard reflection matrix that reflects <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed998e3abimage-20260821114802-3.png\" style=\"height:22px; width:20px\" /> &nbsp;vectors across a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed998d5bbimage-20260821114802-4.png\" style=\"height:22px; width:20px\" /> &nbsp;plane passing through the origin. Consider a new matrix constructed from <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed99a4641image-20260821114802-5.png\" style=\"height:22px; width:11px\" /> defined as</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed9997171image-20260821114802-6.png\" style=\"height:22px; width:137px\" /></p>\r\n\r\n<p>The product of the eigenvalues of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ed9998ff9image-20260821114802-7.png\" style=\"height:22px; width:14px\" /> &nbsp;is equal to</p>",
+      "options": [
+        "<p>8</p>",
+        "<p>12</p>",
+        "<p>16</p>",
+        "<p>&ndash;16</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ee1cd1534062620073a4",
+      "part": "PART-B MSQ",
+      "type": "MSQ",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd8efe37image-20260821114906-1.png\" style=\"height:22px; width:11px\" /> &nbsp;be a real orthogonal matrix of order <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd8f3d0aimage-20260821114906-2.png\" style=\"height:22px; width:41px\" /> &nbsp;such that its determinant is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edd904ca5image-20260821114906-3.png\" style=\"height:22px; width:88px\" /> . Which of the following statements <strong>is/are TRUE</strong>?</p>",
+      "options": [
+        "<p>At least one eigenvalue of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ede9e115bimage-20260821114923-4.png\" style=\"height:22px; width:11px\" /> &nbsp;must be exactly <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ede9e1a2cimage-20260821114923-5.png\" style=\"height:22px; width:21px\" /> .</p>",
+        "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87edf6e2dffimage-20260821114936-6.png\" style=\"height:22px; width:57px\" /> &nbsp;is necessarily a singular matrix.</p>",
+        "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee01cb217image-20260821114947-7.png\" style=\"height:22px; width:57px\" /> &nbsp;is necessarily a singular matrix.</p>",
+        "<p>The transpose <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee09ec99cimage-20260821114955-8.png\" style=\"height:22px; width:19px\" /> &nbsp;is also an orthogonal matrix with a determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee09ec99cimage-20260821114955-9.png\" style=\"height:22px; width:21px\" /> .</p>"
+      ],
+      "ans": [
+        0,
+        1,
+        3
+      ],
+      "stdAns": [
+        0,
+        1,
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ee61b43a7d2fca0bc2e2",
+      "part": "PART-B MSQ",
+      "type": "MSQ",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee2480eb1image-20260821115021-10.png\" style=\"height:22px; width:9px\" /> &nbsp;be a real skew-symmetric matrix of order <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee2481614image-20260821115021-11.png\" style=\"height:22px; width:41px\" /> . Which of the following statements <strong>is/are ALWAYS true?</strong></p>",
+      "options": [
+        "<p>If <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee32ba39cimage-20260821115035-12.png\" style=\"height:22px; width:9px\" /> &nbsp;is an odd number, the determinant of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee32c36caimage-20260821115035-13.png\" style=\"height:22px; width:9px\" /> &nbsp;is zero.</p>",
+        "<p>All non-zero eigenvalues of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee402e729image-20260821115049-14.png\" style=\"height:22px; width:9px\" /> &nbsp;are purely imaginary.</p>",
+        "<p>The matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee45f2d33image-20260821115055-15.png\" style=\"height:22px; width:48px\" /> &nbsp;is always invertible.</p>",
+        "<p>The matrix exponential <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee4f1702aimage-20260821115104-16.png\" style=\"height:22px; width:16px\" /> &nbsp;is an orthogonal matrix.</p>"
+      ],
+      "ans": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "stdAns": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ee913b7fda79b50461f3",
+      "part": "PART-B MSQ",
+      "type": "MSQ",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee6b22742image-20260821115132-17.png\" style=\"height:22px; width:12px\" /> &nbsp;be aHermitian matrix. Which of the following matrices <strong>is/are Unitary?</strong></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee7196ce4image-20260821115138-18.png\" style=\"height:23px; width:22px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee7841500image-20260821115145-19.png\" style=\"height:22px; width:128px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee80a35eaimage-20260821115153-20.png\" style=\"height:22px; width:18px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ee87223afimage-20260821115200-21.png\" style=\"height:22px; width:128px\" /></p>"
+      ],
+      "ans": [
+        0,
+        1,
+        3
+      ],
+      "stdAns": [
+        0,
+        1,
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87eec57b7fc460560d9282",
+      "part": "PART-C NAT",
+      "type": "NAT",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eeb2c6167image-20260821115243-1.png\" style=\"height:54px; width:121px\" /></p>\r\n\r\n<p>The trace of the matrix polynomial <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eeb2c64d8image-20260821115243-2.png\" style=\"height:22px; width:135px\" /> &nbsp;is equal to _____________________________<strong>(Answer should be AN INTEGER)</strong></p>",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "ans": [
+        -6
+      ],
+      "stdAns": [
+        -6
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87eef80a648969590326a2",
+      "part": "PART-C NAT",
+      "type": "NAT",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed185742image-20260821115314-3.png\" style=\"height:22px; width:10px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed18b4f3image-20260821115314-4.png\" style=\"height:22px; width:40px\" /> &nbsp;idempotent matrix such that its trace is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed18daabimage-20260821115314-5.png\" style=\"height:22px; width:71px\" /> . The absolute value of the determinant of the matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87eed17ba1cimage-20260821115314-6.png\" style=\"height:22px; width:58px\" /> &nbsp;is equal to ____________________________<strong>(Answer should be AN INTEGER)</strong></p>",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "ans": [
+        6
+      ],
+      "stdAns": [
+        6
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ef067cbbbcd1270d6f83",
+      "part": "PART-C NAT",
+      "type": "NAT",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>The minimum number of independent real parameters needed to define a general <em>4 </em>&times;<em>4</em><img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef016df94image-20260821115402-7.png\" style=\"height:22px; width:40px\" /> &nbsp;complex Hermitian matrix that having zero Trace, is equal to ____________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "ans": [
+        15
+      ],
+      "stdAns": [
+        15
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ef1e0a648969590326a3",
+      "part": "PART-C NAT",
+      "type": "NAT",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d30bcdimage-20260821115414-8.png\" style=\"height:54px; width:71px\" /> &nbsp;and <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d4117cimage-20260821115414-9.png\" style=\"height:54px; width:70px\" /> &nbsp;be two column vectors. A <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d308d8image-20260821115414-10.png\" style=\"height:22px; width:40px\" /> &nbsp;matrix is defined by <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d379feimage-20260821115414-11.png\" style=\"height:22px; width:58px\" /> . The sum of the squares of the eigenvalues of matrix <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef0d336f2image-20260821115414-12.png\" style=\"height:22px; width:10px\" /> , is equal to _____________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    },
+    {
+      "id": "6a87ef3ce2d98149ea050d55",
+      "part": "PART-C NAT",
+      "type": "NAT",
+      "marksPos": 4,
+      "marksNeg": 0,
+      "question": "<p>Let <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2518753image-20260821115438-13.png\" style=\"height:22px; width:10px\" /> &nbsp;be a <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251a044image-20260821115438-14.png\" style=\"height:22px; width:40px\" /> &nbsp;non-singular matrix such that its determinant is <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2517d93image-20260821115438-15.png\" style=\"height:22px; width:75px\" /> . The value of the <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251cbebimage-20260821115438-16.png\" style=\"height:25px; width:127px\" /> , where <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef251a8cdimage-20260821115438-17.png\" style=\"height:22px; width:53px\" /> &nbsp;represents the adjoint matrix of <img src=\"https://client-media.onlinetestpanel.com/media/questions/careerendeavour/2026/08/21/6a87ef2517183image-20260821115438-18.png\" style=\"height:22px; width:19px\" /> , is equal to __________________________ <strong>(Answer should be AN INTEGER)</strong></p>",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "ans": [
+        46656
+      ],
+      "stdAns": [
+        46656
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "",
+      "haveSol": false,
+      "subject": "PART-A MCQ"
+    }
+  ]
+}

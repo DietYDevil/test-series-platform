@@ -1,0 +1,1046 @@
+{
+  "testName": "Unit Test 05 [General Aptitude-5]",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 42,
+  "lang": "EN",
+  "subjects": [
+    "Unit - General Aptitude"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "Unit - General Aptitude MCQ",
+      "type": "MCQ",
+      "count": 21,
+      "marks": 2,
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<div class=\"q-part\"> <p>From 6 gentlemen and 4 ladies a committee of 5 is to be formed. In how many ways can this be done if the committee is to include at least one lady?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>240</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>246</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>278</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>120</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a9db2355de61ee35c6b44cee0d746f5b.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A bag contains 7 white and 9 black balls. Two balls are drawn in succession at rendom. What is the probability that one of them is white and the other black?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>21/40</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1/8</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>11/17</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7/20</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/9734498db756459acb61f70aa5258caf.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A bucket contains a mixture of two liquids A and B in the proportion 7 : 5. If 9 litres of the mixture is replaced by 9 litres of liquid B, then the ratio of the two liquids becomes 7 : 9. How much of the liquid A was there in the bucket?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 litres</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>21 litres</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 litres</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>32 litres</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/febe16ead868f2233fcb77a961ccb0a7.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/448cbcdcaa2ac59ba76ba0640c7286ca.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>In an examination the percentage of students qualified to the number of students appeared from &lsquo;A&rsquo; is 70%. In school &lsquo;B&rsquo; the number of students appeared is 20% more than the students appeared from school &lsquo;A&rsquo; and the number of students qulified from school &lsquo;B&rsquo; is 50% more than the students qualified from school &lsquo;A&rsquo;. What is the percentage of students qulified to the number of students appeared from school &lsquo;B&rsquo;?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>30%</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>70%</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>87.5%</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>78.5%</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/bfbc2c9d67953d5ac0de1f5115c37c25.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A man purchases a certain number of articles at x a ruppee and the same number at y a rupee. He mixes them together and sells them at z a rupee. Then what is his gain or loss%?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/98dbbfd34dab5bafac849edde02e3f8b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a481b94a3bfb16a279bd3c8000c7315e.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e581c0df074bdef4bd33167296263606.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c90f71e7a2cc2e1e0914bedb1c4ee881.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/70be65a2b15b2e8a61fb5b244d918075.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a5f70d4c0aae3ae6bdebde1f44b3e5e3.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>If 12 men and 16 boys can do a piece of work in 5 days and 13 men and 24 boys can do it in 4 days, how long will 7 men and 10 boys take to do it?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/441b0c8173649cb4a3e566c81547521b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/46404e0d565bc0e12e348e00c03bbc24.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a5d06a614e12098eb5e539b16d842d6e.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3bf7e6a4457c4f9d4d9b144dc1719a42.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a338a97534bfbc2860bc6e755c336be4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/bdaebff732a9735ac79b249ca1e2b875.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/059604e2380a273a6440a311ad7bca3a.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f2302da8003c705dcde636def248bcb3.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Looking at a photograph a person said &ldquo;I have no brother or sister but that man&rsquo;s father is my father&rsquo;s son&rdquo;. At whose photograph was the person looking at?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His son’s</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His nephew</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His father’s</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His own</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p>Son of one&rsquo;s father means the person himself. Therefore, that man is the son of the person.</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Amit left for his office in his car. He drove 15 km towards North and then 10 km towards West. He then turned to the South and then turned to the South and covered 5km. Further he turned to East and moved 8km. Finally he turned right and moved 10 km. How far and in which direction is he from his starting point?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2 km, West</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5 km, East</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3 km, North</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3 km, South</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/d1fb1fcd62807d0512fe6c1ce871de61.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>The following bar-graph shows the Income and Expenditures (in million US $) of five Companies in the year 2011. The percent profit or loss of a Company is given by</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/5cda0afdba7bd9b22d4f7d091f3cddbd.png\" /></p>\n\n<p>Study the graph and answer the question that is based on it.<br />\nIncome and Expenditure (in million US $) of five Companies in the year 2011</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aa690515b09d4c64e809bff1e93e3d22.png\" /></p>\n\n<p>If the income of Company Q in 2011 was 10 % more than the income in 2010 and the Company had earned a profit of 20 % in 2010, then its expenditure in 2010 (in million US $ ) was :</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>28.28</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>30.30</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>32.32</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>34.34</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c37c929f080b873d940bfe0b806feeee.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/832217ccc2ec19ed3acf2eb4dc284ae1.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>If in a certain code language &lsquo;INDIA&rsquo; is coded as &lsquo;OJEBJ&rsquo; and &lsquo;DELHI&rsquo; is coded as &lsquo;FEMJI&rsquo;, then in the same language code for &lsquo;TAKEN&rsquo; is</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UZJOF</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BULOF</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BUJOF</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BULFO</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/2518a1b0c079d7c5ccdc98fb74dd95fc.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/18542202754e382ab0cb2c3f8ccf57f6.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/702e7a754d7afca2504c86a810ad49c3.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/4ac3c25de3f9406c71b8778cc846c6ea.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/32ada15d6a705acf21ea14aa0dcec474.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>In delhi Mumbai duronto express on a specific day, 5 % of the passengers do not like coffee, tea and ice cream and 10 % like all the three items. 20 % like coffee and tea, 25% like coffee and ice-cream.&nbsp; 25 % like ice cream and tea. 55% like coffee 50% like tea and 50% like ice cream. By what percentage, the percenge of passengers who like only coffee is greater than the percentage of passengers who like only ice-cream.</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>80 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100 %</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aad4ba39ba2897fd0ddd2b8f87bde47b.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/12d712b1e174e25c71bcb4b24af73256.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>In a 100 m race A beats B by 10 m and C by 12 m. In race of 180 m, B will beat C by how much metre ?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>10</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/2b2669693a4f804bf0f9112469f19325.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>In the question below are few statements followed by the conclusions numbered accordingly. You have to take the given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the statements disregarding commonly known facts.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/b580131ee7668f57d2d1b19c30c199ab.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Only II follows</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Either I or II follows</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Only III follows   </p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None of follows   </p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e47830393fdedf50620ceacf11d21719.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>What should come next following the same pattern in place of question mark (?) ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3bca71aa82953e1268ae820cffea005a.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>94</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>88</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>104</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>82</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aad9884518e94fe6697766741da450fc.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>The product of two numbers is 7168 and their HCF is 16. Which of the following may be the numbers ?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>16, 440</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>448, 32</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>64, 448</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>112, 64</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/363d9dbbc55fcc58e5b0e39db1a6de05.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/afba833b31a0b45a237795e625ffd4a4.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/dad1bee72499e3cf15a9a9ab02a3f275.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c8dfdb9dbca73bcfdd06c03cd2c14621.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/76fb0a4486deba99357931e3ee4e2482.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c7ee96292e1e5894b9740d8ddb06b872.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p>In first and third set the black portion of middle image is diagonally opposite to that of first image. This is&nbsp; the pattern, so second image in the second set must be diagonally oposite to first image.</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Out of four friends A, B, C and D<br />\n&nbsp;&nbsp; &nbsp;A and B play football and cricket<br />\n&nbsp;&nbsp; &nbsp;B and C play cricket and hockey<br />\n&nbsp;&nbsp; &nbsp;A and D play basket ball and football<br />\n&nbsp;&nbsp; &nbsp;C and D play hockey and basket ball<br />\n&nbsp;&nbsp; &nbsp;Then the friend who does not play hockey is</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>D</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>C</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>B</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>A</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p>From statement (II), Both B and C play hockey and from statement (IV), both C and D play hockey.<br />\n&nbsp;&nbsp; &nbsp;Therefore, A do not play hockey</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f19e9f758ec1f0669a14255d082afe3e.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/b38c7b629f3c56eb3798300d56f28fdc.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 25</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 9</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 21</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 : 27</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e3803f7993b43debd9446a10d6c88a84.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/86d662edcd06feb2a97261bde51d7c76.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3adca31b9b5b090965307d588a6eab84.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/97c4f7bfbdc6db08dda61b42b2f25a62.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/381718b121d9bb5bb19ab2bf5d36a866.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/8fed193b9350c3885a613a6056488824.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/71350a7cc282c45dcbb66829b6ff2786.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3dde2378ccd8003263c9f1e371a9a0fb.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/56df2c1f20b80623e9645816906a3d40.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/d6e06d4ad51377fb313a7cb2bc053123.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f5c7de00e51168771a1da3724b1553e5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/05c586b0ef37aedec1d7b7c6b1f6a6f1.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f9a5110a2962f5b1a2ddeea87ba0239b.png\" /></p>\n",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "Bhawna .",
+    "score": 26,
+    "correct": 13,
+    "incorrect": 0,
+    "timeMin": 52.62
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "Bhawna .",
+      "score": 26,
+      "correct": 13,
+      "incorrect": 0,
+      "timeMin": 52.62
+    },
+    {
+      "rank": 2,
+      "name": "Narayan Lal Balai",
+      "score": 17.5,
+      "correct": 9,
+      "incorrect": 1,
+      "timeMin": 59.47
+    },
+    {
+      "rank": 3,
+      "name": "DEEPAK PANDEY",
+      "score": 15.5,
+      "correct": 8,
+      "incorrect": 1,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 4,
+      "name": "Poorna Chandra",
+      "score": 14,
+      "correct": 8,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 5,
+      "name": "Anamika jaiswal",
+      "score": 3.5,
+      "correct": 3,
+      "incorrect": 5,
+      "timeMin": 47.73
+    },
+    {
+      "rank": 6,
+      "name": "Prateek Giri",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.03
+    },
+    {
+      "rank": 7,
+      "name": "Amaya singh",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.02
+    },
+    {
+      "rank": 8,
+      "name": "Utsav Singh,",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.03
+    }
+  ],
+  "questions": [
+    {
+      "id": "6216fd7da577b6486c194187",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>From 6 gentlemen and 4 ladies a committee of 5 is to be formed. In how many ways can this be done if the committee is to include at least one lady?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>240</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>246</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>278</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>120</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a9db2355de61ee35c6b44cee0d746f5b.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194188",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A bag contains 7 white and 9 black balls. Two balls are drawn in succession at rendom. What is the probability that one of them is white and the other black?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>21/40</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1/8</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>11/17</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7/20</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/9734498db756459acb61f70aa5258caf.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194189",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A bucket contains a mixture of two liquids A and B in the proportion 7 : 5. If 9 litres of the mixture is replaced by 9 litres of liquid B, then the ratio of the two liquids becomes 7 : 9. How much of the liquid A was there in the bucket?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 litres</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>21 litres</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 litres</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>32 litres</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/febe16ead868f2233fcb77a961ccb0a7.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/448cbcdcaa2ac59ba76ba0640c7286ca.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418a",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>In an examination the percentage of students qualified to the number of students appeared from &lsquo;A&rsquo; is 70%. In school &lsquo;B&rsquo; the number of students appeared is 20% more than the students appeared from school &lsquo;A&rsquo; and the number of students qulified from school &lsquo;B&rsquo; is 50% more than the students qualified from school &lsquo;A&rsquo;. What is the percentage of students qulified to the number of students appeared from school &lsquo;B&rsquo;?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>30%</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>70%</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>87.5%</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>78.5%</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/bfbc2c9d67953d5ac0de1f5115c37c25.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418b",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A man purchases a certain number of articles at x a ruppee and the same number at y a rupee. He mixes them together and sells them at z a rupee. Then what is his gain or loss%?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/98dbbfd34dab5bafac849edde02e3f8b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a481b94a3bfb16a279bd3c8000c7315e.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e581c0df074bdef4bd33167296263606.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c90f71e7a2cc2e1e0914bedb1c4ee881.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/70be65a2b15b2e8a61fb5b244d918075.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a5f70d4c0aae3ae6bdebde1f44b3e5e3.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418c",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>If 12 men and 16 boys can do a piece of work in 5 days and 13 men and 24 boys can do it in 4 days, how long will 7 men and 10 boys take to do it?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/441b0c8173649cb4a3e566c81547521b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/46404e0d565bc0e12e348e00c03bbc24.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a5d06a614e12098eb5e539b16d842d6e.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3bf7e6a4457c4f9d4d9b144dc1719a42.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/a338a97534bfbc2860bc6e755c336be4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/bdaebff732a9735ac79b249ca1e2b875.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/059604e2380a273a6440a311ad7bca3a.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f2302da8003c705dcde636def248bcb3.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418d",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Looking at a photograph a person said &ldquo;I have no brother or sister but that man&rsquo;s father is my father&rsquo;s son&rdquo;. At whose photograph was the person looking at?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His son’s</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His nephew</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His father’s</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>His own</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>Son of one&rsquo;s father means the person himself. Therefore, that man is the son of the person.</p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418e",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Amit left for his office in his car. He drove 15 km towards North and then 10 km towards West. He then turned to the South and then turned to the South and covered 5km. Further he turned to East and moved 8km. Finally he turned right and moved 10 km. How far and in which direction is he from his starting point?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2 km, West</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5 km, East</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3 km, North</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>3 km, South</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/d1fb1fcd62807d0512fe6c1ce871de61.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19418f",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>The following bar-graph shows the Income and Expenditures (in million US $) of five Companies in the year 2011. The percent profit or loss of a Company is given by</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/5cda0afdba7bd9b22d4f7d091f3cddbd.png\" /></p>\n\n<p>Study the graph and answer the question that is based on it.<br />\nIncome and Expenditure (in million US $) of five Companies in the year 2011</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aa690515b09d4c64e809bff1e93e3d22.png\" /></p>\n\n<p>If the income of Company Q in 2011 was 10 % more than the income in 2010 and the Company had earned a profit of 20 % in 2010, then its expenditure in 2010 (in million US $ ) was :</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>28.28</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>30.30</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>32.32</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>34.34</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c37c929f080b873d940bfe0b806feeee.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/832217ccc2ec19ed3acf2eb4dc284ae1.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194190",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>If in a certain code language &lsquo;INDIA&rsquo; is coded as &lsquo;OJEBJ&rsquo; and &lsquo;DELHI&rsquo; is coded as &lsquo;FEMJI&rsquo;, then in the same language code for &lsquo;TAKEN&rsquo; is</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UZJOF</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BULOF</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BUJOF</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>BULFO</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/2518a1b0c079d7c5ccdc98fb74dd95fc.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194191",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/18542202754e382ab0cb2c3f8ccf57f6.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/702e7a754d7afca2504c86a810ad49c3.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/4ac3c25de3f9406c71b8778cc846c6ea.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>0</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/32ada15d6a705acf21ea14aa0dcec474.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194192",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>In delhi Mumbai duronto express on a specific day, 5 % of the passengers do not like coffee, tea and ice cream and 10 % like all the three items. 20 % like coffee and tea, 25% like coffee and ice-cream.&nbsp; 25 % like ice cream and tea. 55% like coffee 50% like tea and 50% like ice cream. By what percentage, the percenge of passengers who like only coffee is greater than the percentage of passengers who like only ice-cream.</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>80 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100 %</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aad4ba39ba2897fd0ddd2b8f87bde47b.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/12d712b1e174e25c71bcb4b24af73256.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194193",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>In a 100 m race A beats B by 10 m and C by 12 m. In race of 180 m, B will beat C by how much metre ?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>10</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/2b2669693a4f804bf0f9112469f19325.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194194",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>In the question below are few statements followed by the conclusions numbered accordingly. You have to take the given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the statements disregarding commonly known facts.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/b580131ee7668f57d2d1b19c30c199ab.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Only II follows</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Either I or II follows</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Only III follows   </p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None of follows   </p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e47830393fdedf50620ceacf11d21719.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194195",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>What should come next following the same pattern in place of question mark (?) ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3bca71aa82953e1268ae820cffea005a.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>94</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>88</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>104</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>82</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/aad9884518e94fe6697766741da450fc.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194196",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>The product of two numbers is 7168 and their HCF is 16. Which of the following may be the numbers ?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>16, 440</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>448, 32</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>64, 448</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>112, 64</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/363d9dbbc55fcc58e5b0e39db1a6de05.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194197",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/afba833b31a0b45a237795e625ffd4a4.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/dad1bee72499e3cf15a9a9ab02a3f275.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c8dfdb9dbca73bcfdd06c03cd2c14621.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/76fb0a4486deba99357931e3ee4e2482.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/c7ee96292e1e5894b9740d8ddb06b872.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>In first and third set the black portion of middle image is diagonally opposite to that of first image. This is&nbsp; the pattern, so second image in the second set must be diagonally oposite to first image.</p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194198",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Out of four friends A, B, C and D<br />\n&nbsp;&nbsp; &nbsp;A and B play football and cricket<br />\n&nbsp;&nbsp; &nbsp;B and C play cricket and hockey<br />\n&nbsp;&nbsp; &nbsp;A and D play basket ball and football<br />\n&nbsp;&nbsp; &nbsp;C and D play hockey and basket ball<br />\n&nbsp;&nbsp; &nbsp;Then the friend who does not play hockey is</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>D</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>C</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>B</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>A</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>From statement (II), Both B and C play hockey and from statement (IV), both C and D play hockey.<br />\n&nbsp;&nbsp; &nbsp;Therefore, A do not play hockey</p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c194199",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f19e9f758ec1f0669a14255d082afe3e.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/b38c7b629f3c56eb3798300d56f28fdc.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 25</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 9</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4 : 21</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 : 27</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/e3803f7993b43debd9446a10d6c88a84.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19419a",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/86d662edcd06feb2a97261bde51d7c76.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3adca31b9b5b090965307d588a6eab84.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/97c4f7bfbdc6db08dda61b42b2f25a62.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/381718b121d9bb5bb19ab2bf5d36a866.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/8fed193b9350c3885a613a6056488824.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/71350a7cc282c45dcbb66829b6ff2786.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd7ea577b6486c19419b",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/3dde2378ccd8003263c9f1e371a9a0fb.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/56df2c1f20b80623e9645816906a3d40.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/d6e06d4ad51377fb313a7cb2bc053123.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f5c7de00e51168771a1da3724b1553e5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/05c586b0ef37aedec1d7b7c6b1f6a6f1.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd7ea577b6486c19419c/f9a5110a2962f5b1a2ddeea87ba0239b.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    }
+  ]
+}

@@ -44,6 +44,16 @@ window.TestRunner = (function () {
       SECQ['A'] = Q.map(function (_, i) { return i; });
     }
   }
+  
+  // Ensure we have the topper data available for rankings
+  function ensureToppersData() {
+    if (!DATA.toppers || !Array.isArray(DATA.toppers) || DATA.toppers.length === 0) {
+      // If no topper data exists in the test, create a minimal default to avoid errors
+      DATA.toppers = [
+        { name: 'Not Available', rank: 1, score: 0, correct: 0, incorrect: 0, timeMin: 0 }
+      ];
+    }
+  }
   function secActiveFor(i) {
     for (var s = 0; s < SECS.length; s++) { var ids = SECQ[SECS[s].id]; if (i >= ids[0] && i <= ids[ids.length - 1]) return SECS[s].id; }
     return SECS[SECS.length - 1].id;
@@ -52,6 +62,13 @@ window.TestRunner = (function () {
     _lastTestId = testObj.id || null;
     _lastData = testObj.data || {};
     DATA = testObj.data || {};
+    
+    // Ensure backward compatibility - normalize legacy test data to expected format
+    if (!DATA.questions && DATA.question && Array.isArray(DATA.question)) {
+      // Older format: convert from question[] to questions[]
+      DATA.questions = DATA.question;
+    }
+    
     Q = DATA.questions || [];
     N = Q.length;
     answers = new Array(N).fill(null);
@@ -60,9 +77,13 @@ window.TestRunner = (function () {
     visited = new Array(N).fill(false);
     cur = 0; remaining = (DATA.timeLimitMin || testObj.duration_min || 60) * 60;
     buildSections();
-    document.getElementById('tbName').textContent = testObj.title || DATA.testName || 'Test';
+    ensureToppersData();
+    
+    var title = testObj.title || DATA.testName || 'Test';
     var catName = (testObj.categories && testObj.categories.name) || '';
     var isCsir = /csir/i.test(catName);
+    
+    document.getElementById('tbName').textContent = title;
     document.getElementById('tbBrand').textContent = isCsir ? 'CSIR NET DEC 2026 TEST SERIES' : ((catName || 'ONLINE') + ' TEST SERIES').toUpperCase();
     document.getElementById('tbSub').textContent = isCsir ? 'Council of Scientific & Industrial Research — National Eligibility Test' : 'Secure Online Test Portal';
     document.getElementById('sbInstr').textContent = 'Green = answered, Red = visited-not-answered, Purple = marked, White = not visited.';
@@ -421,6 +442,23 @@ window.TestRunner = (function () {
       '<div class="ov-box"><div class="val">' + fmt((DATA.topper && DATA.topper.timeMin ? DATA.topper.timeMin : 0) * 60) + '</div><div class="lbl">Topper Time</div></div>' +
       '</div>' + bars;
   }
+  
+  // Helper functions for ranking and badges
+  function computeRank(obtained) {
+    var score = Math.round(obtained * 100) / 100;
+    var myRank = 1;
+    (DATA.toppers || []).forEach(function (t) { if (score < t.score) myRank++; });
+    return myRank;
+  }
+  
+  function renderRankBadge(obtained) {
+    var rank = computeRank(obtained);
+    var totalToppers = DATA.toppers ? DATA.toppers.length : 0;
+    if (rank <= totalToppers) {
+      return '<b>Rank ' + rank + '</b> (within Top ' + totalToppers + ')'));
+    }
+    return '<b>Below ' + totalToppers + '</b>';
+  }
 
   function renderTop() {
     var c = RES.filter(function (r) { return r.status === 'correct'; }).length;
@@ -428,47 +466,132 @@ window.TestRunner = (function () {
     var u = RES.filter(function (r) { return r.status === 'unattempted'; }).length;
     var myPct = DATA.maxScore ? (TOT / DATA.maxScore * 100) : 0;
     var totalTime = RES.reduce(function (s, r) { return s + r.time; }, 0);
+    
+    // Calculate rank
     var myRank = 1;
     (DATA.toppers || []).forEach(function (t) { if (TOT < t.score) myRank++; });
-    var lastScore = (DATA.toppers && DATA.toppers.length) ? DATA.toppers[DATA.toppers.length - 1].score : 0;
+    var totalToppers = DATA.toppers ? DATA.toppers.length : 0;
+    var lastScore = totalToppers ? DATA.toppers[totalToppers - 1].score : 0;
+    var rank1Score = totalToppers ? DATA.toppers[0].score : 0;
+    
     var html = '<div class="ov-grid" style="margin-bottom:14px">' +
       '<div class="ov-box"><div class="val gold">' + myRank + '</div><div class="lbl">Your Rank</div></div>' +
       '<div class="ov-box"><div class="val">' + TOT + '</div><div class="lbl">Your Score</div></div>' +
-      '<div class="ov-box"><div class="val">' + (DATA.toppers && DATA.toppers[0] ? DATA.toppers[0].score : 0) + '</div><div class="lbl">Rank 1 Score</div></div>' +
-      '<div class="ov-box"><div class="val">' + lastScore + '</div><div class="lbl">Top-' + (DATA.toppers ? DATA.toppers.length : 0) + ' Cutoff</div></div>' +
+      '<div class="ov-box"><div class="val">' + rank1Score + '</div><div class="lbl">Rank 1 Score</div></div>' +
+      '<div class="ov-box"><div class="val">' + lastScore + '</div><div class="lbl">Top-' + totalToppers + ' Cutoff</div></div>' +
       '</div>';
+    
     if (TOT >= lastScore) {
-      html += '<p style="margin-top:12px">You would be <b>#' + myRank + '</b> among the top ' + (DATA.toppers ? DATA.toppers.length : 0) + ' toppers of this test. Score needed for Rank 1: <b>' + (DATA.toppers && DATA.toppers[0] ? DATA.toppers[0].score : 0) + '</b>.</p>';
+      html += '<p style="margin-top:12px">You would be <b>#' + myRank + '</b> among the top ' + totalToppers + ' toppers of this test. Score needed for Rank 1: <b>' + rank1Score + '</b>.</p>';
     } else {
-      html += '<p style="margin-top:12px">Your score <b>' + TOT + '</b> is less than the ' + (DATA.toppers ? DATA.toppers.length : 0) + 'th topper\'s score (<b>' + lastScore + '</b>), so you are not in the top ' + (DATA.toppers ? DATA.toppers.length : 0) + ' list.</p>';
+      html += '<p style="margin-top:12px">Your score <b>' + TOT + '</b> is less than the ' + totalToppers + 'th topper\'s score (<b>' + lastScore + '</b>), so you are not in the top ' + totalToppers + ' list.</p>';
     }
-    html += '<h3 style="margin:20px 0 10px;color:#0b4f8a;border-bottom:2px solid #eef3f8;padding-bottom:6px">Toppers Table (Top ' + (DATA.toppers ? DATA.toppers.length : 0) + ')</h3>';
-    html += '<table class="tbl"><thead><tr><th>Rank</th><th>Name</th><th>Score</th><th>Correct</th><th>Incorrect</th><th>Time (min)</th></tr></thead><tbody>';
+    
+    // Calculate time comparison
+    var myTimeMin = Math.round(totalTime / 60);
+    if (totalTime < (DATA.topper && DATA.topper.timeMin ? DATA.topper.timeMin * 60 : 0)) {
+      html += '<p style="margin-top:10px;color:#2fa84f">You completed this test ' + (Math.round(totalTime) - (DATA.topper && DATA.topper.timeMin ? Math.round(DATA.topper.timeMin * 60) : 0)) + ' seconds faster than the topper.</p>';
+    } else if (totalTime > (DATA.topper && DATA.topper.timeMin ? DATA.topper.timeMin * 60 : 0)) {
+      html += '<p style="margin-top:10px;color:#b82a1f">You took ' + (Math.round(totalTime) - (DATA.topper && DATA.topper.timeMin ? Math.round(DATA.topper.timeMin * 60) : 0)) + ' seconds longer than the topper.</p>';
+    }
+    
+    html += '<h3 style="margin:20px 0 10px;color:#0b4f8a;border-bottom:2px solid #eef3f8;padding-bottom:6px">Toppers Table (Top ' + totalToppers + ')</h3>';
+    html += '<table class="tbl"><thead><tr><th style="min-width:40px">Rank</th><th style="min-width:120px">Name</th><th style="min-width:60px">Score</th><th style="min-width:60px">Correct</th><th style="min-width:60px">Incorrect</th><th style="min-width:80px">Time (min)</th></tr></thead><tbody>';
+    
     (DATA.toppers || []).forEach(function (t) {
-      html += '<tr><td>#' + t.rank + '</td><td>' + esc(t.name || '') + '</td><td>' + t.score + '</td><td>' + (t.correct !== undefined ? t.correct : '') + '</td><td>' + (t.incorrect !== undefined ? t.incorrect : '') + '</td><td>' + (t.timeMin !== undefined ? t.timeMin + ' min' : '') + '</td></tr>';
+      var rankStyle = t.rank <= Math.min(3, totalToppers) ? ' style="color:#b8860b;font-weight:bold"' : '';
+      var name = t.name ? t.name.replace('(Top scorer)', '').trim() : 'Top Scorer';
+      if (t.rank === 1) name += ' (Top Scorer)';
+      
+      html += '<tr' + rankStyle + '><td style="text-align:center">#' + t.rank + '</td>' +
+              '<td>' + esc(name) + '</td>' +
+              '<td style="text-align:center"><b>' + t.score + '</b></td>' +
+              '<td style="text-align:center">' + (t.correct !== undefined ? t.correct : '—') + '</td>' +
+              '<td style="text-align:center">' + (t.incorrect !== undefined ? t.incorrect : '—') + '</td>' +
+              '<td style="text-align:center">' + (t.timeMin !== undefined ? t.timeMin.toFixed(1) + ' min' : '—') + '</td></tr>';
     });
+    
     html += '</tbody></table>';
     document.getElementById('tp-top').innerHTML = html;
   }
 
   // ---------- exports ----------
-  function analysisTitle() { return 'Test Analysis — ' + (DATA.testName || 'Test') + ' — ' + new Date().toLocaleString(); }
+  function analysisTitle() { 
+    return (DATA.testName || 'Test') + ' — ' + new Date().toLocaleString();
+  }
+  
   function analysisHTMLBody() {
     var c = RES.filter(function (r) { return r.status === 'correct'; }).length;
     var w = RES.filter(function (r) { return r.status === 'incorrect'; }).length;
     var u = RES.filter(function (r) { return r.status === 'unattempted'; }).length;
     var pct = DATA.maxScore ? (TOT / DATA.maxScore * 100) : 0;
     var totalTime = RES.reduce(function (s, r) { return s + r.time; }, 0);
-    var h = '<h1>' + esc(DATA.testName || 'Test') + '</h1><p>' + esc(new Date().toLocaleString()) + '</p>';
-    h += '<h2>Score Overview</h2><table><tr><th>Score</th><th>Correct</th><th>Incorrect</th><th>Unattempted</th><th>Percentage</th><th>Time</th></tr>';
-    h += '<tr><td>' + TOT + '/' + DATA.maxScore + '</td><td>' + c + '</td><td>' + w + '</td><td>' + u + '</td><td>' + pct.toFixed(1) + '%</td><td>' + fmt(totalTime) + '</td></tr></table>';
-    var tp = DATA.topper || {};
-    h += '<h2>Compare with Topper</h2><p>Topper: ' + esc(tp.name || '—') + ' &mdash; ' + (tp.score || 0) + '/' + DATA.maxScore + '. Difference: ' + (TOT - (tp.score || 0)) + '</p>';
-    h += '<h2>Question Wise</h2>';
-    RES.forEach(function (r) {
-      var q = Q[r.i];
-      h += '<h3>Q' + (r.i + 1) + ' (' + r.status.toUpperCase() + ', ' + fmt(r.time) + ', ' + (r.marks > 0 ? '+' + r.marks : r.marks) + ' marks)</h3><div>' + (q.question || '') + '</div><p><b>Your Answer:</b> ' + esc(uaText(r.i)) + ' &nbsp; <b>Correct:</b> ' + esc(caText(q)) + '</p>';
+    var myRank = computeRank(TOT);
+    
+    var h = '<div style="text-align:center;border-bottom:3px solid #0b2e59;padding-bottom:12px;margin-bottom:16px">' +
+      '<h1 style="margin:0;font-size:20px;color:#0b2e59">' + esc(DATA.testName || 'Test') + '</h1>' +
+      '<p style="margin:4px 0;color:#556">Attempt completed: ' + esc(new Date().toLocaleString()) + '</p>' +
+      '</div>';
+    
+    h += '<h2 style="color:#0b2e59;border-bottom:2px solid #0e4f8f;padding-bottom:3px;font-size:15px">Score Overview</h2>' +
+      '<table style="width:100%;border-collapse:collapse;margin:8px 0;font-size:12.5px">' +
+      '<tr><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Score</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Correct</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Incorrect</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Unattempted</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Percentage</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Time Used</th><th style="border:1px solid #ccc;background:#eef2f8;padding:6px">Rank</th></tr>' +
+      '<tr><td style="border:1px solid #ccc;padding:6px;font-weight:700">' + TOT.toFixed(2) + ' / ' + DATA.maxScore + '</td>' +
+      '<td style="border:1px solid #ccc;padding:6px;color:#1e7a38">' + c + '</td>' +
+      '<td style="border:1px solid #ccc;padding:6px;color:#b82a1f">' + w + '</td>' +
+      '<td style="border:1px solid #ccc;padding:6px">' + u + '</td>' +
+      '<td style="border:1px solid #ccc;padding:6px">' + pct.toFixed(1) + '%</td>' +
+      '<td style="border:1px solid #ccc;padding:6px">' + fmt(totalTime) + '</td>' +
+      '<td style="border:1px solid #ccc;padding:6px">' + renderRankBadge(TOT) + '</td></tr></table>';
+    
+    // Top 20 table
+    h += '<h2 style="color:#0b2e59;border-bottom:2px solid #0e4f8f;padding-bottom:3px;font-size:15px;margin-top:18px">Top ' + (DATA.toppers ? Math.min(20, DATA.toppers.length) : 0) + ' Toppers</h2>' +
+      '<table style="width:100%;border-collapse:collapse;margin:8px 0;font-size:12px">' +
+      '<tr><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Rank</th><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Name</th><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Score</th><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Correct</th><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Incorrect</th><th style="border:1px solid #ccc;background:#eef2f8;padding:5px">Time</th></tr>';
+    
+    var timeUnit = (DATA.toppers && DATA.toppers[0] && DATA.toppers[0].timeMin) ? 'min' : 's';
+    var timeFactor = (DATA.toppers && DATA.toppers[0] && DATA.toppers[0].timeMin) ? 60 : 1;
+    
+    (DATA.toppers || []).slice(0, 20).forEach(function (t) {
+      h += '<tr><td style="border:1px solid #ccc;padding:5px;text-align:center">' + t.rank + '</td>' +
+           '<td style="border:1px solid #ccc;padding:5px">' + esc(t.name ? t.name.replace('(Top scorer)', '').trim() : 'Top Scorer ' + t.rank) + '</td>' +
+           '<td style="border:1px solid #ccc;padding:5px;text-align:center">' + t.score + '</td>' +
+           '<td style="border:1px solid #ccc;padding:5px;text-align:center">' + (t.correct !== undefined ? t.correct : '—') + '</td>' +
+           '<td style="border:1px solid #ccc;padding:5px;text-align:center">' + (t.incorrect !== undefined ? t.incorrect : '—') + '</td>' +
+           '<td style="border:1px solid #ccc;padding:5px;text-align:center">' + (timeFactor ? Math.round((t.timeMin || t.timeTakenSec) / timeFactor) + (timeUnit === 'min' ? ' min' : ' sec') : '—') + '</td></tr>';
     });
+    h += '</table>';
+    
+    // Question-wise details
+    h += '<h2 style="color:#0b2e59;border-bottom:2px solid #0e4f8f;padding-bottom:3px;font-size:15px;margin-top:18px">Question-Wise Report</h2>';
+    RES.forEach(function (p) {
+      var q = Q[p.i];
+      var caTxt = q.type === 'NAT' ? String(typeof q.natAns !== 'undefined' ? q.natAns : (q.ans ? q.ans[0] : '')) : (q.ans ? q.ans.map(function (a) { return KEYS[a]; }).join(', ') : '');
+      var statusbadge = p.status === 'correct' ? '<span style="color:#1e7a38;font-weight:700">Correct</span>' : p.status === 'incorrect' ? '<span style="color:#b82a1f;font-weight:700">Incorrect</span>' : '<span style="color:#8a99a8;font-weight:700">Unattempted</span>';
+      var markOrUnattempted = q.type === 'NAT' ? (answers[p.i] === null || answers[p.i] === undefined || String(answers[p.i]).trim() === '') ? 'Unattempted' : (numEq(String(answers[p.i]), q.natAns || NaN) ? statusbadge : statusbadge) : '';
+      h += '<div style="border:1px solid #dbe1ea;border-radius:6px;padding:12px 14px;margin:10px 0;page-break-inside:avoid">' +
+        '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-bottom:6px">' +
+        '<b>Q' + (p.i + 1) + ' [' + esc(q.subject || '') + ']</b>' + statusbadge +
+        '<span style="color:#5a6578">+' + (q.marksPos || 0) + ' / -' + (q.marksNeg || 0) + ' &nbsp; ' + (p.mark > 0 ? '+' + p.mark : p.mark) + ' marks</span></div>' +
+        '<div style="font-size:13px;line-height:1.55">' + (q.question || q.q || '') + '</div>' +
+        '<div style="margin-top:8px;font-size:12.5px">';
+      (q.options || []).forEach(function (op, oi) {
+        var isUser = p.selected && p.selected.indexOf(oi) >= 0;
+        var isCorrect = (q.ans ? q.ans.indexOf(oi) >= 0 : false) || (q.type === 'NAT' && numEq(String(op), String(q.natAns || (q.ans && q.ans[0]))));
+        var style = 'border:1px solid #dbe1ea;border-radius:4px;padding:5px 8px;margin:3px 0;background:#fff';
+        var tag = '';
+        if (isCorrect) { style += ';background:#e9f7ee;border-color:#2fa84f;'; tag = ' <span style="color:#1e7a38;font-weight:700">✔ Correct</span>'; }
+        if (isUser && !isCorrect) { style += ';background:#fdeeec;border-color:#e0392b;'; tag = ' <span style="color:#b82a1f;font-weight:700">✘ Your pick</span>'; }
+        h += '<div style="' + style + '"><b>' + KEYS[oi] + '.</b> ' + op + tag + '</div>';
+      });
+      h += '</div>' +
+        '<div style="margin-top:8px;font-size:12.5px;color:#23303f"><b>Your Answer:</b> ' + esc(uaText(p.i)) + ' &nbsp;|&nbsp; <b>Correct Answer:</b> <span style="color:#1e7a38;font-weight:700">' + caTxt + '</span></div>';
+      if (q.solution) {
+        h += '<div style="margin-top:8px;padding:9px 11px;background:#f7fafc;border-left:3px solid #0e4f8f;font-size:12.5px;color:#23303f"><b>Solution:</b><br>' + q.solution + '</div>';
+      }
+      h += '</div>';
+    });
+    
     return h;
   }
   function download(name, type, content) {
@@ -480,8 +603,10 @@ window.TestRunner = (function () {
     setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 200);
   }
   function exportHTML() {
-    var doc = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + esc(analysisTitle()) + '</title><style>body{font-family:Segoe UI,Arial,sans-serif;margin:30px;color:#1c2733}h1{color:#0b4f8a}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:7px 9px;text-align:left}img{max-width:100%}h3{margin:14px 0 4px}</style></head><body>' + analysisHTMLBody() + '</body></html>';
-    download('analysis.html', 'text/html', doc);
+    var css = 'body{font-family:Segoe UI,Arial,sans-serif;margin:30px;color:#20293a;font-size:13px}img{max-width:100%}table{font-size:12px}h2{margin-top:22px}';
+    var doc = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Test Report - ' + esc(DATA.testName || 'Test') + '</title><style>' + css + '</style></head><body>' + analysisHTMLBody() + '</body></html>';
+    var filename = (DATA.testName || 'test').replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, '_') + '_report.html';
+    download(filename, 'text/html', doc);
   }
   function exportMD() {
     var c = RES.filter(function (r) { return r.status === 'correct'; }).length;
@@ -500,7 +625,24 @@ window.TestRunner = (function () {
       var plain = (q.question || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
       md += '### Q' + (r.i + 1) + ' — ' + r.status.toUpperCase() + ' (' + fmt(r.time) + ', ' + (r.marks > 0 ? '+' + r.marks : r.marks) + ' marks)\n\n' + plain + '\n\n- Your Answer: ' + uaText(r.i) + '\n- Correct Answer: ' + caText(q) + '\n\n';
     });
-    download('analysis.md', 'text/markdown', md);
+    
+    // Enhanced: add topper table (like standalone HTML replica)
+    var top20 = Math.min(20, DATA.toppers ? DATA.toppers.length : 0);
+    if (top20 > 0) {
+      var beforeTable = md.indexOf('## Question Wise');
+      var topperTable = '\n\n## Toppers (Top ' + top20 + ')\n\n| Rank | Name | Score |\n|---|---|---|\n';
+      (DATA.toppers || []).slice(0, top20).forEach(function(t) {
+        var name = t.name ? t.name.replace('(Top scorer)', '').trim() : ('Top Scorer ' + t.rank);
+        if (t.rank === 1) name += ' (Top Scorer)';
+        topperTable += '| ' + t.rank + ' | ' + name.replace(/\*|_|`/g, '') + ' | ' + t.score + ' |\n';
+      });
+      if (beforeTable >= 0) {
+        md = md.substring(0, beforeTable) + topperTable + md.substring(beforeTable);
+      }
+    }
+    
+    var filename = (DATA.testName || 'test').replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, '_') + '_report.md';
+    download(filename, 'text/markdown', md);
   }
   function exportPDF() {
     var doc = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + esc(analysisTitle()) + '</title><style>@page{size:A4;margin:14mm}body{font-family:Segoe UI,Arial,sans-serif;color:#1c2733;font-size:12px}h1{color:#0b4f8a;font-size:18px}h2{border-bottom:2px solid #0b4f8a;padding-bottom:3px;font-size:14px;color:#0b4f8a}table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:5px 7px;text-align:left}h3{font-size:12px;margin:10px 0 2px}img{max-width:100%}</style></head><body>' + analysisHTMLBody() + '</body></html>';

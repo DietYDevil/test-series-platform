@@ -1,0 +1,1111 @@
+{
+  "testName": "Unit Test 02 [EMT-1].",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 85,
+  "lang": "EN",
+  "subjects": [
+    "Part-A",
+    "Part-B"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "Part-A MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 3.5,
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p>Infinite number of straight wires each carrying equal but opposite linear charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38608.png\" style=\"height:26px; width:20px\" />&nbsp;as shown in figure. The net electric field at O.&nbsp;&nbsp; &nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21764.png\" style=\"height:200px; width:259px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/5324.png\" style=\"height:58px; width:144px\" /></p>",
+            "<p>Zero</p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6536.png\" style=\"height:61px; width:127px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23304.png\" style=\"height:54px; width:87px\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43519.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21509.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96353.png\" style=\"height:87px; width:754px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6846.png\" style=\"height:129px; width:207px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41916.png\" style=\"height:131px; width:211px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23352.png\" style=\"height:128px; width:205px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59989.png\" style=\"height:137px; width:205px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50421.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/35820.png\" style=\"height:52px; width:756px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33635.png\" style=\"height:125px; width:192px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57374.png\" style=\"height:25px; width:398px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49320.png\" style=\"height:51px; width:75px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89106.png\" style=\"height:51px; width:88px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/11910.png\" style=\"height:60px; width:101px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32598.png\" style=\"height:65px; width:80px\" /></p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/60005.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86699.png\" style=\"height:67px; width:742px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54401.png\" style=\"height:27px; width:97px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57657.png\" style=\"height:30px; width:101px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64001.png\" style=\"height:34px; width:84px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91832.png\" style=\"height:33px; width:88px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86656.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/53995.png\" style=\"height:93px; width:750px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63246.png\" style=\"height:55px; width:74px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36704.png\" style=\"height:52px; width:81px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/94317.png\" style=\"height:61px; width:82px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/77523.png\" style=\"height:57px; width:82px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38156.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49613.png\" style=\"height:61px; width:751px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74858.png\" style=\"height:44px; width:57px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9196.png\" style=\"height:58px; width:54px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49163.png\" style=\"height:54px; width:55px\" /></p>",
+            "<p>Zero</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33462.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>A charge particle is accelerated by applying potential difference between two plates. If the potential difference is decreased by a factor 4, the de-Broglie wavelength of the particle will&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
+          "options": [
+            "<p>increase by 100 %</p>",
+            "<p>decrease by 50 %</p>",
+            "<p>increase by 25 %</p>",
+            "<p>decrease by 25 %</p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p>The de-Broglie wavelength of an accelerated electron is given by </p>\r\n\r\n<p><img src=\"http://client-media.onlinetestpanel.com/careerendeavour/uploads/question/58294.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40501.png\" style=\"height:60px; width:756px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/61043.png\" style=\"height:53px; width:51px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90252.png\" style=\"height:57px; width:43px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/80175.png\" style=\"height:58px; width:67px\" /></p>",
+            "<p>Zero</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33032.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>A ring of radius R carries linear charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/48800.png\" style=\"height:34px; width:95px\" /> The electric dipole moment of this charge distribution is&nbsp;</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64821.png\" style=\"height:37px; width:69px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/20993.png\" style=\"height:35px; width:61px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/66470.png\" style=\"height:49px; width:71px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49524.png\" style=\"height:51px; width:74px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87887.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Seven identical points charges are placed at the vertices of a cube of side &lsquo;<em>a</em>&rsquo; as shown in figure. The electric field at the centre of the cube is&nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56666.png\" style=\"height:153px; width:156px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38914.png\" style=\"height:60px; width:191px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/37051.png\" style=\"height:59px; width:184px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/5402.png\" style=\"height:64px; width:155px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96631.png\" style=\"height:69px; width:187px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 3.5,
+          "marksNeg": 0.875,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/8709.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90917.png\" xss=removed></p>",
+          "haveSol": true
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "id": "B",
+      "name": "Part-B MCQ",
+      "type": "MCQ",
+      "count": 10,
+      "marks": 5,
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56736.png\" style=\"height:64px; width:752px\" /></p>",
+          "options": [
+            "<p>Zero</p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99940.png\" style=\"height:63px; width:74px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/66901.png\" style=\"height:56px; width:60px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/534381.png\" style=\"height:56px; width:66px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87054.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/80852.png\" style=\"height:129px; width:753px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63195.png\" style=\"height:36px; width:33px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/69848.png\" style=\"height:52px; width:45px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97774.png\" style=\"height:49px; width:28px\" /></p>",
+            "<p>2</p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p>If  is the angular frequency of charge  <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3926.png\" xss=removed>  is the angular frequency of charge <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75549.png\" xss=removed> then we can write</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10560.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41000.png\" style=\"height:62px; width:753px\" /></p>",
+          "options": [
+            "<p>2</p>",
+            "<p>1/2</p>",
+            "<p>4</p>",
+            "<p>1/4</p>"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73980.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81240.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47720.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47501.png\" style=\"height:21px; width:598px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46812.png\" style=\"height:145px; width:151px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23347.png\" style=\"height:28px; width:694px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/45602.png\" style=\"height:55px; width:73px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3449.png\" style=\"height:60px; width:73px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10731.png\" style=\"height:53px; width:82px\" /></p>",
+            "<p>Zero</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82499.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/68322.png\" style=\"height:50px; width:754px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89407.png\" style=\"height:134px; width:174px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/485321.png\" style=\"height:25px; width:520px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/30978.png\" style=\"height:151px; width:227px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73253.png\" style=\"height:134px; width:236px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/78064.png\" style=\"height:146px; width:226px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10877.png\" style=\"height:138px; width:231px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64985.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49357.png\" style=\"height:49px; width:757px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71867.png\" style=\"height:116px; width:263px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/69796.png\" style=\"height:48px; width:49px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64386.png\" style=\"height:51px; width:60px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/25585.png\" style=\"height:48px; width:44px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88411.png\" style=\"height:55px; width:30px\" /></p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92947.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/7963.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/55568.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/42914.png\" style=\"height:59px; width:756px\" /></p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/58673.png\" style=\"height:51px; width:41px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49993.png\" style=\"height:49px; width:50px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71728.png\" style=\"height:49px; width:52px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81109.png\" style=\"height:54px; width:54px\" /></p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54007.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>A uniform charge carrying solid dielectric sphere of radius R and dielectric constant <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63856.png\" style=\"height:24px; width:40px\" />&nbsp;has free volume charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36052.png\" style=\"height:22px; width:27px\" /> The ratio of electrocstatic energy stored inside the sphere and outside the sphere is&nbsp;</p>",
+          "options": [
+            "<p>0.001</p>",
+            "<p>0.01</p>",
+            "<p>0.1</p>",
+            "<p>10&nbsp;</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23064.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9468.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81111.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>Three points charges are placed very closed to each other as shown in figure.</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91247.png\" style=\"height:142px; width:221px\" /></p>\r\n\r\n<p>The leading order form of potential at point p, at a distance r from origin <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93355.png\" style=\"height:22px; width:55px\" />&nbsp;is&nbsp;</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22529.png\" style=\"height:56px; width:58px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92606.png\" style=\"height:55px; width:72px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50397.png\" style=\"height:56px; width:79px\" /></p>",
+            "<p>Zero</p>"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12590.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82188.png\" xss=removed></p>",
+          "haveSol": true
+        },
+        {
+          "q": "<p>A parallel plate capacitor with spacing <em>d</em> and cross-section area <em>A</em> is connected to a source of voltage <em>V</em>. If the plates are pulled apart quasistatically to a spacing of 2<em>d</em> without disconnected from the source, then the energy transferred to the voltage source is&nbsp;</p>",
+          "options": [
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85916.png\" style=\"height:57px; width:75px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16170.png\" style=\"height:59px; width:77px\" /></p>",
+            "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73426.png\" style=\"height:62px; width:87px\" /></p>",
+            "<p>Zero</p>"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 5,
+          "marksNeg": 1.25,
+          "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91859.png\" xss=removed></p>",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "(Unnamed)",
+    "score": 35.75,
+    "correct": 10,
+    "incorrect": 3,
+    "timeMin": 60.02
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "(Unnamed)",
+      "score": 35.75,
+      "correct": 10,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 2,
+      "name": "AMBARISH BANERJEE",
+      "score": 35.75,
+      "correct": 10,
+      "incorrect": 3,
+      "timeMin": 51.65
+    },
+    {
+      "rank": 3,
+      "name": "Girija Shankar Tripathy",
+      "score": 34.5,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 4,
+      "name": "Sai Rama Krishna Sri Vathsav Pathaneni",
+      "score": 32.25,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 5,
+      "name": "Narayan Lal Balai",
+      "score": 30.5,
+      "correct": 9,
+      "incorrect": 5,
+      "timeMin": 58.37
+    },
+    {
+      "rank": 6,
+      "name": "Megha Dangi",
+      "score": 30.38,
+      "correct": 8,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 7,
+      "name": "(Unnamed)",
+      "score": 29.13,
+      "correct": 8,
+      "incorrect": 3,
+      "timeMin": 61.98
+    },
+    {
+      "rank": 8,
+      "name": ".. ...",
+      "score": 26.5,
+      "correct": 7,
+      "incorrect": 2,
+      "timeMin": 53.48
+    },
+    {
+      "rank": 9,
+      "name": "Vinod H N",
+      "score": 24,
+      "correct": 8,
+      "incorrect": 8,
+      "timeMin": 59.77
+    },
+    {
+      "rank": 10,
+      "name": "Dharma Ram KACHHAWAHA",
+      "score": 23.5,
+      "correct": 7,
+      "incorrect": 5,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 11,
+      "name": "(Unnamed)",
+      "score": 18.75,
+      "correct": 5,
+      "incorrect": 5,
+      "timeMin": 57.77
+    },
+    {
+      "rank": 12,
+      "name": "Anjan Pati",
+      "score": 16.75,
+      "correct": 6,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 13,
+      "name": "Mukesh Parida",
+      "score": 15.75,
+      "correct": 6,
+      "incorrect": 6,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 14,
+      "name": "SHIDESH PATIL",
+      "score": 15.13,
+      "correct": 5,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 15,
+      "name": "Ezhilmathi V",
+      "score": 14.63,
+      "correct": 5,
+      "incorrect": 5,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 16,
+      "name": "Pooja Patidar",
+      "score": 14.5,
+      "correct": 5,
+      "incorrect": 6,
+      "timeMin": 52.38
+    },
+    {
+      "rank": 17,
+      "name": "SOUTI ROY",
+      "score": 11.63,
+      "correct": 5,
+      "incorrect": 5,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 18,
+      "name": "Gourab Hazra",
+      "score": 8.5,
+      "correct": 4,
+      "incorrect": 5,
+      "timeMin": 58.65
+    },
+    {
+      "rank": 19,
+      "name": "CHIRAG .",
+      "score": 6.5,
+      "correct": 3,
+      "incorrect": 5,
+      "timeMin": 46.87
+    },
+    {
+      "rank": 20,
+      "name": "Raima Saha",
+      "score": 6.25,
+      "correct": 3,
+      "incorrect": 4,
+      "timeMin": 37.65
+    }
+  ],
+  "questions": [
+    {
+      "id": "6216fa04f14885355d15dd1b",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>Infinite number of straight wires each carrying equal but opposite linear charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38608.png\" style=\"height:26px; width:20px\" />&nbsp;as shown in figure. The net electric field at O.&nbsp;&nbsp; &nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21764.png\" style=\"height:200px; width:259px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/5324.png\" style=\"height:58px; width:144px\" /></p>",
+        "<p>Zero</p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6536.png\" style=\"height:61px; width:127px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23304.png\" style=\"height:54px; width:87px\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/43519.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/21509.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd1c",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96353.png\" style=\"height:87px; width:754px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/6846.png\" style=\"height:129px; width:207px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41916.png\" style=\"height:131px; width:211px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23352.png\" style=\"height:128px; width:205px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/59989.png\" style=\"height:137px; width:205px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50421.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd1d",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/35820.png\" style=\"height:52px; width:756px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33635.png\" style=\"height:125px; width:192px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57374.png\" style=\"height:25px; width:398px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49320.png\" style=\"height:51px; width:75px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89106.png\" style=\"height:51px; width:88px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/11910.png\" style=\"height:60px; width:101px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/32598.png\" style=\"height:65px; width:80px\" /></p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/60005.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd1e",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86699.png\" style=\"height:67px; width:742px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54401.png\" style=\"height:27px; width:97px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/57657.png\" style=\"height:30px; width:101px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64001.png\" style=\"height:34px; width:84px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91832.png\" style=\"height:33px; width:88px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/86656.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd1f",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/53995.png\" style=\"height:93px; width:750px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63246.png\" style=\"height:55px; width:74px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36704.png\" style=\"height:52px; width:81px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/94317.png\" style=\"height:61px; width:82px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/77523.png\" style=\"height:57px; width:82px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38156.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd20",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49613.png\" style=\"height:61px; width:751px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/74858.png\" style=\"height:44px; width:57px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9196.png\" style=\"height:58px; width:54px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49163.png\" style=\"height:54px; width:55px\" /></p>",
+        "<p>Zero</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33462.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd21",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>A charge particle is accelerated by applying potential difference between two plates. If the potential difference is decreased by a factor 4, the de-Broglie wavelength of the particle will&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
+      "options": [
+        "<p>increase by 100 %</p>",
+        "<p>decrease by 50 %</p>",
+        "<p>increase by 25 %</p>",
+        "<p>decrease by 25 %</p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>The de-Broglie wavelength of an accelerated electron is given by </p>\r\n\r\n<p><img src=\"http://client-media.onlinetestpanel.com/careerendeavour/uploads/question/58294.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd22",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/40501.png\" style=\"height:60px; width:756px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/61043.png\" style=\"height:53px; width:51px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90252.png\" style=\"height:57px; width:43px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/80175.png\" style=\"height:58px; width:67px\" /></p>",
+        "<p>Zero</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/33032.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd23",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>A ring of radius R carries linear charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/48800.png\" style=\"height:34px; width:95px\" /> The electric dipole moment of this charge distribution is&nbsp;</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64821.png\" style=\"height:37px; width:69px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/20993.png\" style=\"height:35px; width:61px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/66470.png\" style=\"height:49px; width:71px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49524.png\" style=\"height:51px; width:74px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87887.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd24",
+      "part": "Part-A",
+      "type": "MCQ",
+      "marksPos": 3.5,
+      "marksNeg": 0.875,
+      "question": "<p>Seven identical points charges are placed at the vertices of a cube of side &lsquo;<em>a</em>&rsquo; as shown in figure. The electric field at the centre of the cube is&nbsp;</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56666.png\" style=\"height:153px; width:156px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/38914.png\" style=\"height:60px; width:191px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/37051.png\" style=\"height:59px; width:184px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/5402.png\" style=\"height:64px; width:155px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/96631.png\" style=\"height:69px; width:187px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/8709.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/90917.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd25",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/56736.png\" style=\"height:64px; width:752px\" /></p>",
+      "options": [
+        "<p>Zero</p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/99940.png\" style=\"height:63px; width:74px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/66901.png\" style=\"height:56px; width:60px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/534381.png\" style=\"height:56px; width:66px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/87054.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd26",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/80852.png\" style=\"height:129px; width:753px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63195.png\" style=\"height:36px; width:33px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/69848.png\" style=\"height:52px; width:45px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/97774.png\" style=\"height:49px; width:28px\" /></p>",
+        "<p>2</p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>If  is the angular frequency of charge  <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3926.png\" xss=removed>  is the angular frequency of charge <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/75549.png\" xss=removed> then we can write</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10560.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd27",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/41000.png\" style=\"height:62px; width:753px\" /></p>",
+      "options": [
+        "<p>2</p>",
+        "<p>1/2</p>",
+        "<p>4</p>",
+        "<p>1/4</p>"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73980.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81240.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47720.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd28",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/47501.png\" style=\"height:21px; width:598px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/46812.png\" style=\"height:145px; width:151px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23347.png\" style=\"height:28px; width:694px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/45602.png\" style=\"height:55px; width:73px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/3449.png\" style=\"height:60px; width:73px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10731.png\" style=\"height:53px; width:82px\" /></p>",
+        "<p>Zero</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82499.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa04f14885355d15dd29",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/68322.png\" style=\"height:50px; width:754px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/89407.png\" style=\"height:134px; width:174px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/485321.png\" style=\"height:25px; width:520px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/30978.png\" style=\"height:151px; width:227px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73253.png\" style=\"height:134px; width:236px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/78064.png\" style=\"height:146px; width:226px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/10877.png\" style=\"height:138px; width:231px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64985.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa05f14885355d15dd2a",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49357.png\" style=\"height:49px; width:757px\" /></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71867.png\" style=\"height:116px; width:263px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/69796.png\" style=\"height:48px; width:49px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/64386.png\" style=\"height:51px; width:60px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/25585.png\" style=\"height:48px; width:44px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/88411.png\" style=\"height:55px; width:30px\" /></p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92947.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/7963.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/55568.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa05f14885355d15dd2b",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/42914.png\" style=\"height:59px; width:756px\" /></p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/58673.png\" style=\"height:51px; width:41px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/49993.png\" style=\"height:49px; width:50px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/71728.png\" style=\"height:49px; width:52px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81109.png\" style=\"height:54px; width:54px\" /></p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/54007.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa05f14885355d15dd2c",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>A uniform charge carrying solid dielectric sphere of radius R and dielectric constant <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/63856.png\" style=\"height:24px; width:40px\" />&nbsp;has free volume charge density <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/36052.png\" style=\"height:22px; width:27px\" /> The ratio of electrocstatic energy stored inside the sphere and outside the sphere is&nbsp;</p>",
+      "options": [
+        "<p>0.001</p>",
+        "<p>0.01</p>",
+        "<p>0.1</p>",
+        "<p>10&nbsp;</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/23064.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/9468.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/81111.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa05f14885355d15dd2d",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>Three points charges are placed very closed to each other as shown in figure.</p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91247.png\" style=\"height:142px; width:221px\" /></p>\r\n\r\n<p>The leading order form of potential at point p, at a distance r from origin <img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/93355.png\" style=\"height:22px; width:55px\" />&nbsp;is&nbsp;</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/22529.png\" style=\"height:56px; width:58px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/92606.png\" style=\"height:55px; width:72px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/50397.png\" style=\"height:56px; width:79px\" /></p>",
+        "<p>Zero</p>"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/12590.png\" xss=removed></p>\r\n\r\n<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/82188.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    },
+    {
+      "id": "6216fa05f14885355d15dd2e",
+      "part": "Part-B",
+      "type": "MCQ",
+      "marksPos": 5,
+      "marksNeg": 1.25,
+      "question": "<p>A parallel plate capacitor with spacing <em>d</em> and cross-section area <em>A</em> is connected to a source of voltage <em>V</em>. If the plates are pulled apart quasistatically to a spacing of 2<em>d</em> without disconnected from the source, then the energy transferred to the voltage source is&nbsp;</p>",
+      "options": [
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/85916.png\" style=\"height:57px; width:75px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/16170.png\" style=\"height:59px; width:77px\" /></p>",
+        "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/73426.png\" style=\"height:62px; width:87px\" /></p>",
+        "<p>Zero</p>"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img src=\"https://client-media.onlinetestpanel.com/careerendeavour/uploads/question/91859.png\" xss=removed></p>",
+      "haveSol": true,
+      "subject": "Part-A"
+    }
+  ]
+}

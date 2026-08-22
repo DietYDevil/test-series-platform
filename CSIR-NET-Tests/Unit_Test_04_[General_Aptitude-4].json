@@ -1,0 +1,1041 @@
+{
+  "testName": "Unit Test 04 [General Aptitude-4]",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 40,
+  "lang": "EN",
+  "subjects": [
+    "Unit - General Aptitude"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "Unit - General Aptitude MCQ",
+      "type": "MCQ",
+      "count": 20,
+      "marks": 2,
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/39f2218a58896c0dcf2bebf8eeb94975.png\" /><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/47601b49b99280fef4701e84225bac2e.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100º</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>70º</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>80º</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>75º</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/b442708657a92b4a64cb39ea2998aa2f.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>If in a certain code &lsquo;STUDENT&rsquo; is coded &lsquo;TVXHJTA&rsquo; , then what will be the code for &lsquo;TEACHER&rsquo;</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGHXYMK</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGDGYNK</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGDGMKY</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>SGDGMKY</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/69bcb301325113ca2bf70712db3e9bd0.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Direction: In the question below are few statements followed by the conclusions numbered accordingly. You have to take the given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the statements disregarding commonly known facts.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/cdb1c8a1876e095f3e2bb958fb01581c.png\" /></p>\n\n<p>now based on the statements find out which option is right</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>only (i)</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>(i) and (ii)</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>only (iii)</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/8e0dc50715207ed32929037e8fd73700.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>The figure below shows the Production of rice and wheat over the years from 2014 to 2018 of Madhya Pradesh in million metric ton (MMT)</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/a8d06acff4a1664ac132d58d5254134b.png\" /></p>\n\n<p>By what percentage average production of rice over the years is greater than the average production of wheat over the years ?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>43.75 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>37.5 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 %</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/4e9ff96bd3b34334f4ac5008cef1c3ff.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>The perimeter of a rhombus is 40 cm and the measure of an angle is 60&deg;, then the area of the rhombus is</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/115946421b8a123e5e2d27139d8d9a66.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/b54884628d4b6072e077781a2dba9401.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/981e141f4bdc2dd47c794e5797a0fa10.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/af9196fef20f0d2d6c4ae7487d084a6b.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/0f5954fb2b24cc8f37499b57940ed32d.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/db087aa8b1b7a139a38baca53d90aad9.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Count total number of triangles in the given figure ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/2c3324aec1215453ba3cc9370b4f7eb3.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>14</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>16</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>17</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p>Correct option is (b)</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/18d25668f3cdc4ed07a33f630f40a55b.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>36</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>48</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>54</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>60</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/660fa2f44dd7a0c2c755b57fcdb6a40c.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>At what, minute between h&rsquo;O clock and (h + 1)&rsquo; O clock the hour and minute hands of a clock coincide?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/a965631a5fd7ef2f03b3d89bb29c282b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6c7fbb327700d167e7daa8605b64abfd.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/1b956636b68bb661b95e0ccd5899a744.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c0d167ea9dc7c21ca6493b01689c7a0a.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c7c8836a6dffcfca2c9b5c013fbca752.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Five congruent rectangles are drawn inside a big rectangle of perimeter 198 as shown.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6bad85080cf32b758988ba9e6ec06008.png\" /></p>\n\n<p>What is the perimeter of one of the rectangles ?&nbsp;</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>75</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>90</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/cccab5a950fa88f279c0573e382db5df.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A person goes from A to B always moving to the right or downwards along the lines. How many different routes can he adopt ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/5f979f1cb76a5e7ad834d41e7dde74c2.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/e029aea2ae99655b90c9743e0ef70378.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A candidate is required to answer 6 out of 10 questions which are divided into two groups each containing 5 questions and he is not permitted to attempt more than 4 from each group. In how many ways can he make up his choice?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>200</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>300</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>400</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/fad040c70260330d110ea8660cb4feae.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A bag contains 6 red and 3 white balls. Four balls are draws out one by one and not replaced. What is the probability that they are alternately of different colours?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1/13</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2/5</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7/15</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5/42</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/3aaafb9dcc6de7e1e3a9c8adec51cc5f.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Weights of two friends Ram and Shyam are in the ratio of 4 : 5. Ram&rsquo;s weight increases by 10% and the total weight of Ram and Shyam together becomes 82.8 kg, with an increase of 15%. By what percent did the weight of Shyam increase?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>14 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p> 18 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>19 %</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12 %</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/778070935b139cbb03579bb1fbc6827e.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/ed4126a6815d52d1933a3930985df4e4.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c3f98d58b8e5b18151dcc4d754923b77.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>260</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>320</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>360</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>410</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/35c7da258c86a70ff07bd64c8690471f.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/95b90073b89cb2613f22e7fa225aac55.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Two pipe can separetely fill a tank in 20 hrs and 30 hrs respectively. Both the pipe are opened to fill the tank&nbsp; but when the tank is 1/3rd full a leak develops in the tank through which 1/3rd of the water supplied by both the pipes leak out. What is the total time taken to fill the tank?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 hours</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12 hours</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 hours   </p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5 hours</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/81a904976f3efa87e0dc09cf85f4f6bb.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/74503d3e168166b4e68bdc74cf6a2fa4.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>If in a certain code language<br />\n&nbsp;&nbsp; &nbsp;(i)&nbsp;&nbsp; &nbsp;&lsquo;Do it&rsquo; is coded as &lsquo;35&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(ii)&nbsp;&nbsp; &nbsp;&lsquo;go there now&rsquo; is coded as &lsquo;412&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(iii)&nbsp;&nbsp; &nbsp;&lsquo;there it is&rsquo; is coded as &lsquo;236&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(iv)&nbsp;&nbsp; &nbsp;&lsquo;it now&rsquo; is coded as &lsquo;31&rsquo;<br />\n&nbsp;&nbsp; &nbsp;Then what is the code used for &lsquo;go&rsquo; ?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c21323f5250160c25a77f824445143f8.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A hollow spherical metallic ball has an external diameter 6 cm and is 1/2 cm thick. 2 The volume of metal used in the ball is :</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/ff4ddd2290ac94763b348321f51290a0.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/7e63077fd1999e3aa903a7ac32b88992.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/f89ec1997185d51668e20c07a06c3d98.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/12be479ee8573c8664039cc1521a1c79.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/77d42aa5908e07e3e17af3ffff5100aa.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A is 3/4 times faster than B. If A gives B a start of 84 m, then how far the winning post has to be so that A and B reaches at the same time ?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>150</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>168</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>196</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>154</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/3b2a11a1ef88a1ee6e007b9033d87dcc.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6f1a2bab4c5a193819b10b6791460952.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>A man starts delivering letters 3 km southwards and then turns right. He covers 4 km on this road and again turns right. He delivers letters for 3 km and completes his daily beat. Then he turns left for lunch at home, which is 5 km away. How far has he travel to reach the post office after lunch?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 km</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>10 km</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>9 km</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 km</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/22ea2666b4ef31b013590517ca8d57ac.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p>Amit is the only maternal uncle of the Dilip&rsquo;s wife&rsquo;s daughter son. How is Dilip&rsquo;s son-in-law related to Amit?</p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Brother-in-law</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Father-in-law</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Brother</p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Nephew</p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/17162677e89a737e0d72a29a9ac70ed5.png\" /></p>\n",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "Bhawna .",
+    "score": 20,
+    "correct": 11,
+    "incorrect": 4,
+    "timeMin": 60.02
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "Bhawna .",
+      "score": 20,
+      "correct": 11,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 2,
+      "name": "Puspanjali Nanda",
+      "score": 19,
+      "correct": 10,
+      "incorrect": 2,
+      "timeMin": 58.52
+    },
+    {
+      "rank": 3,
+      "name": "Narayan Lal Balai",
+      "score": 16.5,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 58.98
+    },
+    {
+      "rank": 4,
+      "name": "DEEPAK PANDEY",
+      "score": 10.5,
+      "correct": 6,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 5,
+      "name": "Shraddha Kate",
+      "score": 10.5,
+      "correct": 6,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 6,
+      "name": "(Unnamed)",
+      "score": 8,
+      "correct": 5,
+      "incorrect": 4,
+      "timeMin": 47.22
+    },
+    {
+      "rank": 7,
+      "name": "Poorna Chandra",
+      "score": 6,
+      "correct": 5,
+      "incorrect": 8,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 8,
+      "name": "Anuja Ojha",
+      "score": 3,
+      "correct": 2,
+      "incorrect": 2,
+      "timeMin": 34.07
+    },
+    {
+      "rank": 9,
+      "name": "Anamika jaiswal",
+      "score": 2.5,
+      "correct": 2,
+      "incorrect": 3,
+      "timeMin": 43.42
+    },
+    {
+      "rank": 10,
+      "name": "sushma kumari",
+      "score": 2.5,
+      "correct": 2,
+      "incorrect": 3,
+      "timeMin": 16.72
+    },
+    {
+      "rank": 11,
+      "name": "Prateek Giri",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.02
+    },
+    {
+      "rank": 12,
+      "name": "Amaya singh",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.02
+    },
+    {
+      "rank": 13,
+      "name": "Utsav Singh,",
+      "score": 0,
+      "correct": "20",
+      "incorrect": 0,
+      "timeMin": 0.03
+    }
+  ],
+  "questions": [
+    {
+      "id": "6216fd339a5f9c5c7751d6e5",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/39f2218a58896c0dcf2bebf8eeb94975.png\" /><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/47601b49b99280fef4701e84225bac2e.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100º</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>70º</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>80º</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>75º</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/b442708657a92b4a64cb39ea2998aa2f.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6e6",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>If in a certain code &lsquo;STUDENT&rsquo; is coded &lsquo;TVXHJTA&rsquo; , then what will be the code for &lsquo;TEACHER&rsquo;</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGHXYMK</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGDGYNK</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>UGDGMKY</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>SGDGMKY</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/69bcb301325113ca2bf70712db3e9bd0.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6e7",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Direction: In the question below are few statements followed by the conclusions numbered accordingly. You have to take the given statements to be true even if they seem to be at variance from commonly known facts and then decide which of the given conclusions logically follows from the statements disregarding commonly known facts.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/cdb1c8a1876e095f3e2bb958fb01581c.png\" /></p>\n\n<p>now based on the statements find out which option is right</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>only (i)</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>(i) and (ii)</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>only (iii)</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>None</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/8e0dc50715207ed32929037e8fd73700.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6e8",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>The figure below shows the Production of rice and wheat over the years from 2014 to 2018 of Madhya Pradesh in million metric ton (MMT)</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/a8d06acff4a1664ac132d58d5254134b.png\" /></p>\n\n<p>By what percentage average production of rice over the years is greater than the average production of wheat over the years ?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>43.75 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>37.5 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25 %</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/4e9ff96bd3b34334f4ac5008cef1c3ff.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6e9",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>The perimeter of a rhombus is 40 cm and the measure of an angle is 60&deg;, then the area of the rhombus is</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/115946421b8a123e5e2d27139d8d9a66.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/b54884628d4b6072e077781a2dba9401.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/981e141f4bdc2dd47c794e5797a0fa10.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/af9196fef20f0d2d6c4ae7487d084a6b.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/0f5954fb2b24cc8f37499b57940ed32d.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/db087aa8b1b7a139a38baca53d90aad9.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6ea",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Count total number of triangles in the given figure ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/2c3324aec1215453ba3cc9370b4f7eb3.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>14</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>16</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>17</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p>Correct option is (b)</p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6eb",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/18d25668f3cdc4ed07a33f630f40a55b.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>36</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>48</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>54</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>60</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/660fa2f44dd7a0c2c755b57fcdb6a40c.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6ec",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>At what, minute between h&rsquo;O clock and (h + 1)&rsquo; O clock the hour and minute hands of a clock coincide?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/a965631a5fd7ef2f03b3d89bb29c282b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6c7fbb327700d167e7daa8605b64abfd.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/1b956636b68bb661b95e0ccd5899a744.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c0d167ea9dc7c21ca6493b01689c7a0a.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c7c8836a6dffcfca2c9b5c013fbca752.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6ed",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Five congruent rectangles are drawn inside a big rectangle of perimeter 198 as shown.</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6bad85080cf32b758988ba9e6ec06008.png\" /></p>\n\n<p>What is the perimeter of one of the rectangles ?&nbsp;</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>50</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>75</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>25</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>90</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/cccab5a950fa88f279c0573e382db5df.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6ee",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A person goes from A to B always moving to the right or downwards along the lines. How many different routes can he adopt ?</p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/5f979f1cb76a5e7ad834d41e7dde74c2.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>6</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/e029aea2ae99655b90c9743e0ef70378.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6ef",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A candidate is required to answer 6 out of 10 questions which are divided into two groups each containing 5 questions and he is not permitted to attempt more than 4 from each group. In how many ways can he make up his choice?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>100</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>200</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>300</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>400</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/fad040c70260330d110ea8660cb4feae.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f0",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A bag contains 6 red and 3 white balls. Four balls are draws out one by one and not replaced. What is the probability that they are alternately of different colours?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1/13</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2/5</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>7/15</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5/42</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/3aaafb9dcc6de7e1e3a9c8adec51cc5f.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f1",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Weights of two friends Ram and Shyam are in the ratio of 4 : 5. Ram&rsquo;s weight increases by 10% and the total weight of Ram and Shyam together becomes 82.8 kg, with an increase of 15%. By what percent did the weight of Shyam increase?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>14 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p> 18 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>19 %</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12 %</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/778070935b139cbb03579bb1fbc6827e.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/ed4126a6815d52d1933a3930985df4e4.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f2",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c3f98d58b8e5b18151dcc4d754923b77.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>260</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>320</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>360</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>410</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/35c7da258c86a70ff07bd64c8690471f.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/95b90073b89cb2613f22e7fa225aac55.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f3",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Two pipe can separetely fill a tank in 20 hrs and 30 hrs respectively. Both the pipe are opened to fill the tank&nbsp; but when the tank is 1/3rd full a leak develops in the tank through which 1/3rd of the water supplied by both the pipes leak out. What is the total time taken to fill the tank?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 hours</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>12 hours</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 hours   </p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5 hours</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/81a904976f3efa87e0dc09cf85f4f6bb.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/74503d3e168166b4e68bdc74cf6a2fa4.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f4",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>If in a certain code language<br />\n&nbsp;&nbsp; &nbsp;(i)&nbsp;&nbsp; &nbsp;&lsquo;Do it&rsquo; is coded as &lsquo;35&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(ii)&nbsp;&nbsp; &nbsp;&lsquo;go there now&rsquo; is coded as &lsquo;412&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(iii)&nbsp;&nbsp; &nbsp;&lsquo;there it is&rsquo; is coded as &lsquo;236&rsquo;<br />\n&nbsp;&nbsp; &nbsp;(iv)&nbsp;&nbsp; &nbsp;&lsquo;it now&rsquo; is coded as &lsquo;31&rsquo;<br />\n&nbsp;&nbsp; &nbsp;Then what is the code used for &lsquo;go&rsquo; ?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>2</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>1</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>4</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>5</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/c21323f5250160c25a77f824445143f8.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f5",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A hollow spherical metallic ball has an external diameter 6 cm and is 1/2 cm thick. 2 The volume of metal used in the ball is :</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/ff4ddd2290ac94763b348321f51290a0.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/7e63077fd1999e3aa903a7ac32b88992.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/f89ec1997185d51668e20c07a06c3d98.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/12be479ee8573c8664039cc1521a1c79.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/77d42aa5908e07e3e17af3ffff5100aa.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f6",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A is 3/4 times faster than B. If A gives B a start of 84 m, then how far the winning post has to be so that A and B reaches at the same time ?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>150</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>168</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>196</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>154</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/3b2a11a1ef88a1ee6e007b9033d87dcc.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/6f1a2bab4c5a193819b10b6791460952.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd339a5f9c5c7751d6f7",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>A man starts delivering letters 3 km southwards and then turns right. He covers 4 km on this road and again turns right. He delivers letters for 3 km and completes his daily beat. Then he turns left for lunch at home, which is 5 km away. How far has he travel to reach the post office after lunch?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>15 km</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>10 km</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>9 km</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>8 km</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/22ea2666b4ef31b013590517ca8d57ac.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216fd349a5f9c5c7751d6f8",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p>Amit is the only maternal uncle of the Dilip&rsquo;s wife&rsquo;s daughter son. How is Dilip&rsquo;s son-in-law related to Amit?</p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Brother-in-law</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Father-in-law</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Brother</p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p>Nephew</p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216fd349a5f9c5c7751d6f9/17162677e89a737e0d72a29a9ac70ed5.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    }
+  ]
+}

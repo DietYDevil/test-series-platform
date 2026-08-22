@@ -1,0 +1,1097 @@
+{
+  "testName": "Unit Test 02 [General Aptitude-2]",
+  "timeLimitMin": "60",
+  "totalQs": "20",
+  "maxScore": 40,
+  "lang": "EN",
+  "subjects": [
+    "Unit - General Aptitude"
+  ],
+  "sections": [
+    {
+      "key": "A",
+      "id": "A",
+      "name": "Unit - General Aptitude MCQ",
+      "type": "MCQ",
+      "count": 20,
+      "marks": 2,
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "neg": true,
+      "questions": [
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/10823f5c3837e7191edcfce256785722.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/293fde76f9ea3055937a8a1d8c45ccb6.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0337e0422642cdfe40d003fe93f60fd9.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7f9a20b31991ed186d07e0fefebc3317.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/920e82e9a94b329b844018d7a081b397.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7ec5e5f74e99709394e7e0ae7849407d.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c277f489a2f5df9245132e7f96ae5289.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/139fc0f013062154063af5066671343a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d2367a2d2578fc7d31a6c5a2a2a661b5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/abcceb9833b263d42ea32f57a528f37a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/ae732b86efee33bd06766b282ee80626.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4597072ae324b84e165335b0d10d4816.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/afc858ad6683611f34daecd50102e431.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d166d2bc948f0466289c6c4c7b89a2ee.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/47b1eb90ae60333ee8a7cb24c3252529.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c99152d6589fa9e8d840d2e8c2e9992c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1bb4c29413bc1e4fad6df45acc9f0b72.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fc5aecc801c4c10adbdd09359b29e67b.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d2b48b7304d58a327dd04ae4a699bda4.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7b8623f964874889c8225520a3a6877c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/8b19efb3ddc5367640be54b1a4c0c2de.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f76123557f806b2c40a5266c607c5c30.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/630f55c927bdcc9eccad979b828ef441.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d0ebf64e729a5c5992ff14f180af33f6.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f6b09c575cd6268c21c2ffcdee53acb9.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6255a58737ca8c6b7972392d604b829a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1d3ef5cd3ffb8908930bd782b4779ed0.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/b5b569d74902c7505ea4ca4cc6ed32e3.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7bce1a13fce34112318e529e67bc776e.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/46363c5809d5381f9fb881c65a8ca9dd.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4b175273a58142d58c9d7c46922d0f1a.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dd8a3628817f6bffb2140ac6b4f76e54.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a923217d791f0fe849b784e0e98ef1c6.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/de5da70ea47062f410a5b0f75c0197c8.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6fead695cc7d94e21e4822f4d038d789.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a24abf7e79cd04815fecc0d032850401.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f66751cb671a987e6e8e7649476ee37f.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/971744eb42954178be24abc11f4e038e.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/71cf0833a821c8392d80e208bed46efd.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/53f4719ed788e52bdfaa7ee29a42c8b9.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d1e9113cfbb2322b690534514679e16e.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/36a6348cc8340b938806cc160a74e4a4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3574c349c5904f33d6e3a6315fb1fe04.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/178b3e3aeaa4da9c0ded3dcc2df20db3.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2d9339c4c044f60f684d52ccd87ec8f3.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f399e8edbc7a966392e238150e835d22.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5bb73db9b0effd9394d8a18325e370e9.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/8b7b9fea1e481f7f8dde9c59e5c5bf26.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dd1a047430dffac193f4bc3e30a87520.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6ea34c3b74913a4b895deb56fab1cc81.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5ffac7dcc71a85f5522795b832d5042e.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dce1e81b22a5795acce66c0e26172900.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/83189f4576a72340de67b6459f5d56a5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/66b811ee80a5bd5432e1704d8d7e5d2e.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/750222505bb619f1cc8b8cf8d8dd7387.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/47acf27ceae8ec6722d1e5c2f5bcfd3a.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/431eeae08852e7dd1f2e09e6c0185876.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4b4826229c28f40ce2357136e64eefe5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7a99b5df04d7ba034b1ee86b119ef4fe.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fdc619486f944c10dd55ef07212bdb9d.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7e9dd2e36c25d83f2c00bc41f4ee47f0.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/09a76f9d4f1e80a327d5af9607a04c6c.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/99a6a5557f70df1d00f75609aa604bbe.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/aaac09041478bffd132fcff4f62bfca6.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/635c3aebe4c0afa1f75114467507b620.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/adae2020426de19c100d57dc0cf55acb.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb4b7a85efb95362d385476dde30c691.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4aec6ffd5c4922fa8946d1fa63931718.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/61f1205fa83d14c7ba8975fc5e33cf8f.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3c9f6b33ad0fbe89370833cee1590d3f.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f49244a50d057b930f47a7b4420c32ab.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/efd2f72318ea4cba3f7cab619e6220ae.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3fb769b753c8bd4d5156b6065c92f930.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7157f37f707876814b859efcf5bfd59b.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2011a1a30528f8bf674099c00de07c1d.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bacc308349e8eb48440fd0102447b00b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a9a91d1ddb0701fd4b0152bd5253363b.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/da14b8d5640d0d415bd010a658ff371f.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/ebdffc39e117f028f6fd89f28b0b231d.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            3
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/52e3ef63c9a807bd8f1ba9d81a4b2ef3.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4fac19eca26ea0df85d1436062b0645a.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/da81dd0dfd70b0f24523dc900fad133a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/324725fec5d078b10a79b51d56dbcc78.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/627a16b53736dcd07220b34dc5891804.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/365d82b6bbbe4a2bfc304ec3348734ca.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c84b64f00b0b72aee65ba19ff938c503.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/cd6b1ad9df98cd8b68bc5e29de994e4f.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3ddd6ec68b6077c6ea3b13f5496fecb5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5fa2008d593e05edc43a8b89eac524b3.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f1be454ef69d7301fd83176ec4f8f9d1.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1f80a44d8d07ca49ab11e1f9df048623.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb8fa8556b6087425c9ac62fbabe9755.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb28936a067995c654b58510536775df.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6fb93cc3a9ea60d8635ae8a8f30a9151.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/728506ee2d405cf7fa69f3d22a556381.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f0a29b9cd9f1b332bf2cb16ee1e82609.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2b3865c5a1564ebaeaf2a26d30756b34.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/24c814154da858c32768a26a5cdd00f7.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5c77d37598d603d42d01b15ce9fd3c4c.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/e6526d8c147d888823fafec6be66327a.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/9eb374d74e51fb387e976d560beac7b5.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bd4166d6276fc24cd14661812b121fea.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0680d8c9123d742d22adc5db3fd22ab2.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            0
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6cfb161596f067caaab1fac16afa1a6b.png\" /></p>\n\n<p>&nbsp;</p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/deba5f4feb070e7f436f085ebee6c5b7.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0f3774994fedc459fb94c1c97fc08187.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a0db67520addaa72ef543699d55fe8ba.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3307cf7738cb03971837123c47bf540c.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a5ecef05c5e2ac1f4da9d6d794515483.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0ec5843b73ede04307576a73aea84653.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/00157e818788f00b3b16da9ef43e237e.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0412bf23fc11a58b1ca64a70dfc7c013.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fda90b54b4aa1b55bfc14becdb246625.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/23b0d121912800610e4e9f3ac3780989.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/aca82cb2f39c1d9d954b90caf4c2e363.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            1
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/502909144c9053013795f5edadefa982.png\" /></p>\n",
+          "haveSol": true
+        },
+        {
+          "q": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5e633d3f3139de1ab81f5c5317ee448b.png\" /></p>\n </div>",
+          "options": [
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7e40e7eb41cacf090dd2eb263578a3cb.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/56831c1121951f0b24581a9e9b4bef11.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3649cd318f84ef889361c37aea087a02.png\"></p>\n</div>\n\t\t\t",
+            "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c54576721ff84e41265e0b3e61dd4fbb.png\"></p>\n</div>\n\t\t\t"
+          ],
+          "ans": [
+            2
+          ],
+          "type": "MCQ",
+          "marksPos": 2,
+          "marksNeg": 0.5,
+          "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f83968161cfc5e6bc090b11b84b4f652.png\" /></p>\n",
+          "haveSol": true
+        }
+      ]
+    }
+  ],
+  "topper": {
+    "rank": 1,
+    "name": "Simran jeet",
+    "score": 29,
+    "correct": 15,
+    "incorrect": 2,
+    "timeMin": 41.47
+  },
+  "toppers": [
+    {
+      "rank": 1,
+      "name": "Simran jeet",
+      "score": 29,
+      "correct": 15,
+      "incorrect": 2,
+      "timeMin": 41.47
+    },
+    {
+      "rank": 2,
+      "name": "Sad Nom",
+      "score": 28.5,
+      "correct": 15,
+      "incorrect": 3,
+      "timeMin": 55.95
+    },
+    {
+      "rank": 3,
+      "name": "Shraddha Kate",
+      "score": 28,
+      "correct": 14,
+      "incorrect": 0,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 4,
+      "name": "Harsh Maurya",
+      "score": 26,
+      "correct": 14,
+      "incorrect": 4,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 5,
+      "name": "Narayan Lal Balai",
+      "score": 25,
+      "correct": 13,
+      "incorrect": 2,
+      "timeMin": 60
+    },
+    {
+      "rank": 6,
+      "name": "Dharma Ram KACHHAWAHA",
+      "score": 23.5,
+      "correct": 12,
+      "incorrect": 1,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 7,
+      "name": "Bhawna .",
+      "score": 23.5,
+      "correct": 12,
+      "incorrect": 1,
+      "timeMin": 57.1
+    },
+    {
+      "rank": 8,
+      "name": "(Unnamed)",
+      "score": 21,
+      "correct": 11,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 9,
+      "name": "Poorna Chandra",
+      "score": 19.5,
+      "correct": 11,
+      "incorrect": 5,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 10,
+      "name": "Chandan Mavinakod",
+      "score": 19,
+      "correct": 10,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 11,
+      "name": "Umesh Singh",
+      "score": 18.5,
+      "correct": 10,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 12,
+      "name": "Ranjana Sain",
+      "score": 16.5,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 55.27
+    },
+    {
+      "rank": 13,
+      "name": "Anuja Ojha",
+      "score": 16.5,
+      "correct": 9,
+      "incorrect": 3,
+      "timeMin": 57.27
+    },
+    {
+      "rank": 14,
+      "name": "Shubhi shrivastava",
+      "score": 14.5,
+      "correct": 8,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 15,
+      "name": "Puspanjali Nanda",
+      "score": 13,
+      "correct": 7,
+      "incorrect": 2,
+      "timeMin": 62.22
+    },
+    {
+      "rank": 16,
+      "name": "DEEPAK PANDEY",
+      "score": 13,
+      "correct": 7,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 17,
+      "name": "Sanjay kumar",
+      "score": 11,
+      "correct": 6,
+      "incorrect": 2,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 18,
+      "name": "Somya Moharana",
+      "score": 11,
+      "correct": 6,
+      "incorrect": 2,
+      "timeMin": 42.27
+    },
+    {
+      "rank": 19,
+      "name": "Anamika jaiswal",
+      "score": 8.5,
+      "correct": 5,
+      "incorrect": 3,
+      "timeMin": 60.02
+    },
+    {
+      "rank": 20,
+      "name": "(Unnamed)",
+      "score": 5,
+      "correct": 6,
+      "incorrect": 14,
+      "timeMin": 0.83
+    }
+  ],
+  "questions": [
+    {
+      "id": "6216f3aea98e3d52a471716c",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/10823f5c3837e7191edcfce256785722.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/293fde76f9ea3055937a8a1d8c45ccb6.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0337e0422642cdfe40d003fe93f60fd9.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7f9a20b31991ed186d07e0fefebc3317.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/920e82e9a94b329b844018d7a081b397.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7ec5e5f74e99709394e7e0ae7849407d.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471716d",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c277f489a2f5df9245132e7f96ae5289.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/139fc0f013062154063af5066671343a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d2367a2d2578fc7d31a6c5a2a2a661b5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/abcceb9833b263d42ea32f57a528f37a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/ae732b86efee33bd06766b282ee80626.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4597072ae324b84e165335b0d10d4816.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471716e",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/afc858ad6683611f34daecd50102e431.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d166d2bc948f0466289c6c4c7b89a2ee.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/47b1eb90ae60333ee8a7cb24c3252529.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c99152d6589fa9e8d840d2e8c2e9992c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1bb4c29413bc1e4fad6df45acc9f0b72.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fc5aecc801c4c10adbdd09359b29e67b.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471716f",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d2b48b7304d58a327dd04ae4a699bda4.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7b8623f964874889c8225520a3a6877c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/8b19efb3ddc5367640be54b1a4c0c2de.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f76123557f806b2c40a5266c607c5c30.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/630f55c927bdcc9eccad979b828ef441.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d0ebf64e729a5c5992ff14f180af33f6.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717170",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f6b09c575cd6268c21c2ffcdee53acb9.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6255a58737ca8c6b7972392d604b829a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1d3ef5cd3ffb8908930bd782b4779ed0.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/b5b569d74902c7505ea4ca4cc6ed32e3.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7bce1a13fce34112318e529e67bc776e.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/46363c5809d5381f9fb881c65a8ca9dd.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717171",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4b175273a58142d58c9d7c46922d0f1a.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dd8a3628817f6bffb2140ac6b4f76e54.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a923217d791f0fe849b784e0e98ef1c6.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/de5da70ea47062f410a5b0f75c0197c8.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6fead695cc7d94e21e4822f4d038d789.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a24abf7e79cd04815fecc0d032850401.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717172",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f66751cb671a987e6e8e7649476ee37f.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/971744eb42954178be24abc11f4e038e.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/71cf0833a821c8392d80e208bed46efd.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/53f4719ed788e52bdfaa7ee29a42c8b9.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/d1e9113cfbb2322b690534514679e16e.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/36a6348cc8340b938806cc160a74e4a4.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3574c349c5904f33d6e3a6315fb1fe04.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717173",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/178b3e3aeaa4da9c0ded3dcc2df20db3.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2d9339c4c044f60f684d52ccd87ec8f3.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f399e8edbc7a966392e238150e835d22.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5bb73db9b0effd9394d8a18325e370e9.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/8b7b9fea1e481f7f8dde9c59e5c5bf26.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dd1a047430dffac193f4bc3e30a87520.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717174",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6ea34c3b74913a4b895deb56fab1cc81.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5ffac7dcc71a85f5522795b832d5042e.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/dce1e81b22a5795acce66c0e26172900.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/83189f4576a72340de67b6459f5d56a5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/66b811ee80a5bd5432e1704d8d7e5d2e.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/750222505bb619f1cc8b8cf8d8dd7387.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717175",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/47acf27ceae8ec6722d1e5c2f5bcfd3a.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/431eeae08852e7dd1f2e09e6c0185876.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4b4826229c28f40ce2357136e64eefe5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7a99b5df04d7ba034b1ee86b119ef4fe.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fdc619486f944c10dd55ef07212bdb9d.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7e9dd2e36c25d83f2c00bc41f4ee47f0.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717176",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/09a76f9d4f1e80a327d5af9607a04c6c.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/99a6a5557f70df1d00f75609aa604bbe.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/aaac09041478bffd132fcff4f62bfca6.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/635c3aebe4c0afa1f75114467507b620.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/adae2020426de19c100d57dc0cf55acb.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb4b7a85efb95362d385476dde30c691.png\" /></p>\n\n<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4aec6ffd5c4922fa8946d1fa63931718.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717177",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/61f1205fa83d14c7ba8975fc5e33cf8f.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3c9f6b33ad0fbe89370833cee1590d3f.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f49244a50d057b930f47a7b4420c32ab.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/efd2f72318ea4cba3f7cab619e6220ae.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3fb769b753c8bd4d5156b6065c92f930.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7157f37f707876814b859efcf5bfd59b.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717178",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2011a1a30528f8bf674099c00de07c1d.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bacc308349e8eb48440fd0102447b00b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a9a91d1ddb0701fd4b0152bd5253363b.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/da14b8d5640d0d415bd010a658ff371f.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/ebdffc39e117f028f6fd89f28b0b231d.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        3
+      ],
+      "stdAns": [
+        3
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/52e3ef63c9a807bd8f1ba9d81a4b2ef3.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a4717179",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/4fac19eca26ea0df85d1436062b0645a.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/da81dd0dfd70b0f24523dc900fad133a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/324725fec5d078b10a79b51d56dbcc78.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/627a16b53736dcd07220b34dc5891804.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/365d82b6bbbe4a2bfc304ec3348734ca.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c84b64f00b0b72aee65ba19ff938c503.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717a",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/cd6b1ad9df98cd8b68bc5e29de994e4f.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3ddd6ec68b6077c6ea3b13f5496fecb5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5fa2008d593e05edc43a8b89eac524b3.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f1be454ef69d7301fd83176ec4f8f9d1.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/1f80a44d8d07ca49ab11e1f9df048623.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb8fa8556b6087425c9ac62fbabe9755.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717b",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bb28936a067995c654b58510536775df.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6fb93cc3a9ea60d8635ae8a8f30a9151.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/728506ee2d405cf7fa69f3d22a556381.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f0a29b9cd9f1b332bf2cb16ee1e82609.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/2b3865c5a1564ebaeaf2a26d30756b34.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/24c814154da858c32768a26a5cdd00f7.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717c",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5c77d37598d603d42d01b15ce9fd3c4c.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/e6526d8c147d888823fafec6be66327a.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/9eb374d74e51fb387e976d560beac7b5.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/bd4166d6276fc24cd14661812b121fea.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0680d8c9123d742d22adc5db3fd22ab2.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        0
+      ],
+      "stdAns": [
+        0
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/6cfb161596f067caaab1fac16afa1a6b.png\" /></p>\n\n<p>&nbsp;</p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717d",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/deba5f4feb070e7f436f085ebee6c5b7.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0f3774994fedc459fb94c1c97fc08187.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a0db67520addaa72ef543699d55fe8ba.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3307cf7738cb03971837123c47bf540c.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/a5ecef05c5e2ac1f4da9d6d794515483.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0ec5843b73ede04307576a73aea84653.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717e",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/00157e818788f00b3b16da9ef43e237e.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/0412bf23fc11a58b1ca64a70dfc7c013.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/fda90b54b4aa1b55bfc14becdb246625.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/23b0d121912800610e4e9f3ac3780989.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/aca82cb2f39c1d9d954b90caf4c2e363.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        1
+      ],
+      "stdAns": [
+        1
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/502909144c9053013795f5edadefa982.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    },
+    {
+      "id": "6216f3aea98e3d52a471717f",
+      "part": "Unit - General Aptitude",
+      "type": "MCQ",
+      "marksPos": 2,
+      "marksNeg": 0.5,
+      "question": "<div class=\"q-part\"> <p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/5e633d3f3139de1ab81f5c5317ee448b.png\" /></p>\n </div>",
+      "options": [
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/7e40e7eb41cacf090dd2eb263578a3cb.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/56831c1121951f0b24581a9e9b4bef11.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/3649cd318f84ef889361c37aea087a02.png\"></p>\n</div>\n\t\t\t",
+        "\n\t\t\t\t\n\t\t\t\t<div class=\"opt-data\"><p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/c54576721ff84e41265e0b3e61dd4fbb.png\"></p>\n</div>\n\t\t\t"
+      ],
+      "ans": [
+        2
+      ],
+      "stdAns": [
+        2
+      ],
+      "status": "unattempted",
+      "timeTaken": 0,
+      "pScore": 0,
+      "nScore": 0,
+      "passage": "",
+      "solution": "<p><img alt=\"\" src=\"https://client-media.onlinetestpanel.com/careerendeavour/test/6216f3aea98e3d52a4717180/f83968161cfc5e6bc090b11b84b4f652.png\" /></p>\n",
+      "haveSol": true,
+      "subject": "Unit - General Aptitude"
+    }
+  ]
+}
