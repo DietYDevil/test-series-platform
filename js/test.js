@@ -39,6 +39,23 @@ window.TestRunner = (function () {
     if (SECS.length) {
       SECS.forEach(function (s) { SECQ[s.id] = []; });
       Q.forEach(function (q, i) { var pid = q.part || (SECS[0] && SECS[0].id); if (SECQ[pid]) SECQ[pid].push(i); else { SECQ[pid] = [i]; } });
+    // Reconcile orphan buckets (CSIR: q.part="Part A" vs sec.name="Part A MCQ")
+    for (var pi in SECQ) {
+      if (pi === SECS[0].id) continue; // skip main bucket
+      var idxs = SECQ[pi];
+      var matched = false;
+      SECS.forEach(function(s){
+        if (s.name.indexOf(pi)!==-1 || pi.indexOf(s.name)!==-1 || s.name.toLowerCase().replace(/\s/g,'')===pi.toLowerCase().replace(/\s/g,'')) {
+          SECQ[s.id] = SECQ[s.id] || [];
+          SECQ[s.id] = SECQ[s.id].concat(idxs);
+          matched = true;
+        }
+      });
+      if (!matched && SECS[0]) { // move other orphans to default bucket
+        SECQ[SECS[0].id] = SECQ[SECS[0].id] || [];
+        SECQ[SECS[0].id] = SECQ[SECS[0].id].concat(idxs);
+      }
+    }
     } else {
       SECS = [{ id: 'A', name: 'All Questions', type: 'MCQ', count: N }];
       SECQ['A'] = Q.map(function (_, i) { return i; });
