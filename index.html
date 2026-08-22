@@ -128,12 +128,15 @@
     <div class="links"><span id="answeredChip">Answered: 0 / 0</span></div>
   </div>
   <div id="secbar"></div>
-      <div id="calc">
-        <div class="cdisp">
-          <div class="cexpr" id="cexpr"></div>
-          <div class="cmain" id="cmain">0</div>
-        </div>
-        <div class="cgrid">
+  <div id="timerbar">
+    <span class="tlbl">Time Left</span>
+    <span id="timer">--:--</span>
+    <span id="answeredChip" style="margin-left:auto">Answered: 0 / 0</span>
+  </div>
+  <div class="tb-right">
+    <div class="cand">
+      <div class="cand-photo" id="candPhoto">PH</div>
+      <div class="cand-info">
           <button type="button" class="mem" data-act="mem" data-val="MC">MC</button>
           <button type="button" class="mem" data-act="mem" data-val="MR">MR</button>
           <button type="button" class="mem" data-act="mem" data-val="M+">M+</button>
@@ -192,11 +195,6 @@
       </div>
     </div>
   </div>
-  <div id="timerbar">
-    <span class="tlbl">Time Left</span>
-    <span id="timer">--:--</span>
-    <span id="answeredChip" style="margin-left:auto">Answered: 0 / 0</span>
-  </div>
   <div id="secbar"></div>
   <div id="layout">
     <div id="qwrap">
@@ -226,8 +224,9 @@
         <button class="danger" style="margin-left:auto" onclick="TestRunner.openSubmit()">Submit Test</button>
       </div>
     </div>
-    <div id="sidebar">
-      <h4>Question Palette</h4>
+     <div id="sidebar">
+       <div id="calc"><div class="cdisp"><div class="cexpr" id="cexpr"></div><div class="cmain" id="cmain">0</div></div><div class="cgrid"></div></div>
+       <h4>Question Palette</h4>
       <div id="palette"></div>
       <div id="legend">
         <span><i class="a"></i> Answered</span>
@@ -238,7 +237,7 @@
       </div>
       <h4 style="margin-top:18px">Instructions</h4>
       <div class="legendmini" id="sbInstr"></div>
-    </div>
+      </div>
   </div>
 </div>
 
