@@ -61,11 +61,14 @@ window.TestRunner = (function () {
     cur = 0; remaining = (DATA.timeLimitMin || testObj.duration_min || 60) * 60;
     buildSections();
     document.getElementById('tbName').textContent = testObj.title || DATA.testName || 'Test';
-    document.getElementById('tbSub').textContent = (DATA.subjects && DATA.subjects[0]) || 'GATE / NET PHYSICS';
+    var catName = (testObj.categories && testObj.categories.name) || '';
+    var isCsir = /csir/i.test(catName);
+    document.getElementById('tbBrand').textContent = isCsir ? 'CSIR NET DEC 2026 TEST SERIES' : ((catName || 'ONLINE') + ' TEST SERIES').toUpperCase();
+    document.getElementById('tbSub').textContent = isCsir ? 'Council of Scientific & Industrial Research — National Eligibility Test' : 'Secure Online Test Portal';
     document.getElementById('sbInstr').textContent = 'Green = answered, Red = visited-not-answered, Purple = marked, White = not visited.';
     var nm = who();
     document.getElementById('candName').textContent = nm;
-    document.getElementById('candRoll').textContent = 'Roll No: ' + (nm ? nm.replace(/\s+/g, '-').toUpperCase() : '—');
+// remove candRoll line for CE format
     updateAnswered();
   }
 
@@ -424,20 +427,27 @@ window.TestRunner = (function () {
     var w = RES.filter(function (r) { return r.status === 'incorrect'; }).length;
     var u = RES.filter(function (r) { return r.status === 'unattempted'; }).length;
     var myPct = DATA.maxScore ? (TOT / DATA.maxScore * 100) : 0;
-    var tp = DATA.topper || { name: '—', rank: '—', score: 0, correct: 0, incorrect: 0, unattempted: 0, timeMin: 0 };
-    var tpPct = DATA.maxScore ? (tp.score / DATA.maxScore * 100) : 0;
-    var diff = TOT - tp.score;
-    var statusHtml = diff > 0 ? '<span class="badge ok">You beat the topper!</span>' : diff === 0 ? '<span class="badge" style="background:var(--mark)">Tied with topper</span>' : '<span class="badge bad">Behind topper</span>';
+    var totalTime = RES.reduce(function (s, r) { return s + r.time; }, 0);
+    var myRank = 1;
+    (DATA.toppers || []).forEach(function (t) { if (TOT < t.score) myRank++; });
+    var lastScore = (DATA.toppers && DATA.toppers.length) ? DATA.toppers[DATA.toppers.length - 1].score : 0;
     var html = '<div class="ov-grid" style="margin-bottom:14px">' +
-      '<div class="ov-box"><div class="val gold">' + tp.rank + '</div><div class="lbl">Topper Rank</div></div>' +
-      '<div class="ov-box"><div class="val">' + tp.score + '</div><div class="lbl">Topper Score</div></div>' +
+      '<div class="ov-box"><div class="val gold">' + myRank + '</div><div class="lbl">Your Rank</div></div>' +
       '<div class="ov-box"><div class="val">' + TOT + '</div><div class="lbl">Your Score</div></div>' +
-      '<div class="ov-box"><div class="val ' + (diff > 0 ? 'ok' : diff < 0 ? 'bad' : '') + '">' + (diff > 0 ? '+' + diff : diff) + '</div><div class="lbl">Difference</div></div>' +
+      '<div class="ov-box"><div class="val">' + (DATA.toppers && DATA.toppers[0] ? DATA.toppers[0].score : 0) + '</div><div class="lbl">Rank 1 Score</div></div>' +
+      '<div class="ov-box"><div class="val">' + lastScore + '</div><div class="lbl">Top-' + (DATA.toppers ? DATA.toppers.length : 0) + ' Cutoff</div></div>' +
       '</div>';
-    html += '<p><b>Topper:</b> ' + esc(tp.name) + ' &mdash; Score ' + tp.score + '/' + DATA.maxScore + ' (' + tpPct.toFixed(1) + '%), Correct ' + tp.correct + ', Incorrect ' + tp.incorrect + ', Unattempted ' + tp.unattempted + ', Time ' + tp.timeMin + ' min.</p>';
-    html += '<div class="bar"><div class="bl"><span>Your Score</span><span>' + TOT + '/' + DATA.maxScore + ' (' + myPct.toFixed(1) + '%)</span></div><div class="track"><div class="fill me" style="width:' + myPct.toFixed(1) + '%"></div></div></div>';
-    html += '<div class="bar"><div class="bl"><span>Topper Score</span><span>' + tp.score + '/' + DATA.maxScore + ' (' + tpPct.toFixed(1) + '%)</span></div><div class="track"><div class="fill topper" style="width:' + tpPct.toFixed(1) + '%"></div></div></div>';
-    html += '<p style="margin-top:12px">' + statusHtml + '</p>';
+    if (TOT >= lastScore) {
+      html += '<p style="margin-top:12px">You would be <b>#' + myRank + '</b> among the top ' + (DATA.toppers ? DATA.toppers.length : 0) + ' toppers of this test. Score needed for Rank 1: <b>' + (DATA.toppers && DATA.toppers[0] ? DATA.toppers[0].score : 0) + '</b>.</p>';
+    } else {
+      html += '<p style="margin-top:12px">Your score <b>' + TOT + '</b> is less than the ' + (DATA.toppers ? DATA.toppers.length : 0) + 'th topper\'s score (<b>' + lastScore + '</b>), so you are not in the top ' + (DATA.toppers ? DATA.toppers.length : 0) + ' list.</p>';
+    }
+    html += '<h3 style="margin:20px 0 10px;color:#0b4f8a;border-bottom:2px solid #eef3f8;padding-bottom:6px">Toppers Table (Top ' + (DATA.toppers ? DATA.toppers.length : 0) + ')</h3>';
+    html += '<table class="tbl"><thead><tr><th>Rank</th><th>Name</th><th>Score</th><th>Correct</th><th>Incorrect</th><th>Time (min)</th></tr></thead><tbody>';
+    (DATA.toppers || []).forEach(function (t) {
+      html += '<tr><td>#' + t.rank + '</td><td>' + esc(t.name || '') + '</td><td>' + t.score + '</td><td>' + (t.correct !== undefined ? t.correct : '') + '</td><td>' + (t.incorrect !== undefined ? t.incorrect : '') + '</td><td>' + (t.timeMin !== undefined ? t.timeMin + ' min' : '') + '</td></tr>';
+    });
+    html += '</tbody></table>';
     document.getElementById('tp-top').innerHTML = html;
   }
 

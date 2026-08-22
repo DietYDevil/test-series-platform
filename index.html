@@ -111,14 +111,23 @@
   </div>
 </div>
 
-<!-- ============ TEST VIEW ============ -->
+<!-- ============ TEST VIEW (CE format) ============ -->
 <div id="viewTest" class="hidden">
   <div id="topbar">
-    <div class="tb-left">
-      <div class="tname" id="tbName"></div>
-      <div class="tsub" id="tbSub"></div>
+    <div class="tb-brand">
+      <h1 id="tbBrand">TEST SERIES</h1>
+      <div class="subtitle" id="tbSub"></div>
     </div>
-    <div id="calchost">
+    <div class="tb-right">
+      <div class="timer-badge"><span class="dot"></span>Time Left:&nbsp;<span id="timer">--:--</span></div>
+      <div class="user-badge" id="candName">User</div>
+    </div>
+  </div>
+  <div id="testbar">
+    <div id="tbName"></div>
+    <div class="links"><span id="answeredChip">Answered: 0 / 0</span></div>
+  </div>
+  <div id="secbar"></div>
       <div id="calc">
         <div class="cdisp">
           <div class="cexpr" id="cexpr"></div>
