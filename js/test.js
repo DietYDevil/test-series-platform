@@ -98,11 +98,13 @@ window.TestRunner = (function () {
     
     var title = testObj.title || DATA.testName || 'Test';
     var catName = (testObj.categories && testObj.categories.name) || '';
-    var isCsir = /csir/i.test(catName);
-    
+    var brandKey = catName + ' ' + title;
+    var isCsir = /csir/i.test(brandKey);
+    var isGate = /\bgate\b/i.test(brandKey);
+
     document.getElementById('tbName').textContent = title;
-    document.getElementById('tbBrand').textContent = isCsir ? 'CSIR NET DEC 2026 TEST SERIES' : ((catName || 'ONLINE') + ' TEST SERIES').toUpperCase();
-    document.getElementById('tbSub').textContent = isCsir ? 'Council of Scientific & Industrial Research — National Eligibility Test' : 'Secure Online Test Portal';
+    document.getElementById('tbBrand').textContent = isCsir ? 'CSIR NET DEC 2026 TEST SERIES' : (isGate ? 'GATE 2027 TEST SERIES' : ((catName || 'ONLINE') + ' TEST SERIES').toUpperCase());
+    document.getElementById('tbSub').textContent = isCsir ? 'Council of Scientific & Industrial Research — National Eligibility Test' : (isGate ? 'Graduate Aptitude Test in Engineering' : 'Secure Online Test Portal');
     document.getElementById('sbInstr').textContent = 'Green = answered, Red = visited-not-answered, Purple = marked, White = not visited.';
     var nm = who();
     document.getElementById('candName').textContent = nm;
