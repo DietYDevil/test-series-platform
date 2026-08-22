@@ -279,11 +279,10 @@ window.App = (function () {
     }
     var filterButtons = document.createElement('div');
     filterButtons.className = 'filterButtons';
-    filterButtons.innerHTML = '
-      <button class="btn filter active" onclick="App.filterTests('none')">All Tests</button>
-      <button class="btn filter" onclick="App.filterTests('unit')">Unit Tests</button>
-      <button class="btn filter" onclick="App.filterTests('minor')">Minor Tests</button>
-      <button class="btn filter" onclick="App.filterTests('full')">Full Mock Tests</button>';
+    filterButtons.innerHTML = '<button class="btn filter active" onclick="App.filterTests(\'none\')">All Tests</button>' +
+                              '<button class="btn filter" onclick="App.filterTests(\'unit\')">Unit Tests</button>' +
+                              '<button class="btn filter" onclick="App.filterTests(\'minor\')">Minor Tests</button>' +
+                              '<button class="btn filter" onclick="App.filterTests(\'full\')">Full Mock Tests</button>';
     grid.appendChild(filterButtons);
     grid.appendChild(makeTestCards(tests, map));
   }
