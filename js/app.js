@@ -54,7 +54,7 @@ window.App = (function () {
   }
 
   // ---------------- init ----------------
-  function init() {
+   function init() {
     var c = cfg();
     if (!c.SUPABASE_URL || c.SUPABASE_URL.indexOf('PASTE_') === 0 || c.SUPABASE_ANON_KEY.indexOf('PASTE_') === 0) {
       var v = el('viewAuth');
@@ -69,7 +69,7 @@ window.App = (function () {
     el('hBrand').textContent = c.APP_NAME;
     el('hSub').textContent = c.APP_SUBTITLE;
     document.title = c.APP_NAME;
-    fillCountryCodes();
+    setTimeout(fillCountryCodes, 100);
     sb.auth.getSession().then(function (res) {
       if (res.data && res.data.session) { state.user = res.data.session.user; bootstrap(); }
       else showAuth();
@@ -80,11 +80,14 @@ window.App = (function () {
     });
   }
 
-  function fillCountryCodes() {
+   function fillCountryCodes() {
     var def = cfg().DEFAULT_COUNTRY_CODE || '+91';
     ['su-cc', 'li-cc'].forEach(function (selId) {
       var sel = el(selId);
-      if (!sel) return;
+      if (!sel) {
+        console.log("Element with ID: " + selId + " not found");
+        return;
+      }
       COUNTRIES.forEach(function (pair) {
         var o = document.createElement('option');
         o.value = pair[0]; o.textContent = pair[1];
@@ -146,7 +149,7 @@ window.App = (function () {
     bootstrap();
   }
 
-  async function login() {
+   async function login() {
     var cc = el('li-cc').value;
     var digits = el('li-phone').value.trim();
     var pass = el('li-pass').value;
@@ -155,8 +158,9 @@ window.App = (function () {
     if (!digits || !pass) { err.textContent = 'Please enter phone and password.'; return; }
     err.textContent = 'Logging in...';
     var phone = normalizePhone(cc, digits);
+    console.log("Login attempt with phone: " + phone);
     var res = await sb.auth.signInWithPassword({ phone: phone, password: pass });
-    if (res.error) { err.textContent = 'Incorrect phone number or password.'; return; }
+    if (res.error) { err.textContent = 'Incorrect phone number or password.'; console.log("Login error: " + res.error.message); return; }
     state.user = res.data.user;
     bootstrap();
   }
