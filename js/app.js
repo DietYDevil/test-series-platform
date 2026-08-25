@@ -978,15 +978,81 @@ window.App = (function () {
   }
 
   // ---------------- admin: results ----------------
+  var resultsModeCur = 'test';
+
+  function jsonAttr(o) { return esc(JSON.stringify(o)).replace(/'/g, '&#39;'); }
+
   async function renderResults() {
     var box = el('admResults');
     box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading...</div>';
     var { data: tests } = await sb.from('tests').select('id, title').order('created_at', { ascending: false });
-    var opts = '<option value="">-- Select a test --</option>' + (tests || []).map(function (t) { return '<option value="' + t.id + '">' + esc(t.title) + '</option>'; }).join('');
+    var { data: students } = await sb.from('profiles').select('id, name, phone').eq('role', 'student').order('name', { ascending: true });
+    var tOpts = '<option value="">-- Select a test --</option>' + (tests || []).map(function (t) { return '<option value="' + t.id + '">' + esc(t.title) + '</option>'; }).join('');
+    var sOpts = '<option value="">-- Select a student --</option>' + (students || []).filter(function (s) { return s.name; }).map(function (s) { return '<option value="' + s.id + '">' + esc(s.name) + ' \u00b7 ' + esc(s.phone) + '</option>'; }).join('');
     var inner = '<div class="admCard"><h3>Results</h3>' +
-      '<div class="field"><label>Choose test</label><select id="res-test" onchange="App.loadResults()">' + opts + '</select></div>' +
-      '<div id="res-table"><div class="empty">Select a test above to see who attempted it.</div></div></div>';
+      '<div class="filterButtons" style="margin-bottom:14px">' +
+      '<button class="' + (resultsModeCur === 'test' ? 'active' : '') + '" onclick="App.setResultsMode(\'test\')">Test-wise</button>' +
+      '<button class="' + (resultsModeCur === 'user' ? 'active' : '') + '" onclick="App.setResultsMode(\'user\')">User-wise</button>' +
+      '</div>' +
+      '<div id="resTestPane" class="' + (resultsModeCur === 'test' ? '' : 'hidden') + '">' +
+        '<div class="field"><label>Choose test</label><select id="res-test" onchange="App.loadResults()">' + tOpts + '</select></div>' +
+        '<div id="res-table"><div class="empty">Select a test above to see who attempted it.</div></div>' +
+      '</div>' +
+      '<div id="resUserPane" class="' + (resultsModeCur === 'user' ? '' : 'hidden') + '">' +
+        '<div class="field"><label>Choose student</label><select id="res-user" onchange="App.loadUserResults()">' + sOpts + '</select></div>' +
+        '<div id="res-user-table"><div class="empty">Select a student above to see their complete performance.</div></div>' +
+      '</div>' +
+      '</div>';
     box.innerHTML = inner;
+  }
+
+  function setResultsMode(m) {
+    resultsModeCur = m;
+    el('resTestPane').classList.toggle('hidden', m !== 'test');
+    el('resUserPane').classList.toggle('hidden', m !== 'user');
+    document.querySelectorAll('#admResults .filterButtons button').forEach(function (b, i) {
+      b.classList.toggle('active', (i === 0) === (m === 'test'));
+    });
+  }
+
+  async function loadUserResults() {
+    var userId = el('res-user').value;
+    var box = el('res-user-table');
+    if (!userId) { box.innerHTML = '<div class="empty">Select a student above.</div>'; return; }
+    box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading...</div>';
+    var rr = await sb.from('results')
+      .select('*, tests(title)')
+      .eq('user_id', userId)
+      .order('submitted_at', { ascending: false });
+    var rows = rr.data || [];
+    if (!rows.length) { box.innerHTML = '<div class="empty">This student has not attempted any test yet.</div>'; return; }
+    var totalPct = 0, bestPct = 0, totalTime = 0;
+    rows.forEach(function (r) {
+      var pct = r.max_score ? (r.score / r.max_score * 100) : 0;
+      totalPct += pct; totalTime += (r.time_used_sec || 0);
+      if (pct > bestPct) bestPct = pct;
+    });
+    var avgPct = totalPct / rows.length;
+    var summary = '<div class="ov-grid" style="margin-bottom:16px">' +
+      '<div class="ov-box"><div class="val">' + rows.length + '</div><div class="lbl">Tests Attempted</div></div>' +
+      '<div class="ov-box"><div class="val ' + (avgPct >= 60 ? 'ok' : (avgPct >= 40 ? 'gold' : 'bad')) + '">' + avgPct.toFixed(1) + '%</div><div class="lbl">Average Score</div></div>' +
+      '<div class="ov-box"><div class="val ok">' + bestPct.toFixed(1) + '%</div><div class="lbl">Best Score</div></div>' +
+      '<div class="ov-box"><div class="val">' + fmtSec(totalTime) + '</div><div class="lbl">Total Time Spent</div></div>' +
+      '</div>';
+    var tbl = '<table class="tbl"><thead><tr><th>Test</th><th>Score</th><th>%</th><th>Correct</th><th>Incorrect</th><th>Unattempted</th><th>Time</th><th>Submitted</th><th></th></tr></thead><tbody>';
+    rows.forEach(function (r) {
+      var pct = r.max_score ? (r.score / r.max_score * 100).toFixed(1) : '0';
+      tbl += '<tr><td><b>' + esc(r.tests ? r.tests.title : 'Test') + '</b></td>' +
+        '<td><b>' + r.score + '/' + r.max_score + '</b></td>' +
+        '<td>' + pct + '%</td>' +
+        '<td><span class="badge ok">' + r.correct + '</span></td><td><span class="badge bad">' + r.incorrect + '</span></td>' +
+        '<td><span class="badge u">' + r.unattempted + '</span></td>' +
+        '<td>' + fmtSec(r.time_used_sec) + '</td>' +
+        '<td>' + esc(new Date(r.submitted_at).toLocaleString()) + '</td>' +
+        '<td><button class="ok" onclick="App.viewResult(' + "'" + r.test_id + "'" + ',' + jsonAttr(r) + ')">View Report</button></td></tr>';
+    });
+    tbl += '</tbody></table>';
+    box.innerHTML = summary + '<p class="note">Click <b>View Report</b> to open the full analysis of that attempt.</p>' + tbl;
   }
 
   async function loadResults() {
@@ -1011,7 +1077,8 @@ window.App = (function () {
         '<td><span class="badge u">' + r.unattempted + '</span></td>' +
         '<td>' + fmtSec(r.time_used_sec) + '</td>' +
         '<td>' + esc(new Date(r.submitted_at).toLocaleString()) + '</td>' +
-        '<td><button class="danger" onclick="App.resetResult(' + "'" + r.id + "'" + ')">Reset</button></td></tr>';
+        '<td><div class="actions"><button class="ok" onclick="App.viewResult(' + "'" + r.test_id + "'" + ',' + jsonAttr(r) + ')">View Report</button>' +
+        '<button class="danger" onclick="App.resetResult(' + "'" + r.id + "'" + ')">Reset</button></div></td></tr>';
     });
     tbl += '</tbody></table>';
     box.innerHTML = '<p class="note">' + total + ' attempt(s). Use <b>Reset</b> to allow a student to retake the test (their old attempt is deleted).</p>' + tbl;
@@ -1070,6 +1137,8 @@ window.App = (function () {
     saveAssignments: saveAssignments,
     renderResults: renderResults,
     loadResults: loadResults,
+    setResultsMode: setResultsMode,
+    loadUserResults: loadUserResults,
     resetResult: resetResult,
     backToDash: backToDash,
     closeInst: closeInst,
