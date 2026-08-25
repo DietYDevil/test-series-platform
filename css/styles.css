@@ -413,3 +413,88 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
   .inboxWrap{flex-direction:column;height:auto}
   .inboxListWrap{width:100%;max-height:250px}
 }
+
+/* ==================== dark mode ==================== */
+#appHeader .themeBtn{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:#fff;width:32px;height:32px;padding:0;font-size:15px;line-height:1;border-radius:6px;display:inline-flex;align-items:center;justify-content:center}
+#appHeader .themeBtn:hover{background:rgba(255,255,255,.28)}
+body.dark{--bg:#0d141f;--card:#15202f;--line:#273850;--text:#dce7f3;--muted:#90a5bb;background:var(--bg);color:var(--text);color-scheme:dark}
+body.dark .btn{background:#1b2840;color:#dce7f3;border-color:#34486a}
+body.dark .btn:hover{background:#223352}
+body.dark .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+body.dark .btn.danger{background:#38191d;color:#ff9d9d;border-color:#5e2b31}
+body.dark .btn.ok{background:#122e1f;color:#83e3a8;border-color:#1f5236}
+body.dark .authCard,body.dark .tcard,body.dark .tableWrap,body.dark .admCard,body.dark .card,body.dark .fcard,body.dark .modal .box,body.dark #chatPanel,body.dark .inboxListWrap,body.dark .inboxChat{background:#15202f;border-color:#273850}
+body.dark .authCard .tabs{border-bottom-color:#273850}
+body.dark .authCard .tabs button{background:#101a29;color:#90a5bb}
+body.dark .authCard .tabs button.active{background:#15202f;color:#6cb8ef;box-shadow:inset 0 -3px 0 #2f80c9}
+body.dark .field label,body.dark .chk{color:#aec3d8}
+body.dark .field input,body.dark .field select,body.dark .field textarea,body.dark .natbox input,body.dark .inputRow input,body.dark .cpInputRow input{background:#0f1928;color:#dce7f3;border-color:#34486a}
+body.dark .field input:focus,body.dark .field select:focus,body.dark .field textarea:focus,body.dark .natbox input:focus,body.dark .inputRow input:focus,body.dark .cpInputRow input:focus{box-shadow:0 0 0 3px rgba(47,128,201,.25)}
+body.dark .pageHead h2,body.dark .admCard h3,body.dark .card h2,body.dark .modal h3{color:#6cb8ef}
+body.dark .admCard h3,body.dark .card h2{border-bottom-color:#1d2b40}
+body.dark .folderTitle{color:#dce7f3}
+body.dark .folderTitle .ftcount,body.dark .fcDetails,body.dark .fcard p{color:#90a5bb}
+body.dark .tabs button,body.dark .filterButtons button{background:#1b2840;color:#c4d5e8;border-color:#34486a}
+body.dark .tabs button.active,body.dark .filterButtons button.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+body.dark .tbl th{background:#101a29;color:#9fb4ca}
+body.dark .tbl td{border-bottom-color:#1d2b40}
+body.dark .tbl tr:hover td{background:#182437}
+body.dark .tbl .actions button{background:#1b2840;color:#c4d5e8;border-color:#34486a}
+body.dark .tbl .actions button.ok{background:#122e1f;color:#83e3a8;border-color:#1f5236}
+body.dark .tbl .actions button.danger{background:#38191d;color:#ff9d9d;border-color:#5e2b31}
+body.dark .tc-foot{border-top-color:#1d2b40}
+body.dark .fc-count{background:#16283d;color:#6cb8ef}
+body.dark .assigned .u{background:#16283d;color:#6cb8ef}
+body.dark .ov-box{background:#101a29;border-color:#1d2b40}
+body.dark .bar .track{background:#1d2b40}
+body.dark .uploadZone{background:#101a29;border-color:#34486a}
+body.dark .uploadZone:hover{border-color:#2f80c9;background:#142032}
+body.dark .note,body.dark .hint,body.dark .chatEmpty,body.dark .thPrev,body.dark .icHeadInfo span,body.dark .thTime{color:#7e94aa}
+body.dark .empty{color:#90a5bb}
+body.dark #legend i.u{background:#0f1928;border-color:#34486a}
+body.dark .modal .row{border-bottom-color:#1d2b40}
+body.dark #instRules{color:#aec3d8!important}
+body.dark .qcard{background:#101a29;border-color:#1d2b40}
+body.dark .donut .inner{background:#15202f}
+body.dark .msqnote{background:#241d38;border-color:#3c3059;color:#b79ae8}
+body.dark .natbox .nsaved{color:#83e3a8}
+
+/* dark mode: chat + inbox */
+body.dark .cpMsgs,body.dark .msgsArea,body.dark .icHead{background:#0f1928}
+body.dark .inboxListHead{background:#0f1928;color:#6cb8ef;border-bottom-color:#1d2b40}
+body.dark .icHead{border-bottom-color:#1d2b40}
+body.dark .threadItem{border-bottom-color:#1d2b40}
+body.dark .threadItem:hover,body.dark .threadItem.active{background:#182437}
+body.dark .bub{background:#1b2840;border-color:#34486a;color:#dce7f3}
+body.dark .bubRow.me .bub{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-color:transparent}
+body.dark .cpInputRow,body.dark .inputRow{border-top-color:#273850;background:#15202f}
+
+/* dark mode: test engine */
+body.dark #qwrap{background:#121c2c}
+body.dark #sidebar{background:#0f1826;border-left-color:#273850}
+body.dark #viewTest #secbar{background:#121c2c;border-bottom-color:#273850}
+body.dark #viewTest #secbar .sec-tab{color:#aec3d8;border-right-color:#1d2b40}
+body.dark #viewTest #secbar .sec-tab:hover{background:#182437}
+body.dark #viewTest #testbar{background:#081426}
+body.dark #qbody{color:#d5e2f0}
+body.dark #qmeta .qnum{color:#dce7f3}
+body.dark #qmeta .subj{background:#16283d;color:#6cb8ef}
+body.dark #qmeta .qtype{background:#241d38;color:#b79ae8}
+body.dark #qmeta .qmarks,body.dark .legendmini,body.dark .natbox .nlabel{color:#90a5bb}
+body.dark .opt{background:#0f1928;border-color:#2b3d59}
+body.dark .opt.selected{background:#14283f;border-color:#2f80c9}
+body.dark .opt .key{background:#16283d;color:#6cb8ef}
+body.dark #nav button{background:#1b2840;color:#c4d5e8;border-color:#34486a}
+body.dark #nav button.mark{background:#241d38;color:#b79ae8;border-color:#3c3059}
+body.dark #nav button.clear{background:#2b2415;color:#ecc56a;border-color:#57451f}
+body.dark #sidebar h4{color:#90a5bb}
+body.dark #palette button{background:#1b2840;border-color:#34486a;color:#c4d5e8}
+body.dark #palette .sechead{color:#6cb8ef}
+body.dark #viewTest #palette button{background:linear-gradient(135deg,#3a4658,#28313f);color:#e3ecf7}
+body.dark #legend{color:#90a5bb}
+body.dark #calcBox{background:#0f1928;border-color:#273850}
+body.dark .calc-display{background:#0a1220;color:#cde3f7;border-color:#34486a}
+body.dark .calc-mode{color:#aec3d8}
+body.dark .calc-grid button{background:#1b2840;color:#c4d5e8;border-color:#34486a}
+body.dark .calc-grid button.op{background:#18305a}
+body.dark .calc-grid button.mem{background:#33290f}

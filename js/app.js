@@ -56,6 +56,9 @@ window.App = (function () {
 
   // ---------------- init ----------------
    function init() {
+    var savedTheme = 'light';
+    try { savedTheme = localStorage.getItem('theme') || 'light'; } catch (e) {}
+    applyTheme(savedTheme);
     var c = cfg();
     if (!c.SUPABASE_URL || c.SUPABASE_URL.indexOf('PASTE_') === 0 || c.SUPABASE_ANON_KEY.indexOf('PASTE_') === 0) {
       var v = el('viewAuth');
@@ -96,6 +99,17 @@ window.App = (function () {
       });
       sel.value = def;
     });
+  }
+
+  // ---------------- theme ----------------
+  function applyTheme(t) {
+    document.body.classList.toggle('dark', t === 'dark');
+    var b = el('themeBtn');
+    if (b) b.innerHTML = t === 'dark' ? '&#9728;&#65039;' : '&#127769;';
+    try { localStorage.setItem('theme', t); } catch (e) {}
+  }
+  function toggleTheme() {
+    applyTheme(document.body.classList.contains('dark') ? 'light' : 'dark');
   }
 
   // ---------------- auth ----------------
@@ -1107,6 +1121,7 @@ window.App = (function () {
   return {
     init: init,
     getClient: function () { return sb; },
+    toggleTheme: toggleTheme,
     showAuthTab: showAuthTab,
     login: login,
     signup: signup,
