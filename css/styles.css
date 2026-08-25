@@ -346,7 +346,7 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px}
 #viewTest #palette button.cur{outline:2.5px solid #0b2e59;outline-offset:1px}
 
 /* ==================== greeting bar ==================== */
-.greetBar{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:14px;padding:18px 26px;margin:0 0 18px;box-shadow:0 6px 18px rgba(11,79,138,.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.greetBar{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:14px;padding:18px 26px;margin:0 0 18px;box-shadow:0 6px 18px rgba(11,79,138,.18);display:flex;align-items:baseline;flex-wrap:wrap;gap:12px}
 .greetHi{font-size:21px;font-weight:700}
 .greetWave{display:inline-block;animation:wave 1.8s infinite;transform-origin:70% 70%}
 @keyframes wave{0%,60%,100%{transform:rotate(0)}65%,85%{transform:rotate(14deg)}75%{transform:rotate(-8deg)}}
