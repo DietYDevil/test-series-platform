@@ -223,10 +223,18 @@ window.App = (function () {
     return null;
   }
 
+  function detailsUrlFor(name) {
+    var n = String(name || '').toLowerCase();
+    if (n.indexOf('csir') >= 0) return 'https://course.onlinecareerendeavour.com/product-detail?id=621733edf2a17b2eb12b1a0f';
+    if (n.indexOf('gate') >= 0) return 'https://course.onlinecareerendeavour.com/product-detail?id=621733e9f2a17b2eb12b1a0a';
+    return null;
+  }
+
   function makeFolderCard(cat, tests, accent) {
     var isGen = cat.id === null;
     var list = isGen ? tests.filter(function (t) { return !t.category_id; })
                      : tests.filter(function (t) { return t.category_id === cat.id; });
+    var detUrl = detailsUrlFor(cat.name);
     var card = document.createElement('div');
     card.className = 'fcard ' + (accent || 'fc-a');
     card.innerHTML =
@@ -235,6 +243,7 @@ window.App = (function () {
         '<h3>' + esc(cat.name) + '</h3>' +
       '</div>' +
       '<p>' + esc(cat.description || '') + '</p>' +
+      (detUrl ? '<div class="fcDetails">Details : <a href="' + esc(detUrl) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + esc(detUrl) + '</a></div>' : '') +
       '<span class="fc-count">' + list.length + ' test' + (list.length === 1 ? '' : 's') + '</span>';
     card.onclick = function () {
       dashCatId = isGen ? '__none__' : cat.id;
@@ -547,7 +556,8 @@ window.App = (function () {
           '<div class="actions">' +
           '<button onclick="App.editCategory(' + "'" + c.id + "'" + ')">Edit</button>' +
           '<button onclick="App.toggleCategoryStatus(' + "'" + c.id + "'" + ')">' + (c.is_active ? 'Deactivate' : 'Activate') + '</button>' +
-          '<button class="primary" onclick="App.assignAllStudentsToCategory(' + "'" + c.id + "'" + ')">Assign All Students</button>' +
+          '<button class="primary" onclick="App.manageCategoryUsers(' + "'" + c.id + "'" + ')">Manage Users</button>' +
+          '<button class="danger" onclick="App.removeAllCategoryUsers(' + "'" + c.id + "'" + ')">Remove All Users</button>' +
           '<button class="danger" onclick="App.deleteCategory(' + "'" + c.id + "'" + ')">Delete</button>' +
           '</div></div>' +
           '<div class="stat"><span>Description</span><b>' + esc(c.description || '—') + '</b></div>' +
@@ -628,6 +638,78 @@ window.App = (function () {
     var { error } = await sb.from('category_access').upsert(rows, { onConflict: 'category_id,user_id' });
     if (error) { toast('Failed: ' + error.message); return; }
     toast('Assigned ' + rows.length + ' student(s) to this folder!');
+    renderCategories();
+  }
+
+  async function manageCategoryUsers(categoryId) {
+    var { data: cat } = await sb.from('categories').select('name, icon').eq('id', categoryId).maybeSingle();
+    if (!cat) { toast('Category not found.'); return; }
+    var { data: students } = await sb.from('profiles').select('id, name, phone, approved').eq('role', 'student').order('name', { ascending: true });
+    var { data: access } = await sb.from('category_access').select('user_id').eq('category_id', categoryId);
+    var current = {};
+    (access || []).forEach(function (a) { current[a.user_id] = true; });
+    var html = '';
+    if (!(students || []).length) {
+      html = '<div class="empty">No students registered yet.</div>';
+    } else {
+      (students || []).forEach(function (s) {
+        html += '<div class="chk" style="padding:5px 0"><input type="checkbox" data-uid="' + s.id + '" ' + (current[s.id] ? 'checked' : '') + '>' +
+          '<span>' + esc(s.name) + ' &middot; ' + esc(s.phone) + ' ' +
+          (s.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>') +
+          '</span></div>';
+      });
+    }
+    var modal = document.createElement('div');
+    modal.id = 'catUsersModal';
+    modal.className = 'modal';
+    modal.innerHTML = '<div class="box"><h3>' + (cat.icon || '📁') + ' ' + esc(cat.name) + ' &mdash; Manage Users</h3>' +
+      '<p class="note">Tick the students who should have access to this folder. Unticked students will be removed.</p>' +
+      '<div class="chk" style="margin:8px 0"><input type="checkbox" id="cuSelectAll" onchange="App.cuToggleAll(this)"><span><b>Select / deselect all</b></span></div>' +
+      '<input type="hidden" id="cuCatId" value="' + categoryId + '">' +
+      '<div id="catUsersBox" style="max-height:320px;overflow-y:auto;border-top:1px solid var(--line);padding-top:8px">' + html + '</div>' +
+      '<div class="acts">' +
+      '<button style="background:#eee;color:#3a4c5e" onclick="App.closeCatUsersModal()">Cancel</button>' +
+      '<button style="background:var(--brand);color:#fff" onclick="App.saveCategoryUsers()">Save</button>' +
+      '</div></div>';
+    document.body.appendChild(modal);
+    modal.classList.add('show');
+  }
+
+  function cuToggleAll(master) {
+    document.querySelectorAll('#catUsersBox input[type=checkbox][data-uid]').forEach(function (b) { b.checked = master.checked; });
+  }
+
+  function closeCatUsersModal() {
+    var m = el('catUsersModal');
+    if (m) m.remove();
+  }
+
+  async function saveCategoryUsers() {
+    var catId = el('cuCatId').value;
+    var boxes = document.querySelectorAll('#catUsersBox input[type=checkbox][data-uid]');
+    var selected = [];
+    boxes.forEach(function (b) { if (b.checked) selected.push(b.getAttribute('data-uid')); });
+    var del = await sb.from('category_access').delete().eq('category_id', catId);
+    if (del.error) { toast('Failed: ' + del.error.message); return; }
+    for (var i = 0; i < selected.length; i++) {
+      await sb.from('category_access').upsert({
+        category_id: catId,
+        user_id: selected[i],
+        approved: true,
+        approved_at: new Date().toISOString(),
+        approved_by: state.user.id
+      });
+    }
+    closeCatUsersModal();
+    toast(selected.length + ' student(s) now have access to this folder');
+    renderCategories();
+  }
+
+  async function removeAllCategoryUsers(categoryId) {
+    if (!confirm('Remove ALL students from this folder? They will immediately lose access to its tests.')) return;
+    var { error } = await sb.from('category_access').delete().eq('category_id', categoryId);
+    if (error) { toast('Failed: ' + error.message); return; }
+    toast('All users removed from this folder');
     renderCategories();
   }
 
@@ -981,6 +1063,11 @@ window.App = (function () {
     deleteCategory: deleteCategory,
     toggleCategoryAccess: toggleCategoryAccess,
     assignAllStudentsToCategory: assignAllStudentsToCategory,
+    manageCategoryUsers: manageCategoryUsers,
+    cuToggleAll: cuToggleAll,
+    closeCatUsersModal: closeCatUsersModal,
+    saveCategoryUsers: saveCategoryUsers,
+    removeAllCategoryUsers: removeAllCategoryUsers,
     renderTests: renderTests,
     uploadTest: uploadTest,
     readFile: readFile,

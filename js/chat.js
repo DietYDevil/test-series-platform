@@ -166,8 +166,11 @@ window.Chat = (function () {
       var inboxShowing = el('admInbox') && !el('admInbox').classList.contains('hidden') && el('admInbox').dataset.built;
       if (inboxShowing) { loadAll().then(renderInboxList); if (threadUser) renderInboxChat(); }
       else if (threadUser) syncThread(threadUser);
-    } else if (open) {
-      syncThread(myId).then(function () { if (open) { renderPanel(); markSeenStudent(); } });
+    } else {
+      syncThread(myId).then(function () {
+        if (open) { renderPanel(); markSeenStudent(); }
+        else refreshUnread();
+      });
     }
   }
 
