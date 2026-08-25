@@ -451,6 +451,7 @@ body.dark .uploadZone{background:#101a29;border-color:#34486a}
 body.dark .uploadZone:hover{border-color:#2f80c9;background:#142032}
 body.dark .note,body.dark .hint,body.dark .chatEmpty,body.dark .thPrev,body.dark .icHeadInfo span,body.dark .thTime{color:#7e94aa}
 body.dark .empty{color:#90a5bb}
+body.dark .badge.u{background:#44586b}
 body.dark #legend i.u{background:#0f1928;border-color:#34486a}
 body.dark .modal .row{border-bottom-color:#1d2b40}
 body.dark #instRules{color:#aec3d8!important}
