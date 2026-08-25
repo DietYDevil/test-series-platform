@@ -548,7 +548,6 @@ window.App = (function () {
           return '<span class="u" style="margin-right:8px">' + esc(a.name) + ' · ' + esc(a.phone) + ' ' +
             (a.viaTest ? '<span class="badge info" style="font-size:10px;padding:1px 6px">via tests</span>'
                        : (a.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>')) +
-            '<button class="danger" style="margin-left:4px;font-size:11px;padding:2px 8px" onclick="App.toggleCategoryAccess(' + "'" + c.id + "'" + ',' + "'" + a.user_id + "'" + ',' + (!a.approved) + ')">' + (a.approved ? 'Revoke' : 'Approve') + '</button>' +
             '</span>';
         }).join('') : '';
         var testCount = testCountMap[c.id] || 0;
@@ -613,13 +612,6 @@ window.App = (function () {
     if (!confirm('Delete this category? Tests in this category will become uncategorized.')) return;
     await sb.from('categories').delete().eq('id', id);
     toast('Category deleted');
-    renderCategories();
-  }
-
-   async function toggleCategoryAccess(categoryId, userId, approve) {
-    var { error } = await sb.from('category_access').upsert({ category_id: categoryId, user_id: userId, approved: approve, approved_at: approve ? new Date().toISOString() : null, approved_by: state.user.id });
-    if (error) { toast('Failed: ' + error.message); return; }
-    toast(approve ? 'Access granted' : 'Access revoked');
     renderCategories();
   }
 
@@ -1061,7 +1053,6 @@ window.App = (function () {
     editCategory: editCategory,
     toggleCategoryStatus: toggleCategoryStatus,
     deleteCategory: deleteCategory,
-    toggleCategoryAccess: toggleCategoryAccess,
     assignAllStudentsToCategory: assignAllStudentsToCategory,
     manageCategoryUsers: manageCategoryUsers,
     cuToggleAll: cuToggleAll,
