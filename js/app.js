@@ -368,7 +368,7 @@ window.App = (function () {
   async function renderDashboard() {
     showView('viewDash');
     el('greetName').textContent = state.profile.name || 'there';
-    el('greetSub').textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + '  \u00b7  Ready for your next test?';
+    el('greetSub').textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
     el('dashMeta').textContent = state.profile.phone;
     var uid = state.user.id;
     var grid = el('dashGrid');
