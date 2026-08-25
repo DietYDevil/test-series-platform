@@ -32,6 +32,7 @@ window.App = (function () {
     views.forEach(function (v) { el(v).classList.toggle('hidden', v !== id); });
     var showHeader = ['viewDash', 'viewResult', 'viewAdmin'].indexOf(id) >= 0;
     el('appHeader').classList.toggle('hidden', !showHeader);
+    if (window.Chat) Chat.onRouteChange(id);
     window.scrollTo(0, 0);
   }
   
@@ -75,7 +76,7 @@ window.App = (function () {
       else showAuth();
     });
     sb.auth.onAuthStateChange(function (ev, session) {
-      if (ev === 'SIGNED_OUT') { state.user = null; state.profile = null; showAuth(); }
+      if (ev === 'SIGNED_OUT') { state.user = null; state.profile = null; if (window.Chat) Chat.teardown(); showAuth(); }
       else if (ev === 'SIGNED_IN' && session) { state.user = session.user; bootstrap(); }
     });
   }
@@ -179,6 +180,7 @@ window.App = (function () {
     state.profile = data;
     el('huName').textContent = data.name;
     el('huPhone').textContent = data.phone;
+    if (window.Chat) Chat.start();
     if (data.role === 'admin') { adminTab('users'); return; }
     if (data.approved) { renderDashboard(); return; }
     showPending();
@@ -204,6 +206,7 @@ window.App = (function () {
     try { if (sb) await sb.auth.signOut(); } catch (e) {}
     state.user = null; state.profile = null;
     dashCatId = null;
+    if (window.Chat) Chat.teardown();
     showView('viewAuth');
   }
 
@@ -341,7 +344,9 @@ window.App = (function () {
 
   async function renderDashboard() {
     showView('viewDash');
-    el('dashMeta').textContent = state.profile.name + '  \u00b7  ' + state.profile.phone;
+    el('greetName').textContent = state.profile.name || 'there';
+    el('greetSub').textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + '  \u00b7  Ready for your next test?';
+    el('dashMeta').textContent = state.profile.phone;
     var uid = state.user.id;
     var grid = el('dashGrid');
     grid.innerHTML = '<div class="empty"><span class="spinner"></span> Loading tests...</div>';
@@ -444,10 +449,12 @@ window.App = (function () {
     el('admCategories').classList.toggle('hidden', tab !== 'categories');
     el('admTests').classList.toggle('hidden', tab !== 'tests');
     el('admResults').classList.toggle('hidden', tab !== 'results');
+    el('admInbox').classList.toggle('hidden', tab !== 'inbox');
     if (tab === 'users') renderUsers();
     if (tab === 'categories') renderCategories();
     if (tab === 'tests') renderTests();
     if (tab === 'results') renderResults();
+    if (tab === 'inbox' && window.Chat) Chat.renderInbox();
   }
 
   async function renderUsers() {
@@ -958,6 +965,7 @@ window.App = (function () {
 
   return {
     init: init,
+    getClient: function () { return sb; },
     showAuthTab: showAuthTab,
     login: login,
     signup: signup,
