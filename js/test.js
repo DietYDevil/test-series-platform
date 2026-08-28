@@ -678,11 +678,25 @@ window.TestRunner = (function () {
   }
 
   // ---------- show a previously saved result ----------
+  function safeList(v) {
+    if (v == null) return [];
+    if (Array.isArray(v)) return v;
+    try {
+      var p = JSON.parse(v);
+      return Array.isArray(p) ? p : [];
+    } catch (e) {}
+    return [];
+  }
   function viewStoredResult(testObj, resultRow) {
     loadTest(testObj);
-    answers = (resultRow.answers || []).slice();
-    timeSpent = (resultRow.time_spent || []).slice();
-    marked = (resultRow.marked || []).slice();
+    answers = safeList(resultRow.answers);
+    timeSpent = safeList(resultRow.time_spent);
+    marked = safeList(resultRow.marked).map(Boolean);
+    for (var i = 0; i < N; i++) {
+      if (answers[i] === undefined) answers[i] = null;
+      if (timeSpent[i] === undefined) timeSpent[i] = 0;
+      if (marked[i] === undefined) marked[i] = false;
+    }
     visited = new Array(N).fill(true);
     remaining = 0;
     App.showView('viewResult');

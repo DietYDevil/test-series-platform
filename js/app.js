@@ -420,7 +420,7 @@ window.App = (function () {
           '<td><span class="badge ok">' + r.correct + '</span></td><td><span class="badge bad">' + r.incorrect + '</span></td>' +
           '<td><span class="badge u">' + r.unattempted + '</span></td><td>' + pct + '%</td>' +
           '<td>' + esc(new Date(r.submitted_at).toLocaleString()) + '</td>' +
-          '<td><button class="btn" onclick="App.viewResult(' + "'" + r.test_id + "'" + ',' + JSON.stringify(r) + ')">View</button></td></tr>';
+          '<td><button class="btn" onclick="App.viewResultRow(' + "'" + r.id + "'" + ')">View</button></td></tr>';
       }).join('');
       hist.innerHTML = '<table class="tbl"><thead><tr><th>Test</th><th>Score</th><th>Correct</th><th>Incorrect</th><th>Unattempted</th><th>%</th><th>Submitted</th><th></th></tr></thead><tbody>' + rows + '</tbody></table>';
     }
@@ -444,6 +444,17 @@ window.App = (function () {
     }
     
     TestRunner.viewStoredResult(t, resultRow);
+  }
+
+  async function viewResultRow(resultId) {
+    var { data: rr, error } = await sb.from('results').select('*').eq('id', resultId).maybeSingle();
+    if (error || !rr) { toast('Result not found.'); return; }
+    var { data: t } = await sb.from('tests').select('*').eq('id', rr.test_id).maybeSingle();
+    if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
+      toast('Invalid or missing test data. Unable to display report.');
+      return;
+    }
+    TestRunner.viewStoredResult(t, rr);
   }
 
   // ---------------- save result ----------------
@@ -1073,7 +1084,7 @@ window.App = (function () {
         '<td><span class="badge u">' + r.unattempted + '</span></td>' +
         '<td>' + fmtSec(r.time_used_sec) + '</td>' +
         '<td>' + esc(new Date(r.submitted_at).toLocaleString()) + '</td>' +
-        '<td><button class="ok" onclick="App.viewResult(' + "'" + r.test_id + "'" + ',' + jsonAttr(r) + ')">View Report</button></td></tr>';
+        '<td><button class="ok" onclick="App.viewResultRow(' + "'" + r.id + "'" + ')">View Report</button></td></tr>';
     });
     tbl += '</tbody></table>';
     box.innerHTML = summary + '<p class="note">Click <b>View Report</b> to open the full analysis of that attempt.</p>' + tbl;
@@ -1101,7 +1112,7 @@ window.App = (function () {
         '<td><span class="badge u">' + r.unattempted + '</span></td>' +
         '<td>' + fmtSec(r.time_used_sec) + '</td>' +
         '<td>' + esc(new Date(r.submitted_at).toLocaleString()) + '</td>' +
-        '<td><div class="actions"><button class="ok" onclick="App.viewResult(' + "'" + r.test_id + "'" + ',' + jsonAttr(r) + ')">View Report</button>' +
+        '<td><div class="actions"><button class="ok" onclick="App.viewResultRow(' + "'" + r.id + "'" + ')">View Report</button>' +
         '<button class="danger" onclick="App.resetResult(' + "'" + r.id + "'" + ')">Reset</button></div></td></tr>';
     });
     tbl += '</tbody></table>';
@@ -1169,6 +1180,7 @@ window.App = (function () {
     closeInst: closeInst,
     saveResult: saveResult,
     viewResult: viewResult,
+    viewResultRow: viewResultRow,
     renderDashboard: renderDashboard,
     showModal: showModal,
     hideModal: hideModal,
