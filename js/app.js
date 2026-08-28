@@ -111,9 +111,6 @@ window.App = (function () {
   function toggleTheme() {
     applyTheme(document.body.classList.contains('dark') ? 'light' : 'dark');
   }
-  // Helpful overrides for test/dark mode compatibility
-  function forceLightMode() { document.body.classList.remove('dark'); }
-  function restoreUserTheme() { var saved = 'light'; try { saved = localStorage.getItem('theme') || 'light'; } catch (e) {} applyTheme(saved); }
 
   // ---------------- auth ----------------
   function showAuth() {
@@ -1152,7 +1149,6 @@ window.App = (function () {
     init: init,
     getClient: function () { return sb; },
     toggleTheme: toggleTheme,
-    restoreUserTheme: restoreUserTheme,
     showAuthTab: showAuthTab,
     login: login,
     signup: signup,

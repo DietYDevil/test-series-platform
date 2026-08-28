@@ -502,3 +502,77 @@ body.dark .calc-mode{color:#aec3d8}
 body.dark .calc-grid button{background:#1b2840;color:#c4d5e8;border-color:#34486a}
 body.dark .calc-grid button.op{background:#18305a}
 body.dark .calc-grid button.mem{background:#33290f}
+
+/* ============================================================
+   FORCE LIGHT MODE FOR TEST + REPORT SCREENS
+   Questions/options contain images tuned for light backgrounds,
+   so the test-taking (viewTest) and report (viewResult) screens
+   always stay light even when the rest of the site is dark.
+   ============================================================ */
+body.dark #viewTest{color:#1c2733;color-scheme:light}
+body.dark #viewTest .page,
+body.dark #viewTest #qwrap,
+body.dark #viewTest #sidebar{background:#ffffff}
+body.dark #viewTest #sidebar{border-left-color:#dfe6ee}
+body.dark #viewTest #qbody{color:#23303f}
+body.dark #viewTest #qmeta .qnum{color:#1c2733}
+body.dark #viewTest #qmeta .qmarks,
+body.dark #viewTest .legendmini,
+body.dark #viewTest .natbox .nlabel{color:#5a6b7c}
+body.dark #viewTest .opt{background:#fbfdfe;border-color:#dde5ed}
+body.dark #viewTest .opt.selected{background:#eaf3fc;border-color:#0d6fbf}
+body.dark #viewTest .opt .key{background:#e6f0fa;color:#0b4f8a}
+body.dark #viewTest #nav button{background:#fff;color:#3a4c5e;border-color:#ccd6e0}
+body.dark #viewTest #nav button.mark{background:#f6f2fc;color:#7a5cbb;border-color:#d9cdf0}
+body.dark #viewTest #nav button.clear{background:#fff7ed;color:#b8860b;border-color:#f0d5b0}
+body.dark #viewTest #sidebar h4{color:#5a6b7c}
+body.dark #viewTest #palette .sechead{color:#0b4f8a}
+body.dark #viewTest #palette button{background:#fff;border-color:#c9d2db;color:#44586b}
+body.dark #viewTest #legend{color:#5a6b7c}
+body.dark #viewTest #legend i.u{background:#fff;border-color:#ccd6e0}
+body.dark #viewTest #calcBox{background:#eef2f6;border-color:#dfe6ee}
+body.dark #viewTest .calc-display{background:#0c141c;color:#9cf5c0;border-color:#05080c}
+body.dark #viewTest .calc-mode{color:#5a6b7c}
+body.dark #viewTest .calc-grid button{background:#fff;color:#1f3142;border-color:#b7c1cc}
+body.dark #viewTest .calc-grid button.op{background:#e6f0fa}
+body.dark #viewTest .calc-grid button.mem{background:#f2f6f9}
+body.dark #viewTest .fc-count{background:#eef4fa;color:#0b4f8a}
+
+/* report / result screen stays light too (contains question images) */
+body.dark #viewResult{color:#1c2733;color-scheme:light}
+body.dark #viewResult .card{background:#ffffff;border-color:#e6edf3}
+body.dark #viewResult .card h2{color:#0b4f8a;border-bottom-color:#eef3f8}
+body.dark #viewResult .tabs button{background:#fff;color:#44586b;border-color:#ccd6e0}
+body.dark #viewResult .tabs button.active{background:#0b4f8a;color:#fff;border-color:#0b4f8a}
+body.dark #viewResult .qcard{background:#fbfdfe;border-color:#e4ebf2}
+body.dark #viewResult .qtext{color:#23303f}
+body.dark #viewResult .ov-box{background:#f2f6fa;border-color:#dfe6ee}
+body.dark #viewResult .bar .track{background:#e4ebf2}
+body.dark #viewResult .donut .inner{background:#ffffff}
+body.dark #viewResult .msqnote{background:#f6f2fc;border-color:#d9cdf0;color:#7a5cbb}
+body.dark #viewResult .tbl th{background:#f2f6fa;color:#33475a}
+body.dark #viewResult .tbl td{border-bottom-color:#dfe6ee}
+body.dark #viewResult .tbl tr:hover td{background:#f8fafc}
+body.dark #viewResult .tbl .actions button{background:#fff;color:#33475a;border-color:#ccd6e0}
+body.dark #viewResult .note{color:#5a6b7c}
+body.dark #viewResult .empty{color:#8a99a8}
+
+/* instructions modal stays light too */
+body.dark #instModal .box{background:#ffffff;border-color:#e6edf3}
+body.dark #instModal h3{color:#0b4f8a}
+body.dark #instModal #instRules{color:#33475a!important}
+body.dark #instModal .row{border-bottom-color:#eef3f8}
+body.dark #instModal .note{color:#5a6b7c}
+
+/* ============================================================
+   QUESTION / OPTION IMAGE + TEXT ALIGNMENT
+   Images baked into question stems and options (often with a
+   white margin around the main text) are aligned so the rendered
+   text sits on the same line as surrounding inline text.
+   ============================================================ */
+#qbody img,
+.opt .val img,
+.qcard .qtext img,
+#viewResult .qcard img{vertical-align:middle;display:inline-block;max-width:100%;height:auto}
+.opt .val{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.opt .val img{margin:0 4px}

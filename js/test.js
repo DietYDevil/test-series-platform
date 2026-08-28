@@ -134,7 +134,6 @@ window.TestRunner = (function () {
 
   function start() {
     App.hideModal('instModal');
-    App.forceLightMode(); // Ensure dark mode does not affect test UI quality
     App.showView('viewTest');
     running = true;
     timerInt = setInterval(tick, 1000);
@@ -313,7 +312,6 @@ window.TestRunner = (function () {
   function finish(auto) {
     clearInterval(timerInt); running = false;
     App.hideModal('submitModal');
-    App.restoreUserTheme(); // Return theme control to user after test
     App.saveResult().then(function (ok) {
       if (ok === false) App.toast('Attempt could not be saved. You may already have an attempt for this test.');
       App.showView('viewResult');
