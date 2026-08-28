@@ -708,7 +708,7 @@ window.App = (function () {
     }
     closeCatUsersModal();
     toast(selected.length + ' student(s) now have access to this folder');
-    renderCategories();
+    setTimeout(renderCategories, 500);
   }
 
   async function removeAllCategoryUsers(categoryId) {
