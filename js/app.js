@@ -430,9 +430,19 @@ window.App = (function () {
     var t = (typeof testId === 'object' && testId.id) ? testId : null;
     if (!t) {
       var { data } = await sb.from('tests').select('*').eq('id', testId).maybeSingle();
-      if (!data) { toast('Test not found.'); return; }
+      if (!data) { 
+        toast('Test not found.'); 
+        return; 
+      }
       t = data;
     }
+    
+    // Ensure the test data is valid before trying to display it
+    if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
+      toast('Invalid test data. Unable to display report.');
+      return;
+    }
+    
     TestRunner.viewStoredResult(t, resultRow);
   }
 
