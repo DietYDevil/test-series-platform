@@ -114,6 +114,7 @@ window.TestRunner = (function () {
 
   function openInstructions(testObj) {
     loadTest(testObj);
+    App.forceLightMode(); // Ensure dark mode does not affect test UI quality
     document.getElementById('instTitle').textContent = testObj.title || DATA.testName;
     document.getElementById('instQs').textContent = N;
     document.getElementById('instDur').textContent = (DATA.timeLimitMin || testObj.duration_min) + ' minutes';
@@ -134,7 +135,6 @@ window.TestRunner = (function () {
 
   function start() {
     App.hideModal('instModal');
-    App.forceLightMode(); // Ensure dark mode does not affect test UI quality
     App.showView('viewTest');
     running = true;
     timerInt = setInterval(tick, 1000);
