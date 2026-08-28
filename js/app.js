@@ -447,14 +447,20 @@ window.App = (function () {
   }
 
   async function viewResultRow(resultId) {
-    var { data: rr, error } = await sb.from('results').select('*').eq('id', resultId).maybeSingle();
-    if (error || !rr) { toast('Result not found.'); return; }
-    var { data: t } = await sb.from('tests').select('*').eq('id', rr.test_id).maybeSingle();
-    if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
-      toast('Invalid or missing test data. Unable to display report.');
-      return;
+    try {
+      var { data: rr, error } = await sb.from('results').select('*').eq('id', resultId).maybeSingle();
+      if (error || !rr) { toast('Result not found.'); return; }
+      var { data: t } = await sb.from('tests').select('*').eq('id', rr.test_id).maybeSingle();
+      if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
+        toast('Invalid or missing test data. Test may have been deleted.');
+        return;
+      }
+      TestRunner.viewStoredResult(t, rr);
+    } catch (e) {
+      console.error('Report error:', e && e.message);
+      toast('Failed to load report. Please try again.');
+      App.backToDash();
     }
-    TestRunner.viewStoredResult(t, rr);
   }
 
   // ---------------- save result ----------------
