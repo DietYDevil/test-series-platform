@@ -592,7 +592,7 @@ window.App = (function () {
             '</span>';
         }).join('') : '';
         var testCount = testCountMap[c.id] || 0;
-         return '<div class="admCard"><div class="pageHead" style="margin:0 0 8px"><h3>' + (c.icon || '📁') + ' ' + esc(c.name) + ' ' + status + '</h3>' +
+        return '<div class="admCard" data-category-id="' + c.id + '"><div class="pageHead" style="margin:0 0 8px"><h3>' + (c.icon || '📁') + ' ' + esc(c.name) + ' ' + status + '</h3>' +
           '<div class="actions">' +
           '<button onclick="App.editCategory(' + "'" + c.id + "'" + ')">Edit</button>' +
           '<button onclick="App.toggleCategoryStatus(' + "'" + c.id + "'" + ')">' + (c.is_active ? 'Deactivate' : 'Activate') + '</button>' +
@@ -735,6 +735,31 @@ window.App = (function () {
     }
     closeCatUsersModal();
     toast(selected.length + ' student(s) now have access to this folder');
+    // Force re-render of the specific category's assigned users
+    var { data: access } = await sb.from('category_access').select('category_id, user_id, approved, profiles(name, phone)').eq('category_id', catId);
+    var accessMap = {};
+    (access || []).forEach(function (a) {
+      if (!accessMap[a.category_id]) accessMap[a.category_id] = [];
+      accessMap[a.category_id].push({ name: a.profiles ? a.profiles.name : '?', phone: a.profiles ? a.profiles.phone : '', approved: a.approved, user_id: a.user_id });
+    });
+    // Now update the DOM for this specific category
+    var categoryElement = document.querySelector('div[data-category-id="' + catId + '"]');
+    if (categoryElement) {
+      var assigned = accessMap[catId] ? accessMap[catId].map(function (a) {
+        return '<span class="u" style="margin-right:8px">' + esc(a.name) + ' · ' + esc(a.phone) + ' ' +
+          (a.approved ? '<span class="badge ok" style="font-size:10px;padding:1px 6px">Approved</span>' : '<span class="badge gold" style="font-size:10px;padding:1px 6px">Pending</span>') +
+          '</span>';
+      }).join('') : '';
+      var assignedElement = categoryElement.querySelector('.assigned');
+      if (assignedElement) {
+        assignedElement.innerHTML = assigned;
+      }
+      var studentsWithAccessElement = categoryElement.querySelector('.stat span:nth-child(2)');
+      if (studentsWithAccessElement) {
+        studentsWithAccessElement.textContent = accessMap[catId] ? accessMap[catId].length : 0;
+      }
+    }
+    // Also call renderCategories after a short delay to ensure everything is up to date
     setTimeout(renderCategories, 500);
   }
 
