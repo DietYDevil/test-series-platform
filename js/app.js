@@ -1,7 +1,8 @@
-// ============================================================
-// App - auth, routing, dashboard, admin panel
-// ============================================================
-window.App = (function () {
+  // ============================================================
+  // App - auth, routing, dashboard, admin panel
+  // ============================================================
+  // The COSMO Test Portal
+  window.App = (function () {
   var sb = null;
   var state = { user: null, profile: null };
   var viewStack = [];
