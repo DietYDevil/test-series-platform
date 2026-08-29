@@ -69,11 +69,11 @@
       return;
     }
     sb = window.supabase.createClient(c.SUPABASE_URL, c.SUPABASE_ANON_KEY);
-    el('authBrand').textContent = c.APP_NAME;
+    el('authBrand').textContent = 'The COSMO Test Portal';
     el('authSub').textContent = c.APP_SUBTITLE;
-    el('hBrand').textContent = c.APP_NAME;
+    el('hBrand').textContent = 'The COSMO Test Portal';
     el('hSub').textContent = c.APP_SUBTITLE;
-    document.title = c.APP_NAME;
+    document.title = 'The COSMO Test Portal';
     setTimeout(fillCountryCodes, 100);
     sb.auth.getSession().then(function (res) {
       if (res.data && res.data.session) { state.user = res.data.session.user; bootstrap(); }
