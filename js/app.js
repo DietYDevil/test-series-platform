@@ -148,7 +148,11 @@ window.App = (function () {
     if (p1 !== p2) { err.textContent = 'Passwords do not match.'; return; }
     err.textContent = 'Creating account...';
     var phone = normalizePhone(cc, digits);
-    var res = await sb.auth.signUp({ phone: phone, password: p1 });
+    var res = await sb.auth.signUp({
+      phone: phone,
+      password: p1,
+      options: { data: { name: name } }
+    });
     if (res.error) {
       var msg = res.error.message || 'Sign up failed.';
       if (/already registered|duplicate|exists/i.test(msg)) err.textContent = 'This phone number is already registered. Please login.';
@@ -158,8 +162,6 @@ window.App = (function () {
     var uid = (res.data && res.data.session && res.data.session.user && res.data.session.user.id) ||
               (res.data && res.data.user && res.data.user.id);
     if (!uid) { err.textContent = 'Account created. Please login now.'; showAuthTab('login'); el('li-phone').value = digits; return; }
-    var r = await sb.rpc('create_profile', { p_name: name, p_phone: phone });
-    if (r.error) { err.textContent = 'Account created but profile save failed: ' + r.error.message; return; }
     state.user = { id: uid };
     bootstrap();
   }
@@ -537,10 +539,10 @@ window.App = (function () {
   }
 
   async function removeUser(id) {
-    if (!confirm('Remove this user? Their test results will be deleted. (The Supabase auth account can also be removed later from the Supabase dashboard.)')) return;
-    var { error } = await sb.from('profiles').delete().eq('id', id);
+    if (!confirm('Remove this user? They will be set to pending and can be re-approved or removed later.')) return;
+    var { error } = await sb.from('profiles').update({ approved: false }).eq('id', id);
     if (error) { toast('Failed: ' + error.message); return; }
-    toast('User removed');
+    toast('User set to pending');
     renderUsers();
   }
 

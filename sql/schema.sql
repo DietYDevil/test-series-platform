@@ -128,11 +128,11 @@ language sql stable security definer set search_path = public as $$
       ));
 $$;
 
--- Create a profile for a freshly signed-up user.
+-- Auto-create profile when a new user signs up.
 -- The very FIRST account ever created automatically becomes the admin.
 -- (Sign up your own admin account first!)
-create or replace function public.create_profile(p_name text, p_phone text)
-returns void
+create or replace function public.handle_new_user()
+returns trigger
 language plpgsql security definer set search_path = public as $$
 declare
   v_role text;
@@ -143,9 +143,20 @@ begin
     v_role := 'admin';
   end if;
   insert into public.profiles (id, name, phone, role, approved)
-  values (auth.uid(), p_name, p_phone, v_role, v_role = 'admin');
+  values (
+    new.id,
+    coalesce(new.raw_user_meta_data->>'name', ''),
+    new.phone,
+    v_role,
+    v_role = 'admin'
+  );
+  return new;
 end;
 $$;
+
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute function public.handle_new_user();
 
 -- Seed default categories if none exist
 insert into public.categories (name, description, icon, display_order)
@@ -268,4 +279,4 @@ grant all on table public.results         to anon, authenticated;
 grant execute on function public.is_admin()             to anon, authenticated;
 grant execute on function public.can_view_test(uuid)    to anon, authenticated;
 grant execute on function public.can_access_category(uuid) to anon, authenticated;
-grant execute on function public.create_profile(text, text) to authenticated;
+grant execute on function public.handle_new_user() to authenticated;
