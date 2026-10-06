@@ -198,6 +198,7 @@ window.App = (function () {
     el('huPhone').textContent = data.phone;
     if (window.Chat) Chat.start();
     if (data.role === 'admin') { adminTab('users'); return; }
+    clearCaches();
     if (data.approved) { renderDashboard(); return; }
     showPending();
   }
@@ -222,6 +223,7 @@ window.App = (function () {
     try { if (sb) await sb.auth.signOut(); } catch (e) {}
     state.user = null; state.profile = null;
     dashCatId = null;
+    clearCaches();
     if (window.Chat) Chat.teardown();
     showView('viewAuth');
   }
@@ -244,6 +246,67 @@ window.App = (function () {
     if (n.indexOf('csir') >= 0) return 'https://course.onlinecareerendeavour.com/product-detail?id=621733edf2a17b2eb12b1a0f';
     if (n.indexOf('gate') >= 0) return 'https://course.onlinecareerendeavour.com/product-detail?id=621733e9f2a17b2eb12b1a0a';
     return null;
+  }
+
+  // ---------- list-query column whitelists ----------
+  // tests.data holds the whole question JSON (often 1 MB+), and results hold
+  // answers/time_spent/marked arrays. Any list view that uses select('*')
+  // downloads all of that, which is what made the dashboard and admin tests
+  // pages slow. Lists fetch metadata only; full payloads load on demand.
+  var TEST_LIST_COLS =
+    'id, title, subject, description, duration_min, total_qs, max_score, ' +
+    'all_users, status, category_id, created_at';
+  var TEST_DATA_COLS =
+    'id, title, duration_min, max_score, data, categories(name, icon)';
+  var RESULT_LIST_COLS =
+    'id, test_id, user_id, score, max_score, correct, incorrect, unattempted, ' +
+    'time_used_sec, started_at, submitted_at';
+
+  var testDataCache = {};
+  var dashCache = null;
+  var adminTestsCache = null;
+
+  function clearCaches() {
+    testDataCache = {};
+    dashCache = null;
+    adminTestsCache = null;
+  }
+
+  function activeTestsQuery() {
+    return sb.from('tests').select(TEST_LIST_COLS + ', categories(name, icon)')
+      .eq('status', 'active').order('created_at', { ascending: false });
+  }
+
+  // Fetch a single test including its full dataset. Cached so re-opening the
+  // same test (start -> back -> start) does not re-download the payload.
+  async function fetchTestRow(testId) {
+    if (testDataCache[testId]) return testDataCache[testId];
+    var { data, error } = await sb.from('tests').select(TEST_DATA_COLS).eq('id', testId).maybeSingle();
+    if (error || !data) return null;
+    testDataCache[testId] = data;
+    return data;
+  }
+
+  // Metadata rows from list queries carry no .data; hydrate before running.
+  async function withTestData(t) {
+    if (!t) return null;
+    if (t.data && (t.data.questions || t.data.question)) return t;
+    var full = await fetchTestRow(t.id);
+    if (!full || !full.data) return null;
+    t.data = full.data;
+    t.categories = t.categories || full.categories;
+    t.duration_min = t.duration_min || full.duration_min;
+    t.max_score = t.max_score || full.max_score;
+    return t;
+  }
+
+  // Report rendering needs answers/time_spent/marked, which list queries skip.
+  async function ensureFullResult(r) {
+    if (!r) return null;
+    if (Array.isArray(r.answers)) return r;
+    if (!r.id) return r;
+    var { data } = await sb.from('results').select('*').eq('id', r.id).maybeSingle();
+    return data || r;
   }
 
   function makeFolderCard(cat, tests, accent) {
@@ -360,38 +423,70 @@ window.App = (function () {
     btn.className = 'btn ' + (res ? '' : 'primary');
     btn.textContent = res ? 'View Result' : 'Take Test';
     (function (t2, r2) {
-      btn.onclick = function () { r2 ? viewResult(t2, r2) : TestRunner.openInstructions(t2); };
+      btn.onclick = async function () {
+        if (btn.disabled) return;
+        btn.disabled = true;
+        var label = btn.textContent;
+        btn.innerHTML = '<span class="spinner"></span> Loading...';
+        try {
+          if (r2) {
+            await viewResult(t2, r2);
+          } else {
+            var full = await withTestData(t2);
+            if (full) TestRunner.openInstructions(full);
+            else toast('Could not load this test. Please try again.');
+          }
+        } catch (e) {
+          console.error('Open test error:', e && e.message);
+          toast('Could not open test. Please try again.');
+        }
+        btn.disabled = false;
+        btn.textContent = label;
+      };
     })(t, res);
     foot.appendChild(btn);
     card.appendChild(foot);
     return card;
   }
 
-  async function renderDashboard() {
+  async function renderDashboard(force) {
     showView('viewDash');
     el('greetName').textContent = state.profile.name || 'there';
     el('greetSub').textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
     el('dashMeta').textContent = state.profile.phone;
     var uid = state.user.id;
     var grid = el('dashGrid');
+    var hist = el('dashHistory');
+
+    // Folder/filter clicks re-render instantly from the cached bundle.
+    if (dashCache && !force) {
+      renderDashBody(grid, hist, dashCache);
+      return;
+    }
     grid.innerHTML = '<div class="empty"><span class="spinner"></span> Loading tests...</div>';
+    hist.innerHTML = '';
 
-    var tests = [];
-    var myResults = [];
-    var categories = [];
+    var [cr, tr, rr] = await Promise.all([
+      sb.from('categories').select('*').eq('is_active', true).order('display_order', { ascending: true }),
+      activeTestsQuery(),
+      sb.from('results').select(RESULT_LIST_COLS).eq('user_id', uid)
+    ]);
 
-    try {
-      var cr = await sb.from('categories').select('*').eq('is_active', true).order('display_order', { ascending: true });
-      categories = cr.data || [];
-      var tr = await sb.from('tests').select('*, categories(name, icon)').eq('status', 'active').order('created_at', { ascending: false });
-      tests = tr.data || [];
-    } catch (e) {
-      // categories table not available yet -> fall back to plain query
-      var tr2 = await sb.from('tests').select('*').eq('status', 'active').order('created_at', { ascending: false });
+    var tests = tr.data || [];
+    if (tr.error) {
+      // categories join unavailable (table missing or RLS hides it) -> plain list
+      var tr2 = await sb.from('tests').select(TEST_LIST_COLS).eq('status', 'active').order('created_at', { ascending: false });
       tests = tr2.data || [];
     }
-    var rr = await sb.from('results').select('*').eq('user_id', uid);
-    myResults = rr.data || [];
+
+    dashCache = { tests: tests, categories: cr.data || [], results: rr.data || [] };
+    renderDashBody(grid, hist, dashCache);
+  }
+
+  function renderDashBody(grid, hist, bundle) {
+    var tests = bundle.tests;
+    var categories = bundle.categories;
+    var myResults = bundle.results;
 
     var map = {};
     myResults.forEach(function (r) { map[r.test_id] = r; });
@@ -411,7 +506,6 @@ window.App = (function () {
     }
 
     // history table
-    var hist = el('dashHistory');
     if (!myResults.length) {
       hist.innerHTML = '<div class="empty">You have not attempted any test yet.</div>';
     } else {
@@ -430,29 +524,29 @@ window.App = (function () {
 
   async function viewResult(testId, resultRow) {
     var t = (typeof testId === 'object' && testId.id) ? testId : null;
+    if (!t) t = await fetchTestRow(testId);
     if (!t) {
-      var { data } = await sb.from('tests').select('*').eq('id', testId).maybeSingle();
-      if (!data) { 
-        toast('Test not found.'); 
-        return; 
-      }
-      t = data;
+      toast('Test not found.');
+      return;
     }
-    
+
+    t = await withTestData(t);
+
     // Ensure the test data is valid before trying to display it
     if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
       toast('Invalid test data. Unable to display report.');
       return;
     }
-    
-    TestRunner.viewStoredResult(t, resultRow);
+
+    // answers / time_spent / marked are not part of list queries
+    TestRunner.viewStoredResult(t, await ensureFullResult(resultRow));
   }
 
   async function viewResultRow(resultId) {
     try {
       var { data: rr, error } = await sb.from('results').select('*').eq('id', resultId).maybeSingle();
       if (error || !rr) { toast('Result not found.'); return; }
-      var { data: t } = await sb.from('tests').select('*').eq('id', rr.test_id).maybeSingle();
+      var t = await fetchTestRow(rr.test_id);
       if (!t || !t.data || !t.data.questions || !Array.isArray(t.data.questions)) {
         toast('Invalid or missing test data. Test may have been deleted.');
         return;
@@ -750,17 +844,24 @@ window.App = (function () {
   }
 
   // ---------------- admin: tests ----------------
-  async function renderTests() {
+  async function renderTests(force) {
     var box = el('admTests');
-    box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading tests...</div>';
-    var { data: tests } = await sb.from('tests').select('*, categories(name, icon)').order('created_at', { ascending: false });
-    var { data: access } = await sb.from('test_access').select('test_id, user_id, profiles(name)');
+    if (force || !adminTestsCache) {
+      box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading tests...</div>';
+      var [tq, aq, formQ] = await Promise.all([
+        sb.from('tests').select(TEST_LIST_COLS + ', categories(name, icon)').order('created_at', { ascending: false }),
+        sb.from('test_access').select('test_id, user_id, profiles(name)'),
+        uploadFormHtml()
+      ]);
+      adminTestsCache = { tests: tq.data || [], access: aq.data || [], form: formQ };
+    }
+    var tests = adminTestsCache.tests;
     var accessMap = {};
-    (access || []).forEach(function (a) {
+    adminTestsCache.access.forEach(function (a) {
       if (!accessMap[a.test_id]) accessMap[a.test_id] = [];
       accessMap[a.test_id].push(a.profiles ? a.profiles.name : '?');
     });
-    var html = await uploadFormHtml();
+    var html = adminTestsCache.form;
     if (!tests.length) {
       html += '<div class="empty">No tests yet. Upload your first test above.</div>';
     } else {
@@ -926,7 +1027,7 @@ window.App = (function () {
     toast('Test saved!');
     // reset form
     el('up-title').value = ''; el('up-subject').value = ''; el('up-desc').value = ''; el('up-json').value = '';
-    renderTests();
+    renderTests(true);
   }
 
   async function toggleArchive(id) {
@@ -934,14 +1035,14 @@ window.App = (function () {
     if (!data) return;
     var newStatus = data.status === 'active' ? 'archived' : 'active';
     await sb.from('tests').update({ status: newStatus }).eq('id', id);
-    renderTests();
+    renderTests(true);
   }
 
   async function deleteTest(id) {
     if (!confirm('Delete this test and all its results? This cannot be undone.')) return;
     await sb.from('tests').delete().eq('id', id);
     toast('Test deleted');
-    renderTests();
+    renderTests(true);
   }
 
   async function moveTestCategory(testId) {
@@ -970,7 +1071,7 @@ window.App = (function () {
     if (modal) modal.remove();
     if (error) { toast('Failed: ' + error.message); return; }
     toast('Test moved!');
-    renderTests();
+    renderTests(true);
   }
 
   async function assignTest(testId) {
@@ -1018,7 +1119,7 @@ window.App = (function () {
     }
     hideModal('assignModal');
     toast(selected.length + ' student(s) assigned' + (t && t.category_id ? ' + folder access granted' : ''));
-    renderTests();
+    renderTests(true);
   }
 
   // ---------------- admin: results ----------------
@@ -1065,7 +1166,7 @@ window.App = (function () {
     if (!userId) { box.innerHTML = '<div class="empty">Select a student above.</div>'; return; }
     box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading...</div>';
     var rr = await sb.from('results')
-      .select('*, tests(title)')
+      .select(RESULT_LIST_COLS + ', tests(title)')
       .eq('user_id', userId)
       .order('submitted_at', { ascending: false });
     var rows = rr.data || [];
@@ -1105,7 +1206,7 @@ window.App = (function () {
     if (!testId) { box.innerHTML = '<div class="empty">Select a test above.</div>'; return; }
     box.innerHTML = '<div class="empty"><span class="spinner"></span> Loading...</div>';
     var { data: rows } = await sb.from('results')
-      .select('*, profiles(name, phone)')
+      .select(RESULT_LIST_COLS + ', profiles(name, phone)')
       .eq('test_id', testId)
       .order('score', { ascending: false });
     if (!(rows || []).length) { box.innerHTML = '<div class="empty">No attempts for this test yet.</div>'; return; }
@@ -1145,7 +1246,8 @@ window.App = (function () {
   function closeInst() { hideModal('instModal'); }
   function backToDash() {
     if (document.exitFullscreen) { try { document.exitFullscreen(); } catch (e) {} }
-    renderDashboard();
+    // an attempt may have just been saved -> refetch tests/results
+    renderDashboard(true);
   }
 
   return {
